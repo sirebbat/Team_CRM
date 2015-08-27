@@ -50,7 +50,7 @@ Partial Class create_contact
         Me.ci_lbl_lname = New System.Windows.Forms.Label()
         Me.ci_lbl_fname = New System.Windows.Forms.Label()
         Me.ci_btn_update = New System.Windows.Forms.Button()
-        Me.btn_cancel = New System.Windows.Forms.Button()
+        Me.ci_btn_cancel = New System.Windows.Forms.Button()
         Me.gb_ci.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -359,22 +359,22 @@ Partial Class create_contact
         Me.ci_btn_update.Text = "Save"
         Me.ci_btn_update.UseVisualStyleBackColor = False
         '
-        'btn_cancel
+        'ci_btn_cancel
         '
-        Me.btn_cancel.BackColor = System.Drawing.Color.LightSlateGray
-        Me.btn_cancel.FlatAppearance.BorderColor = System.Drawing.Color.LightBlue
-        Me.btn_cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.btn_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue
-        Me.btn_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_cancel.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.btn_cancel.ForeColor = System.Drawing.Color.White
-        Me.btn_cancel.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.btn_cancel.Location = New System.Drawing.Point(673, 471)
-        Me.btn_cancel.Name = "btn_cancel"
-        Me.btn_cancel.Size = New System.Drawing.Size(198, 65)
-        Me.btn_cancel.TabIndex = 6
-        Me.btn_cancel.Text = "Cancel"
-        Me.btn_cancel.UseVisualStyleBackColor = False
+        Me.ci_btn_cancel.BackColor = System.Drawing.Color.LightSlateGray
+        Me.ci_btn_cancel.FlatAppearance.BorderColor = System.Drawing.Color.LightBlue
+        Me.ci_btn_cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.ci_btn_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue
+        Me.ci_btn_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ci_btn_cancel.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.ci_btn_cancel.ForeColor = System.Drawing.Color.White
+        Me.ci_btn_cancel.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.ci_btn_cancel.Location = New System.Drawing.Point(673, 471)
+        Me.ci_btn_cancel.Name = "ci_btn_cancel"
+        Me.ci_btn_cancel.Size = New System.Drawing.Size(198, 65)
+        Me.ci_btn_cancel.TabIndex = 6
+        Me.ci_btn_cancel.Text = "Cancel"
+        Me.ci_btn_cancel.UseVisualStyleBackColor = False
         '
         'create_contact
         '
@@ -383,7 +383,7 @@ Partial Class create_contact
         Me.BackColor = System.Drawing.Color.SlateGray
         Me.ClientSize = New System.Drawing.Size(1399, 586)
         Me.ControlBox = False
-        Me.Controls.Add(Me.btn_cancel)
+        Me.Controls.Add(Me.ci_btn_cancel)
         Me.Controls.Add(Me.ci_btn_update)
         Me.Controls.Add(Me.gb_ci)
         Me.Name = "create_contact"
@@ -422,5 +422,5 @@ Partial Class create_contact
     Friend WithEvents ci_lbl_lname As Label
     Friend WithEvents ci_lbl_fname As Label
     Friend WithEvents ci_btn_update As Button
-    Friend WithEvents btn_cancel As Button
+    Friend WithEvents ci_btn_cancel As Button
 End Class

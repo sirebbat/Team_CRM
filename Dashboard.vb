@@ -18,4 +18,10 @@ Public Class Dashboard
         search_contact.BringToFront()
 
     End Sub
+
+    'Add button - Employee tab
+    Private Sub emp_btn_add_Click(sender As Object, e As EventArgs) Handles emp_btn_add.Click
+        Me.SendToBack()
+        add_employee.Visible = True
+    End Sub
 End Class

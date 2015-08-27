@@ -41,3 +41,4 @@ C:\Users\ruben\Documents\GitHub\Team_CRM\obj\Debug\Team_CRM.create_contact.resou
 C:\Users\ruben\Documents\GitHub\Team_CRM\obj\Debug\Team_CRM.Resources.resources
 C:\Users\ruben\Documents\GitHub\Team_CRM\obj\Debug\Team_CRM.search_contact.resources
 C:\Users\ruben\Documents\GitHub\Team_CRM\obj\Debug\Team-CRM.vbproj.GenerateResource.Cache
+C:\Users\ruben\Documents\GitHub\Team_CRM\obj\Debug\Team_CRM.add_employee.resources

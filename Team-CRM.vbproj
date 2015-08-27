@@ -75,6 +75,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="add_employee.Designer.vb">
+      <DependentUpon>add_employee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="add_employee.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="creatte_activity.Designer.vb">
       <DependentUpon>add_activity.vb</DependentUpon>
     </Compile>
@@ -117,6 +123,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="add_employee.resx">
+      <DependentUpon>add_employee.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="creatte_activity.resx">
       <DependentUpon>add_activity.vb</DependentUpon>
     </EmbeddedResource>

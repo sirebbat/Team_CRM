@@ -295,10 +295,10 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="act_lbl_activity.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 2</value>
+    <value>9, 2</value>
   </data>
   <data name="act_lbl_activity.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 19</value>
+    <value>56, 25</value>
   </data>
   <data name="act_lbl_activity.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -331,7 +331,7 @@
     <value>NoControl</value>
   </data>
   <data name="act_lbl_type.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 2</value>
+    <value>96, 2</value>
   </data>
   <data name="act_lbl_type.Size" type="System.Drawing.Size, System.Drawing">
     <value>46, 19</value>
@@ -367,7 +367,7 @@
     <value>NoControl</value>
   </data>
   <data name="act_lbl_lastmodified.Location" type="System.Drawing.Point, System.Drawing">
-    <value>430, 2</value>
+    <value>427, 2</value>
   </data>
   <data name="act_lbl_lastmodified.Size" type="System.Drawing.Size, System.Drawing">
     <value>111, 19</value>
@@ -403,7 +403,7 @@
     <value>NoControl</value>
   </data>
   <data name="act_lbl_addedon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>311, 2</value>
+    <value>308, 2</value>
   </data>
   <data name="act_lbl_addedon.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 19</value>
@@ -439,7 +439,7 @@
     <value>NoControl</value>
   </data>
   <data name="act_lbl_employee.Location" type="System.Drawing.Point, System.Drawing">
-    <value>669, 2</value>
+    <value>666, 2</value>
   </data>
   <data name="act_lbl_employee.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 19</value>
@@ -478,7 +478,7 @@
     <value>NoControl</value>
   </data>
   <data name="act_lbl_comment.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1009, 2</value>
+    <value>1008, 2</value>
   </data>
   <data name="act_lbl_comment.Size" type="System.Drawing.Size, System.Drawing">
     <value>83, 19</value>
@@ -514,7 +514,7 @@
     <value>NoControl</value>
   </data>
   <data name="act_lbl_status.Location" type="System.Drawing.Point, System.Drawing">
-    <value>198, 2</value>
+    <value>195, 2</value>
   </data>
   <data name="act_lbl_status.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 19</value>
@@ -562,7 +562,7 @@
     <value>4</value>
   </data>
   <data name="act_tbl.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="act_lbl_activity" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="act_lbl_type" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="act_lbl_lastmodified" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="act_lbl_addedon" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="act_lbl_employee" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="act_lbl_comment" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="act_lbl_status" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,44.01709,Percent,55.98291,Absolute,117,Absolute,131,Absolute,130,Absolute,317,Absolute,357" /&gt;&lt;Rows Styles="Percent,26.6055,Percent,73.39449" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="act_lbl_activity" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="act_lbl_type" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="act_lbl_lastmodified" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="act_lbl_addedon" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="act_lbl_employee" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="act_lbl_comment" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="act_lbl_status" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,44.01709,Percent,55.98291,Absolute,117,Absolute,131,Absolute,130,Absolute,317,Absolute,360" /&gt;&lt;Rows Styles="Percent,26.6055,Percent,73.39449" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="gb_activities.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 20.25pt, style=Bold</value>
@@ -1609,7 +1609,7 @@
     <value>NoControl</value>
   </data>
   <data name="emp_lbl_fname.Location" type="System.Drawing.Point, System.Drawing">
-    <value>172, 2</value>
+    <value>170, 2</value>
   </data>
   <data name="emp_lbl_fname.Size" type="System.Drawing.Size, System.Drawing">
     <value>91, 19</value>
@@ -1645,7 +1645,7 @@
     <value>NoControl</value>
   </data>
   <data name="emp_lbl_email.Location" type="System.Drawing.Point, System.Drawing">
-    <value>990, 2</value>
+    <value>988, 2</value>
   </data>
   <data name="emp_lbl_email.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 19</value>
@@ -1681,7 +1681,7 @@
     <value>NoControl</value>
   </data>
   <data name="emp_lbl_phone.Location" type="System.Drawing.Point, System.Drawing">
-    <value>654, 2</value>
+    <value>651, 2</value>
   </data>
   <data name="emp_lbl_phone.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 19</value>
@@ -1717,7 +1717,7 @@
     <value>NoControl</value>
   </data>
   <data name="emp_lbl_lname.Location" type="System.Drawing.Point, System.Drawing">
-    <value>399, 2</value>
+    <value>396, 2</value>
   </data>
   <data name="emp_lbl_lname.Size" type="System.Drawing.Size, System.Drawing">
     <value>90, 19</value>
@@ -1765,7 +1765,7 @@
     <value>0</value>
   </data>
   <data name="TableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="emp_lbl_empid" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="emp_lbl_fname" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="emp_lbl_email" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="emp_lbl_phone" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="emp_lbl_lname" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,37.46313,Percent,62.53687,Absolute,254,Absolute,226,Absolute,428" /&gt;&lt;Rows Styles="Percent,42.24138,Percent,57.75862" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="emp_lbl_empid" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="emp_lbl_fname" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="emp_lbl_email" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="emp_lbl_phone" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="emp_lbl_lname" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,37.46313,Percent,62.53687,Absolute,254,Absolute,226,Absolute,431" /&gt;&lt;Rows Styles="Percent,42.24138,Percent,57.75862" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="gb_emp.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 20.25pt, style=Bold</value>

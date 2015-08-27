@@ -1,5 +1,5 @@
 ﻿Public Class create_contact
-    Private Sub Button1_MouseClick(sender As Object, e As MouseEventArgs) Handles btn_cancel.MouseClick
+    Private Sub Button1_MouseClick(sender As Object, e As MouseEventArgs) Handles ci_btn_cancel.MouseClick
         Me.Close()
         Dashboard.BringToFront()
 
