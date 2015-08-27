@@ -27,3 +27,17 @@ C:\Users\ruben\Documents\Team-CRMnew\Team-CRM\obj\Debug\Team_CRM.create_contact.
 C:\Users\ruben\Documents\Team-CRMnew\Team-CRM\obj\Debug\Team_CRM.Resources.resources
 C:\Users\ruben\Documents\Team-CRMnew\Team-CRM\obj\Debug\Team_CRM.search_contact.resources
 C:\Users\ruben\Documents\Team-CRMnew\Team-CRM\obj\Debug\Team-CRM.vbproj.GenerateResource.Cache
+C:\Users\ruben\Documents\GitHub\Team_CRM\bin\Debug\Team-CRM.exe.config
+C:\Users\ruben\Documents\GitHub\Team_CRM\obj\Debug\Team-CRM.exe
+C:\Users\ruben\Documents\GitHub\Team_CRM\obj\Debug\Team-CRM.xml
+C:\Users\ruben\Documents\GitHub\Team_CRM\obj\Debug\Team-CRM.pdb
+C:\Users\ruben\Documents\GitHub\Team_CRM\bin\Debug\Team-CRM.exe
+C:\Users\ruben\Documents\GitHub\Team_CRM\bin\Debug\Team-CRM.pdb
+C:\Users\ruben\Documents\GitHub\Team_CRM\bin\Debug\Team-CRM.xml
+C:\Users\ruben\Documents\GitHub\Team_CRM\obj\Debug\Team-CRM.vbprojResolveAssemblyReference.cache
+C:\Users\ruben\Documents\GitHub\Team_CRM\obj\Debug\Team_CRM.creatte_activity.resources
+C:\Users\ruben\Documents\GitHub\Team_CRM\obj\Debug\Team_CRM.Dashboard.resources
+C:\Users\ruben\Documents\GitHub\Team_CRM\obj\Debug\Team_CRM.create_contact.resources
+C:\Users\ruben\Documents\GitHub\Team_CRM\obj\Debug\Team_CRM.Resources.resources
+C:\Users\ruben\Documents\GitHub\Team_CRM\obj\Debug\Team_CRM.search_contact.resources
+C:\Users\ruben\Documents\GitHub\Team_CRM\obj\Debug\Team-CRM.vbproj.GenerateResource.Cache
