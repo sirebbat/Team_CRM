@@ -13,30 +13,14 @@ Public Class create_contact
 
 
 
-
-
-        'Convert text box to characthers
-
-        Dim fname As Char = ci_txt_fname.Text
-        Dim lname As Char = ci_txt_lname.Text
-        Dim company As Char = ci_txt_company.Text
-        Dim office_number As Char = ci_txt_officen.Text
-        Dim cell_phone As Char = ci_txt_cellp.Text
-        Dim url As Char = ci_txt_url.Text
-        Dim addrone As Char = ci_txt_addrone.Text
-        Dim addrtwo As Char = ci_txt_addrtwo.Text
-        Dim city As Char = adr_txt_city.Text
-        Dim state As Char = adr_txt_state.Text
-        Dim zip_code As Char = adr_txt_zip.Text
-
-
+        'Variables for the Access database
         Dim provider As String
         Dim dataFile As String
         Dim connString As String
         Dim myConnection As OleDbConnection = New OleDbConnection
         provider = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source ="
 
-        'Change the following to your access database location
+
 
         dataFile = "C:\Users\ruben\Documents\GitHub\Team_CRM\db\crm_db.accdb"
 
@@ -44,11 +28,13 @@ Public Class create_contact
 
         myConnection.ConnectionString = connString
 
-
+        ' starts the connection
 
         myConnection.Open()
 
         Dim str As String
+
+        'creates SQL expression
 
         str = "insert into crm_contact ([fname], [lname], [company], [office_number], [cell_phone], [url], [street_one], [street_two], [city], [state], [zip_code]) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
 
@@ -77,11 +63,14 @@ Public Class create_contact
         cmd.Parameters.Add(New OleDbParameter("zip_code", CType(adr_txt_zip.Text, String)))
         Try
 
+            ' excute SQL expression
             cmd.ExecuteNonQuery()
 
             cmd.Dispose()
 
             myConnection.Close()
+
+            'clears the form
 
             ci_txt_fname.Clear()
             ci_txt_lname.Clear()
@@ -97,18 +86,19 @@ Public Class create_contact
 
 
 
+
         Catch ex As Exception
 
             MsgBox(ex.Message)
 
         End Try
-- See more at: http : //www.visual-basic-tutorials.com/writeToAccessTable.htm#sthash.phfFTl1Y.dpuf
+
 
         MessageBox.Show("Contact Saved", "Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
 
 
-        con.Close()
+
 
 
 

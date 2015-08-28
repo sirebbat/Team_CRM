@@ -23,8 +23,6 @@ Partial Class create_contact
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.gb_ci = New System.Windows.Forms.GroupBox()
-        Me.adr_txt_zip = New System.Windows.Forms.TextBox()
-        Me.adr_txt_state = New System.Windows.Forms.TextBox()
         Me.adr_txt_city = New System.Windows.Forms.TextBox()
         Me.adr_lbl_zip = New System.Windows.Forms.Label()
         Me.ci_txt_addrtwo = New System.Windows.Forms.TextBox()
@@ -34,8 +32,6 @@ Partial Class create_contact
         Me.adr_lbl_city = New System.Windows.Forms.Label()
         Me.adr_lbl_streetadd = New System.Windows.Forms.Label()
         Me.ci_txt_url = New System.Windows.Forms.TextBox()
-        Me.ci_txt_cellp = New System.Windows.Forms.TextBox()
-        Me.ci_txt_officen = New System.Windows.Forms.TextBox()
         Me.ci_txt_company = New System.Windows.Forms.TextBox()
         Me.ci_txt_lname = New System.Windows.Forms.TextBox()
         Me.ci_lbl_url = New System.Windows.Forms.Label()
@@ -48,15 +44,21 @@ Partial Class create_contact
         Me.ci_btn_update = New System.Windows.Forms.Button()
         Me.ci_btn_cancel = New System.Windows.Forms.Button()
         Me.ci_lbl_createddate = New System.Windows.Forms.Label()
-        Me.ci_created_date = New System.Windows.Forms.DateTimePicker()
+        Me.ci_txt_officen = New System.Windows.Forms.MaskedTextBox()
+        Me.ci_txt_cellp = New System.Windows.Forms.MaskedTextBox()
+        Me.adr_txt_zip = New System.Windows.Forms.MaskedTextBox()
+        Me.ci_created_date = New System.Windows.Forms.MaskedTextBox()
+        Me.adr_txt_state = New System.Windows.Forms.ComboBox()
         Me.gb_ci.SuspendLayout()
         Me.SuspendLayout()
         '
         'gb_ci
         '
+        Me.gb_ci.Controls.Add(Me.adr_txt_state)
         Me.gb_ci.Controls.Add(Me.ci_created_date)
         Me.gb_ci.Controls.Add(Me.adr_txt_zip)
-        Me.gb_ci.Controls.Add(Me.adr_txt_state)
+        Me.gb_ci.Controls.Add(Me.ci_txt_cellp)
+        Me.gb_ci.Controls.Add(Me.ci_txt_officen)
         Me.gb_ci.Controls.Add(Me.adr_txt_city)
         Me.gb_ci.Controls.Add(Me.adr_lbl_zip)
         Me.gb_ci.Controls.Add(Me.ci_txt_addrtwo)
@@ -66,8 +68,6 @@ Partial Class create_contact
         Me.gb_ci.Controls.Add(Me.adr_lbl_city)
         Me.gb_ci.Controls.Add(Me.adr_lbl_streetadd)
         Me.gb_ci.Controls.Add(Me.ci_txt_url)
-        Me.gb_ci.Controls.Add(Me.ci_txt_cellp)
-        Me.gb_ci.Controls.Add(Me.ci_txt_officen)
         Me.gb_ci.Controls.Add(Me.ci_txt_company)
         Me.gb_ci.Controls.Add(Me.ci_txt_lname)
         Me.gb_ci.Controls.Add(Me.ci_lbl_url)
@@ -87,26 +87,10 @@ Partial Class create_contact
         Me.gb_ci.TabStop = False
         Me.gb_ci.Text = "Contact Information"
         '
-        'adr_txt_zip
-        '
-        Me.adr_txt_zip.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.adr_txt_zip.Location = New System.Drawing.Point(979, 269)
-        Me.adr_txt_zip.Name = "adr_txt_zip"
-        Me.adr_txt_zip.Size = New System.Drawing.Size(100, 26)
-        Me.adr_txt_zip.TabIndex = 31
-        '
-        'adr_txt_state
-        '
-        Me.adr_txt_state.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.adr_txt_state.Location = New System.Drawing.Point(584, 319)
-        Me.adr_txt_state.Name = "adr_txt_state"
-        Me.adr_txt_state.Size = New System.Drawing.Size(61, 26)
-        Me.adr_txt_state.TabIndex = 30
-        '
         'adr_txt_city
         '
         Me.adr_txt_city.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.adr_txt_city.Location = New System.Drawing.Point(584, 272)
+        Me.adr_txt_city.Location = New System.Drawing.Point(567, 272)
         Me.adr_txt_city.Name = "adr_txt_city"
         Me.adr_txt_city.Size = New System.Drawing.Size(100, 26)
         Me.adr_txt_city.TabIndex = 29
@@ -186,26 +170,10 @@ Partial Class create_contact
         'ci_txt_url
         '
         Me.ci_txt_url.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.ci_txt_url.Location = New System.Drawing.Point(582, 183)
+        Me.ci_txt_url.Location = New System.Drawing.Point(567, 183)
         Me.ci_txt_url.Name = "ci_txt_url"
         Me.ci_txt_url.Size = New System.Drawing.Size(297, 26)
         Me.ci_txt_url.TabIndex = 21
-        '
-        'ci_txt_cellp
-        '
-        Me.ci_txt_cellp.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.ci_txt_cellp.Location = New System.Drawing.Point(582, 137)
-        Me.ci_txt_cellp.Name = "ci_txt_cellp"
-        Me.ci_txt_cellp.Size = New System.Drawing.Size(100, 26)
-        Me.ci_txt_cellp.TabIndex = 20
-        '
-        'ci_txt_officen
-        '
-        Me.ci_txt_officen.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.ci_txt_officen.Location = New System.Drawing.Point(582, 88)
-        Me.ci_txt_officen.Name = "ci_txt_officen"
-        Me.ci_txt_officen.Size = New System.Drawing.Size(100, 26)
-        Me.ci_txt_officen.TabIndex = 19
         '
         'ci_txt_company
         '
@@ -342,15 +310,52 @@ Partial Class create_contact
         Me.ci_lbl_createddate.TabIndex = 8
         Me.ci_lbl_createddate.Text = "Created Date"
         '
+        'ci_txt_officen
+        '
+        Me.ci_txt_officen.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.ci_txt_officen.Location = New System.Drawing.Point(567, 78)
+        Me.ci_txt_officen.Mask = "(999) 000-0000"
+        Me.ci_txt_officen.Name = "ci_txt_officen"
+        Me.ci_txt_officen.Size = New System.Drawing.Size(130, 26)
+        Me.ci_txt_officen.TabIndex = 33
+        '
+        'ci_txt_cellp
+        '
+        Me.ci_txt_cellp.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.ci_txt_cellp.Location = New System.Drawing.Point(567, 134)
+        Me.ci_txt_cellp.Mask = "(999) 000-0000"
+        Me.ci_txt_cellp.Name = "ci_txt_cellp"
+        Me.ci_txt_cellp.Size = New System.Drawing.Size(130, 26)
+        Me.ci_txt_cellp.TabIndex = 34
+        '
+        'adr_txt_zip
+        '
+        Me.adr_txt_zip.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.adr_txt_zip.Location = New System.Drawing.Point(906, 272)
+        Me.adr_txt_zip.Mask = "00000"
+        Me.adr_txt_zip.Name = "adr_txt_zip"
+        Me.adr_txt_zip.Size = New System.Drawing.Size(100, 26)
+        Me.adr_txt_zip.TabIndex = 35
+        '
         'ci_created_date
         '
-        Me.ci_created_date.CustomFormat = ""
-        Me.ci_created_date.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ci_created_date.Location = New System.Drawing.Point(1084, 35)
-        Me.ci_created_date.MinDate = New Date(1990, 1, 1, 0, 0, 0, 0)
+        Me.ci_created_date.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.ci_created_date.Location = New System.Drawing.Point(1070, 33)
+        Me.ci_created_date.Mask = "00/00/0000"
         Me.ci_created_date.Name = "ci_created_date"
-        Me.ci_created_date.Size = New System.Drawing.Size(258, 26)
-        Me.ci_created_date.TabIndex = 32
+        Me.ci_created_date.Size = New System.Drawing.Size(100, 26)
+        Me.ci_created_date.TabIndex = 36
+        Me.ci_created_date.ValidatingType = GetType(Date)
+        '
+        'adr_txt_state
+        '
+        Me.adr_txt_state.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.adr_txt_state.FormattingEnabled = True
+        Me.adr_txt_state.Items.AddRange(New Object() {"AA ", "AE ", "AP ", "AL ", "AK ", "AS ", "AZ ", "AR ", "CA ", "CO ", "CT ", "DE ", "DC ", "FM ", "FL ", "GA ", "GU ", "HI ", "ID ", "IL ", "IN ", "IA ", "KS ", "KY ", "LA ", "ME ", "MH ", "MD ", "MA ", "MI ", "MN ", "MS ", "MO ", "MT ", "NE ", "NV ", "NH ", "NJ ", "NM ", "NY ", "NC ", "ND ", "MP ", "OH ", "OK ", "OR ", "PW ", "PA ", "PR ", "RI ", "SC ", "SD ", "TN ", "TX ", "UT ", "VT ", "VI ", "VA ", "WA ", "WV ", "WI ", "WY"})
+        Me.adr_txt_state.Location = New System.Drawing.Point(567, 324)
+        Me.adr_txt_state.Name = "adr_txt_state"
+        Me.adr_txt_state.Size = New System.Drawing.Size(100, 26)
+        Me.adr_txt_state.TabIndex = 37
         '
         'create_contact
         '
@@ -371,8 +376,6 @@ Partial Class create_contact
     End Sub
 
     Friend WithEvents gb_ci As GroupBox
-    Friend WithEvents adr_txt_zip As TextBox
-    Friend WithEvents adr_txt_state As TextBox
     Friend WithEvents adr_txt_city As TextBox
     Friend WithEvents adr_lbl_zip As Label
     Friend WithEvents ci_txt_addrtwo As TextBox
@@ -382,8 +385,6 @@ Partial Class create_contact
     Friend WithEvents adr_lbl_city As Label
     Friend WithEvents adr_lbl_streetadd As Label
     Friend WithEvents ci_txt_url As TextBox
-    Friend WithEvents ci_txt_cellp As TextBox
-    Friend WithEvents ci_txt_officen As TextBox
     Friend WithEvents ci_txt_company As TextBox
     Friend WithEvents ci_txt_lname As TextBox
     Friend WithEvents ci_lbl_url As Label
@@ -395,6 +396,10 @@ Partial Class create_contact
     Friend WithEvents ci_lbl_fname As Label
     Friend WithEvents ci_btn_update As Button
     Friend WithEvents ci_btn_cancel As Button
-    Friend WithEvents ci_created_date As DateTimePicker
     Friend WithEvents ci_lbl_createddate As Label
+    Friend WithEvents adr_txt_state As ComboBox
+    Friend WithEvents ci_created_date As MaskedTextBox
+    Friend WithEvents adr_txt_zip As MaskedTextBox
+    Friend WithEvents ci_txt_cellp As MaskedTextBox
+    Friend WithEvents ci_txt_officen As MaskedTextBox
 End Class
