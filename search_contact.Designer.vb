@@ -39,7 +39,6 @@ Partial Class search_contact
         Me.TextBox1.Font = New System.Drawing.Font("Arial", 12.0!)
         Me.TextBox1.Location = New System.Drawing.Point(200, 125)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.ReadOnly = True
         Me.TextBox1.Size = New System.Drawing.Size(194, 26)
         Me.TextBox1.TabIndex = 7
         '
@@ -72,7 +71,6 @@ Partial Class search_contact
         Me.TextBox2.Font = New System.Drawing.Font("Arial", 12.0!)
         Me.TextBox2.Location = New System.Drawing.Point(200, 178)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.ReadOnly = True
         Me.TextBox2.Size = New System.Drawing.Size(194, 26)
         Me.TextBox2.TabIndex = 9
         '
@@ -93,7 +91,6 @@ Partial Class search_contact
         Me.account_number.Font = New System.Drawing.Font("Arial", 12.0!)
         Me.account_number.Location = New System.Drawing.Point(200, 68)
         Me.account_number.Name = "account_number"
-        Me.account_number.ReadOnly = True
         Me.account_number.Size = New System.Drawing.Size(194, 26)
         Me.account_number.TabIndex = 11
         '

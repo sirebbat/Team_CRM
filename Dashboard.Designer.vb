@@ -504,7 +504,6 @@ Partial Class Dashboard
         Me.MinimizeBox = False
         Me.Name = "Dashboard"
         Me.ShowIcon = False
-        Me.TopMost = True
         Me.dashboard_tab.ResumeLayout(False)
         Me.tabClient.ResumeLayout(False)
         Me.tabClient.PerformLayout()

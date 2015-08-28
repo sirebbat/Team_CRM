@@ -3,7 +3,7 @@ Imports System.Globalization
 Imports System.Text.RegularExpressions
 
 Public Class create_contact
-    Dim secs = "00"
+
     Dim myConnString As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source =" & Environment.CurrentDirectory & "\crm_db.accdb"
 
 
