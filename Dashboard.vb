@@ -1,4 +1,6 @@
 ﻿'Dashboard
+Imports System.Globalization
+
 Public Class Dashboard
 
 
@@ -24,4 +26,6 @@ Public Class Dashboard
         Me.SendToBack()
         add_employee.Visible = True
     End Sub
+
+
 End Class

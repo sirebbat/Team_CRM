@@ -26,6 +26,14 @@ Partial Class Dashboard
         Me.dashboard_tab = New System.Windows.Forms.TabControl()
         Me.tabClient = New System.Windows.Forms.TabPage()
         Me.gb_activities = New System.Windows.Forms.GroupBox()
+        Me.act_lb = New System.Windows.Forms.ListView()
+        Me.act_lb_activity = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.act_lb_type = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.act_lb_status = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.act_lb_addedon = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.act_lb_lastmodified = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.act_lb_employee = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.act_lb_comment = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.act_btn_delete = New System.Windows.Forms.Button()
         Me.act_btn_save = New System.Windows.Forms.Button()
         Me.act_btn_create = New System.Windows.Forms.Button()
@@ -63,22 +71,14 @@ Partial Class Dashboard
         Me.btnSearch = New System.Windows.Forms.Button()
         Me.btnCreate = New System.Windows.Forms.Button()
         Me.tabEmp = New System.Windows.Forms.TabPage()
-        Me.emp_btn_update = New System.Windows.Forms.Button()
-        Me.emp_btn_add = New System.Windows.Forms.Button()
-        Me.act_lb = New System.Windows.Forms.ListView()
-        Me.act_lb_activity = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.act_lb_type = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.act_lb_status = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.act_lb_addedon = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.act_lb_lastmodified = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.act_lb_employee = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.act_lb_comment = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.emp_lb = New System.Windows.Forms.ListView()
         Me.emp_lb_employeeid = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.emp_lb_fname = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.emp_lb_lname = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.emp_lb_phone = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.emp_lb_ = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.emp_btn_update = New System.Windows.Forms.Button()
+        Me.emp_btn_add = New System.Windows.Forms.Button()
         Me.dashboard_tab.SuspendLayout()
         Me.tabClient.SuspendLayout()
         Me.gb_activities.SuspendLayout()
@@ -117,6 +117,43 @@ Partial Class Dashboard
         Me.gb_activities.ForeColor = System.Drawing.Color.White
         Me.gb_activities.Name = "gb_activities"
         Me.gb_activities.TabStop = False
+        '
+        'act_lb
+        '
+        Me.act_lb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.act_lb.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.act_lb_activity, Me.act_lb_type, Me.act_lb_status, Me.act_lb_addedon, Me.act_lb_lastmodified, Me.act_lb_employee, Me.act_lb_comment})
+        resources.ApplyResources(Me.act_lb, "act_lb")
+        Me.act_lb.Name = "act_lb"
+        Me.act_lb.UseCompatibleStateImageBehavior = False
+        Me.act_lb.View = System.Windows.Forms.View.Details
+        '
+        'act_lb_activity
+        '
+        resources.ApplyResources(Me.act_lb_activity, "act_lb_activity")
+        '
+        'act_lb_type
+        '
+        resources.ApplyResources(Me.act_lb_type, "act_lb_type")
+        '
+        'act_lb_status
+        '
+        resources.ApplyResources(Me.act_lb_status, "act_lb_status")
+        '
+        'act_lb_addedon
+        '
+        resources.ApplyResources(Me.act_lb_addedon, "act_lb_addedon")
+        '
+        'act_lb_lastmodified
+        '
+        resources.ApplyResources(Me.act_lb_lastmodified, "act_lb_lastmodified")
+        '
+        'act_lb_employee
+        '
+        resources.ApplyResources(Me.act_lb_employee, "act_lb_employee")
+        '
+        'act_lb_comment
+        '
+        resources.ApplyResources(Me.act_lb_comment, "act_lb_comment")
         '
         'act_btn_delete
         '
@@ -406,65 +443,6 @@ Partial Class Dashboard
         Me.tabEmp.ForeColor = System.Drawing.Color.White
         Me.tabEmp.Name = "tabEmp"
         '
-        'emp_btn_update
-        '
-        Me.emp_btn_update.BackColor = System.Drawing.Color.LightSlateGray
-        Me.emp_btn_update.FlatAppearance.BorderColor = System.Drawing.Color.LightBlue
-        Me.emp_btn_update.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.emp_btn_update.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue
-        resources.ApplyResources(Me.emp_btn_update, "emp_btn_update")
-        Me.emp_btn_update.ForeColor = System.Drawing.Color.White
-        Me.emp_btn_update.Name = "emp_btn_update"
-        Me.emp_btn_update.UseVisualStyleBackColor = False
-        '
-        'emp_btn_add
-        '
-        Me.emp_btn_add.BackColor = System.Drawing.Color.LightSlateGray
-        Me.emp_btn_add.FlatAppearance.BorderColor = System.Drawing.Color.LightBlue
-        Me.emp_btn_add.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.emp_btn_add.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue
-        resources.ApplyResources(Me.emp_btn_add, "emp_btn_add")
-        Me.emp_btn_add.ForeColor = System.Drawing.Color.White
-        Me.emp_btn_add.Name = "emp_btn_add"
-        Me.emp_btn_add.UseVisualStyleBackColor = False
-        '
-        'act_lb
-        '
-        Me.act_lb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.act_lb.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.act_lb_activity, Me.act_lb_type, Me.act_lb_status, Me.act_lb_addedon, Me.act_lb_lastmodified, Me.act_lb_employee, Me.act_lb_comment})
-        resources.ApplyResources(Me.act_lb, "act_lb")
-        Me.act_lb.Name = "act_lb"
-        Me.act_lb.UseCompatibleStateImageBehavior = False
-        Me.act_lb.View = System.Windows.Forms.View.Details
-        '
-        'act_lb_activity
-        '
-        resources.ApplyResources(Me.act_lb_activity, "act_lb_activity")
-        '
-        'act_lb_type
-        '
-        resources.ApplyResources(Me.act_lb_type, "act_lb_type")
-        '
-        'act_lb_status
-        '
-        resources.ApplyResources(Me.act_lb_status, "act_lb_status")
-        '
-        'act_lb_addedon
-        '
-        resources.ApplyResources(Me.act_lb_addedon, "act_lb_addedon")
-        '
-        'act_lb_lastmodified
-        '
-        resources.ApplyResources(Me.act_lb_lastmodified, "act_lb_lastmodified")
-        '
-        'act_lb_employee
-        '
-        resources.ApplyResources(Me.act_lb_employee, "act_lb_employee")
-        '
-        'act_lb_comment
-        '
-        resources.ApplyResources(Me.act_lb_comment, "act_lb_comment")
-        '
         'emp_lb
         '
         Me.emp_lb.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.emp_lb_employeeid, Me.emp_lb_fname, Me.emp_lb_lname, Me.emp_lb_phone, Me.emp_lb_})
@@ -492,6 +470,28 @@ Partial Class Dashboard
         'emp_lb_
         '
         resources.ApplyResources(Me.emp_lb_, "emp_lb_")
+        '
+        'emp_btn_update
+        '
+        Me.emp_btn_update.BackColor = System.Drawing.Color.LightSlateGray
+        Me.emp_btn_update.FlatAppearance.BorderColor = System.Drawing.Color.LightBlue
+        Me.emp_btn_update.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.emp_btn_update.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue
+        resources.ApplyResources(Me.emp_btn_update, "emp_btn_update")
+        Me.emp_btn_update.ForeColor = System.Drawing.Color.White
+        Me.emp_btn_update.Name = "emp_btn_update"
+        Me.emp_btn_update.UseVisualStyleBackColor = False
+        '
+        'emp_btn_add
+        '
+        Me.emp_btn_add.BackColor = System.Drawing.Color.LightSlateGray
+        Me.emp_btn_add.FlatAppearance.BorderColor = System.Drawing.Color.LightBlue
+        Me.emp_btn_add.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.emp_btn_add.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue
+        resources.ApplyResources(Me.emp_btn_add, "emp_btn_add")
+        Me.emp_btn_add.ForeColor = System.Drawing.Color.White
+        Me.emp_btn_add.Name = "emp_btn_add"
+        Me.emp_btn_add.UseVisualStyleBackColor = False
         '
         'Dashboard
         '

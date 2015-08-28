@@ -22,7 +22,10 @@ Partial Class create_contact
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.gb_ci = New System.Windows.Forms.GroupBox()
+        Me.ci_txt_email = New System.Windows.Forms.TextBox()
+        Me.ci_lbl_email = New System.Windows.Forms.Label()
         Me.adr_txt_state = New System.Windows.Forms.ComboBox()
         Me.ci_created_date = New System.Windows.Forms.MaskedTextBox()
         Me.adr_txt_zip = New System.Windows.Forms.MaskedTextBox()
@@ -49,11 +52,14 @@ Partial Class create_contact
         Me.ci_lbl_fname = New System.Windows.Forms.Label()
         Me.ci_btn_update = New System.Windows.Forms.Button()
         Me.ci_btn_cancel = New System.Windows.Forms.Button()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.gb_ci.SuspendLayout()
         Me.SuspendLayout()
         '
         'gb_ci
         '
+        Me.gb_ci.Controls.Add(Me.ci_txt_email)
+        Me.gb_ci.Controls.Add(Me.ci_lbl_email)
         Me.gb_ci.Controls.Add(Me.adr_txt_state)
         Me.gb_ci.Controls.Add(Me.ci_created_date)
         Me.gb_ci.Controls.Add(Me.adr_txt_zip)
@@ -87,6 +93,24 @@ Partial Class create_contact
         Me.gb_ci.TabStop = False
         Me.gb_ci.Text = "Contact Information"
         '
+        'ci_txt_email
+        '
+        Me.ci_txt_email.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.ci_txt_email.Location = New System.Drawing.Point(567, 175)
+        Me.ci_txt_email.Name = "ci_txt_email"
+        Me.ci_txt_email.Size = New System.Drawing.Size(303, 26)
+        Me.ci_txt_email.TabIndex = 6
+        '
+        'ci_lbl_email
+        '
+        Me.ci_lbl_email.AutoSize = True
+        Me.ci_lbl_email.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.ci_lbl_email.Location = New System.Drawing.Point(428, 175)
+        Me.ci_lbl_email.Name = "ci_lbl_email"
+        Me.ci_lbl_email.Size = New System.Drawing.Size(48, 18)
+        Me.ci_lbl_email.TabIndex = 29
+        Me.ci_lbl_email.Text = "Email"
+        '
         'adr_txt_state
         '
         Me.adr_txt_state.Font = New System.Drawing.Font("Arial", 12.0!)
@@ -95,7 +119,7 @@ Partial Class create_contact
         Me.adr_txt_state.Location = New System.Drawing.Point(567, 324)
         Me.adr_txt_state.Name = "adr_txt_state"
         Me.adr_txt_state.Size = New System.Drawing.Size(100, 26)
-        Me.adr_txt_state.TabIndex = 10
+        Me.adr_txt_state.TabIndex = 11
         '
         'ci_created_date
         '
@@ -140,7 +164,7 @@ Partial Class create_contact
         Me.adr_txt_city.Location = New System.Drawing.Point(567, 272)
         Me.adr_txt_city.Name = "adr_txt_city"
         Me.adr_txt_city.Size = New System.Drawing.Size(100, 26)
-        Me.adr_txt_city.TabIndex = 9
+        Me.adr_txt_city.TabIndex = 10
         '
         'adr_lbl_zip
         '
@@ -159,7 +183,7 @@ Partial Class create_contact
         Me.ci_txt_addrtwo.Location = New System.Drawing.Point(147, 319)
         Me.ci_txt_addrtwo.Name = "ci_txt_addrtwo"
         Me.ci_txt_addrtwo.Size = New System.Drawing.Size(266, 26)
-        Me.ci_txt_addrtwo.TabIndex = 8
+        Me.ci_txt_addrtwo.TabIndex = 9
         '
         'ci_txt_addrone
         '
@@ -167,7 +191,7 @@ Partial Class create_contact
         Me.ci_txt_addrone.Location = New System.Drawing.Point(147, 269)
         Me.ci_txt_addrone.Name = "ci_txt_addrone"
         Me.ci_txt_addrone.Size = New System.Drawing.Size(266, 26)
-        Me.ci_txt_addrone.TabIndex = 7
+        Me.ci_txt_addrone.TabIndex = 8
         '
         'adr_lbl_streetad
         '
@@ -217,10 +241,10 @@ Partial Class create_contact
         'ci_txt_url
         '
         Me.ci_txt_url.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.ci_txt_url.Location = New System.Drawing.Point(567, 183)
+        Me.ci_txt_url.Location = New System.Drawing.Point(567, 214)
         Me.ci_txt_url.Name = "ci_txt_url"
         Me.ci_txt_url.Size = New System.Drawing.Size(297, 26)
-        Me.ci_txt_url.TabIndex = 6
+        Me.ci_txt_url.TabIndex = 7
         '
         'ci_txt_company
         '
@@ -243,7 +267,7 @@ Partial Class create_contact
         Me.ci_lbl_url.AutoSize = True
         Me.ci_lbl_url.Font = New System.Drawing.Font("Arial", 12.0!)
         Me.ci_lbl_url.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.ci_lbl_url.Location = New System.Drawing.Point(430, 191)
+        Me.ci_lbl_url.Location = New System.Drawing.Point(430, 222)
         Me.ci_lbl_url.Name = "ci_lbl_url"
         Me.ci_lbl_url.Size = New System.Drawing.Size(39, 18)
         Me.ci_lbl_url.TabIndex = 14
@@ -402,4 +426,7 @@ Partial Class create_contact
     Friend WithEvents adr_txt_zip As MaskedTextBox
     Friend WithEvents ci_txt_cellp As MaskedTextBox
     Friend WithEvents ci_txt_officen As MaskedTextBox
+    Friend WithEvents ci_lbl_email As Label
+    Friend WithEvents ci_txt_email As TextBox
+    Friend WithEvents Timer1 As Timer
 End Class

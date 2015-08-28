@@ -1306,7 +1306,7 @@
     <value>3, 3, 3, 6</value>
   </data>
   <data name="tabClient.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1223, 974</value>
+    <value>1240, 974</value>
   </data>
   <data name="tabClient.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1498,7 +1498,7 @@
     <value>True</value>
   </data>
   <data name="dashboard_tab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1231, 1000</value>
+    <value>1248, 1000</value>
   </data>
   <data name="dashboard_tab.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1528,7 +1528,7 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1248, 961</value>
+    <value>1265, 961</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
