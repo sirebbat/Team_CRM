@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class create_contact
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,9 +20,14 @@ Partial Class create_contact
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.gb_ci = New System.Windows.Forms.GroupBox()
+        Me.adr_txt_state = New System.Windows.Forms.ComboBox()
+        Me.ci_created_date = New System.Windows.Forms.MaskedTextBox()
+        Me.adr_txt_zip = New System.Windows.Forms.MaskedTextBox()
+        Me.ci_txt_cellp = New System.Windows.Forms.MaskedTextBox()
+        Me.ci_txt_officen = New System.Windows.Forms.MaskedTextBox()
         Me.adr_txt_city = New System.Windows.Forms.TextBox()
         Me.adr_lbl_zip = New System.Windows.Forms.Label()
         Me.ci_txt_addrtwo = New System.Windows.Forms.TextBox()
@@ -37,18 +42,13 @@ Partial Class create_contact
         Me.ci_lbl_url = New System.Windows.Forms.Label()
         Me.ci_lbl_cellp = New System.Windows.Forms.Label()
         Me.ci_lbl_officen = New System.Windows.Forms.Label()
+        Me.ci_lbl_createddate = New System.Windows.Forms.Label()
         Me.ci_txt_fname = New System.Windows.Forms.TextBox()
         Me.ci_lbl_company = New System.Windows.Forms.Label()
         Me.ci_lbl_lname = New System.Windows.Forms.Label()
         Me.ci_lbl_fname = New System.Windows.Forms.Label()
         Me.ci_btn_update = New System.Windows.Forms.Button()
         Me.ci_btn_cancel = New System.Windows.Forms.Button()
-        Me.ci_lbl_createddate = New System.Windows.Forms.Label()
-        Me.ci_txt_officen = New System.Windows.Forms.MaskedTextBox()
-        Me.ci_txt_cellp = New System.Windows.Forms.MaskedTextBox()
-        Me.adr_txt_zip = New System.Windows.Forms.MaskedTextBox()
-        Me.ci_created_date = New System.Windows.Forms.MaskedTextBox()
-        Me.adr_txt_state = New System.Windows.Forms.ComboBox()
         Me.gb_ci.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -86,6 +86,53 @@ Partial Class create_contact
         Me.gb_ci.TabIndex = 4
         Me.gb_ci.TabStop = False
         Me.gb_ci.Text = "Contact Information"
+        '
+        'adr_txt_state
+        '
+        Me.adr_txt_state.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.adr_txt_state.FormattingEnabled = True
+        Me.adr_txt_state.Items.AddRange(New Object() {"AA ", "AE ", "AP ", "AL ", "AK ", "AS ", "AZ ", "AR ", "CA ", "CO ", "CT ", "DE ", "DC ", "FM ", "FL ", "GA ", "GU ", "HI ", "ID ", "IL ", "IN ", "IA ", "KS ", "KY ", "LA ", "ME ", "MH ", "MD ", "MA ", "MI ", "MN ", "MS ", "MO ", "MT ", "NE ", "NV ", "NH ", "NJ ", "NM ", "NY ", "NC ", "ND ", "MP ", "OH ", "OK ", "OR ", "PW ", "PA ", "PR ", "RI ", "SC ", "SD ", "TN ", "TX ", "UT ", "VT ", "VI ", "VA ", "WA ", "WV ", "WI ", "WY"})
+        Me.adr_txt_state.Location = New System.Drawing.Point(567, 324)
+        Me.adr_txt_state.Name = "adr_txt_state"
+        Me.adr_txt_state.Size = New System.Drawing.Size(100, 26)
+        Me.adr_txt_state.TabIndex = 37
+        '
+        'ci_created_date
+        '
+        Me.ci_created_date.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.ci_created_date.Location = New System.Drawing.Point(1070, 33)
+        Me.ci_created_date.Mask = "00/00/0000"
+        Me.ci_created_date.Name = "ci_created_date"
+        Me.ci_created_date.Size = New System.Drawing.Size(100, 26)
+        Me.ci_created_date.TabIndex = 36
+        Me.ci_created_date.ValidatingType = GetType(Date)
+        '
+        'adr_txt_zip
+        '
+        Me.adr_txt_zip.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.adr_txt_zip.Location = New System.Drawing.Point(906, 272)
+        Me.adr_txt_zip.Mask = "00000"
+        Me.adr_txt_zip.Name = "adr_txt_zip"
+        Me.adr_txt_zip.Size = New System.Drawing.Size(100, 26)
+        Me.adr_txt_zip.TabIndex = 35
+        '
+        'ci_txt_cellp
+        '
+        Me.ci_txt_cellp.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.ci_txt_cellp.Location = New System.Drawing.Point(567, 134)
+        Me.ci_txt_cellp.Mask = "(999) 000-0000"
+        Me.ci_txt_cellp.Name = "ci_txt_cellp"
+        Me.ci_txt_cellp.Size = New System.Drawing.Size(130, 26)
+        Me.ci_txt_cellp.TabIndex = 34
+        '
+        'ci_txt_officen
+        '
+        Me.ci_txt_officen.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.ci_txt_officen.Location = New System.Drawing.Point(567, 78)
+        Me.ci_txt_officen.Mask = "(999) 000-0000"
+        Me.ci_txt_officen.Name = "ci_txt_officen"
+        Me.ci_txt_officen.Size = New System.Drawing.Size(130, 26)
+        Me.ci_txt_officen.TabIndex = 33
         '
         'adr_txt_city
         '
@@ -224,6 +271,17 @@ Partial Class create_contact
         Me.ci_lbl_officen.TabIndex = 10
         Me.ci_lbl_officen.Text = "Office Number"
         '
+        'ci_lbl_createddate
+        '
+        Me.ci_lbl_createddate.AutoSize = True
+        Me.ci_lbl_createddate.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.ci_lbl_createddate.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.ci_lbl_createddate.Location = New System.Drawing.Point(942, 41)
+        Me.ci_lbl_createddate.Name = "ci_lbl_createddate"
+        Me.ci_lbl_createddate.Size = New System.Drawing.Size(103, 18)
+        Me.ci_lbl_createddate.TabIndex = 8
+        Me.ci_lbl_createddate.Text = "Created Date"
+        '
         'ci_txt_fname
         '
         Me.ci_txt_fname.Font = New System.Drawing.Font("Arial", 12.0!)
@@ -298,64 +356,6 @@ Partial Class create_contact
         Me.ci_btn_cancel.TabIndex = 6
         Me.ci_btn_cancel.Text = "Cancel"
         Me.ci_btn_cancel.UseVisualStyleBackColor = False
-        '
-        'ci_lbl_createddate
-        '
-        Me.ci_lbl_createddate.AutoSize = True
-        Me.ci_lbl_createddate.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.ci_lbl_createddate.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.ci_lbl_createddate.Location = New System.Drawing.Point(942, 41)
-        Me.ci_lbl_createddate.Name = "ci_lbl_createddate"
-        Me.ci_lbl_createddate.Size = New System.Drawing.Size(103, 18)
-        Me.ci_lbl_createddate.TabIndex = 8
-        Me.ci_lbl_createddate.Text = "Created Date"
-        '
-        'ci_txt_officen
-        '
-        Me.ci_txt_officen.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.ci_txt_officen.Location = New System.Drawing.Point(567, 78)
-        Me.ci_txt_officen.Mask = "(999) 000-0000"
-        Me.ci_txt_officen.Name = "ci_txt_officen"
-        Me.ci_txt_officen.Size = New System.Drawing.Size(130, 26)
-        Me.ci_txt_officen.TabIndex = 33
-        '
-        'ci_txt_cellp
-        '
-        Me.ci_txt_cellp.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.ci_txt_cellp.Location = New System.Drawing.Point(567, 134)
-        Me.ci_txt_cellp.Mask = "(999) 000-0000"
-        Me.ci_txt_cellp.Name = "ci_txt_cellp"
-        Me.ci_txt_cellp.Size = New System.Drawing.Size(130, 26)
-        Me.ci_txt_cellp.TabIndex = 34
-        '
-        'adr_txt_zip
-        '
-        Me.adr_txt_zip.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.adr_txt_zip.Location = New System.Drawing.Point(906, 272)
-        Me.adr_txt_zip.Mask = "00000"
-        Me.adr_txt_zip.Name = "adr_txt_zip"
-        Me.adr_txt_zip.Size = New System.Drawing.Size(100, 26)
-        Me.adr_txt_zip.TabIndex = 35
-        '
-        'ci_created_date
-        '
-        Me.ci_created_date.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.ci_created_date.Location = New System.Drawing.Point(1070, 33)
-        Me.ci_created_date.Mask = "00/00/0000"
-        Me.ci_created_date.Name = "ci_created_date"
-        Me.ci_created_date.Size = New System.Drawing.Size(100, 26)
-        Me.ci_created_date.TabIndex = 36
-        Me.ci_created_date.ValidatingType = GetType(Date)
-        '
-        'adr_txt_state
-        '
-        Me.adr_txt_state.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.adr_txt_state.FormattingEnabled = True
-        Me.adr_txt_state.Items.AddRange(New Object() {"AA ", "AE ", "AP ", "AL ", "AK ", "AS ", "AZ ", "AR ", "CA ", "CO ", "CT ", "DE ", "DC ", "FM ", "FL ", "GA ", "GU ", "HI ", "ID ", "IL ", "IN ", "IA ", "KS ", "KY ", "LA ", "ME ", "MH ", "MD ", "MA ", "MI ", "MN ", "MS ", "MO ", "MT ", "NE ", "NV ", "NH ", "NJ ", "NM ", "NY ", "NC ", "ND ", "MP ", "OH ", "OK ", "OR ", "PW ", "PA ", "PR ", "RI ", "SC ", "SD ", "TN ", "TX ", "UT ", "VT ", "VI ", "VA ", "WA ", "WV ", "WI ", "WY"})
-        Me.adr_txt_state.Location = New System.Drawing.Point(567, 324)
-        Me.adr_txt_state.Name = "adr_txt_state"
-        Me.adr_txt_state.Size = New System.Drawing.Size(100, 26)
-        Me.adr_txt_state.TabIndex = 37
         '
         'create_contact
         '

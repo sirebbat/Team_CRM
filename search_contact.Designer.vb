@@ -27,7 +27,7 @@ Partial Class search_contact
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.account_number = New System.Windows.Forms.TextBox()
         Me.sc_btn_search = New System.Windows.Forms.Button()
         Me.sc_btn_cancel = New System.Windows.Forms.Button()
         Me.sc_lbl_notfound = New System.Windows.Forms.Label()
@@ -88,14 +88,14 @@ Partial Class search_contact
         Me.Label3.TabIndex = 10
         Me.Label3.Text = "Account Number"
         '
-        'TextBox3
+        'account_number
         '
-        Me.TextBox3.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.TextBox3.Location = New System.Drawing.Point(200, 68)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.ReadOnly = True
-        Me.TextBox3.Size = New System.Drawing.Size(194, 26)
-        Me.TextBox3.TabIndex = 11
+        Me.account_number.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.account_number.Location = New System.Drawing.Point(200, 68)
+        Me.account_number.Name = "account_number"
+        Me.account_number.ReadOnly = True
+        Me.account_number.Size = New System.Drawing.Size(194, 26)
+        Me.account_number.TabIndex = 11
         '
         'sc_btn_search
         '
@@ -167,7 +167,7 @@ Partial Class search_contact
         Me.Controls.Add(Me.sc_lbl_notfound)
         Me.Controls.Add(Me.sc_btn_cancel)
         Me.Controls.Add(Me.sc_btn_search)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.account_number)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Label2)
@@ -185,7 +185,7 @@ Partial Class search_contact
     Friend WithEvents Label2 As Label
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents account_number As TextBox
     Friend WithEvents sc_btn_search As Button
     Friend WithEvents sc_btn_cancel As Button
     Friend WithEvents sc_lbl_notfound As Label

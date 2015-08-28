@@ -1,5 +1,7 @@
 ﻿Imports System.Data.OleDb
 
+
+
 Public Class create_contact
     Private Sub Button1_MouseClick(sender As Object, e As MouseEventArgs) Handles ci_btn_cancel.MouseClick
         Me.Close()
@@ -36,7 +38,7 @@ Public Class create_contact
 
         'creates SQL expression
 
-        str = "insert into crm_contact ([fname], [lname], [company], [office_number], [cell_phone], [url], [street_one], [street_two], [city], [state], [zip_code]) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
+        str = "insert into crm_contact ([fname], [lname], [company], [office_number], [cell_phone], [url],[created_date], [street_one], [street_two], [city], [state], [zip_code]) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
 
         Dim cmd As OleDbCommand = New OleDbCommand(str, myConnection)
 
@@ -51,6 +53,8 @@ Public Class create_contact
         cmd.Parameters.Add(New OleDbParameter("cell_phone", CType(ci_txt_cellp.Text, String)))
 
         cmd.Parameters.Add(New OleDbParameter("url", CType(ci_txt_url.Text, String)))
+
+        cmd.Parameters.Add(New OleDbParameter("created_date", CType(ci_created_date.Text, String)))
 
         cmd.Parameters.Add(New OleDbParameter("street_one", CType(ci_txt_addrone.Text, String)))
 
@@ -78,10 +82,11 @@ Public Class create_contact
             ci_txt_officen.Clear()
             ci_txt_cellp.Clear()
             ci_txt_url.Clear()
+            ci_created_date.Clear()
             ci_txt_addrone.Clear()
             ci_txt_addrtwo.Clear()
             adr_txt_city.Clear()
-            adr_txt_state.Clear()
+            adr_txt_state.ResetText()
             adr_txt_zip.Clear()
 
 
@@ -103,4 +108,5 @@ Public Class create_contact
 
 
     End Sub
+
 End Class
