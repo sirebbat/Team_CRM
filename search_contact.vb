@@ -33,30 +33,93 @@ Public Class search_contact
             'opens the connection
             myConnection.Open()
 
-            'query
-            Dim myCommand As New OleDbCommand("SELECT account, fname, lname FROM crm_contact WHERE account=" & account_number.Text, myConnection)
-            Dim myReader As OleDbDataReader = myCommand.ExecuteReader
+            'Search by account number
+            If account_number IsNot String.Empty Then
+                'query
+                Dim myCommand As New OleDbCommand("SELECT account, fname, lname FROM crm_contact WHERE account=" & account_number.Text, myConnection)
+                Dim myReader As OleDbDataReader = myCommand.ExecuteReader
 
-            'reads the query
-            While myReader.Read
-                sc_lbl_found.Enabled = True
-                sc_lbl_found.Visible = True
-                recordCount = recordCount + 1
+                'reads the query
+                While myReader.Read
+                    sc_lbl_found.Enabled = True
+                    sc_lbl_found.Visible = True
+                    recordCount = recordCount + 1
 
-            End While
-            sc_lbl_notfound.Enabled = True
-            sc_lbl_notfound.Enabled = True
-
-            'checks for the records
-            If recordCount = 0 Then
-
+                End While
                 sc_lbl_notfound.Enabled = True
-                sc_lbl_notfound.Visible = True
-            Else
-                sc_lbl_found.Enabled = True
-                sc_lbl_found.Visible = True
+                sc_lbl_notfound.Enabled = True
+
+                'checks for the records
+                If recordCount = 0 Then
+
+                    sc_lbl_notfound.Enabled = True
+                    sc_lbl_notfound.Visible = True
+                Else
+                    sc_lbl_found.Enabled = True
+                    sc_lbl_found.Visible = True
+                    sc_btn_ok.Visible = True
+
+                End If
 
             End If
+
+
+            'search by first name
+            If sc_txt_fname IsNot String.Empty Or sc_txt_lname IsNot String.Empty Then
+                Dim myCommand As New OleDbCommand("SELECT account, fname, lname FROM crm_contact WHERE fname =" & sc_txt_fname.Text, myConnection)
+                Dim myReader As OleDbDataReader = myCommand.ExecuteReader
+
+                'reads the query
+                While myReader.Read
+                    sc_lbl_found.Enabled = True
+                    sc_lbl_found.Visible = True
+                    recordCount = recordCount + 1
+
+                End While
+                sc_lbl_notfound.Enabled = True
+                sc_lbl_notfound.Enabled = True
+
+                'checks for the records
+                If recordCount = 0 Then
+
+                    sc_lbl_notfound.Enabled = True
+                    sc_lbl_notfound.Visible = True
+                Else
+                    sc_lbl_found.Enabled = True
+                    sc_lbl_found.Visible = True
+                    sc_btn_ok.Visible = True
+
+                End If
+            End If
+
+            'search by last name
+            If sc_txt_lname IsNot String.Empty Or sc_txt_lname IsNot String.Empty Then
+                Dim myCommand As New OleDbCommand("SELECT account, fname, lname FROM crm_contact WHERE lname =" & sc_txt_lname.Text, myConnection)
+                Dim myReader As OleDbDataReader = myCommand.ExecuteReader
+
+                'reads the query
+                While myReader.Read
+                    sc_lbl_found.Enabled = True
+                    sc_lbl_found.Visible = True
+                    recordCount = recordCount + 1
+
+                End While
+                sc_lbl_notfound.Enabled = True
+                sc_lbl_notfound.Enabled = True
+
+                'checks for the records
+                If recordCount = 0 Then
+
+                    sc_lbl_notfound.Enabled = True
+                    sc_lbl_notfound.Visible = True
+                Else
+                    sc_lbl_found.Enabled = True
+                    sc_lbl_found.Visible = True
+                    sc_btn_ok.Visible = True
+
+                End If
+            End If
+
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try

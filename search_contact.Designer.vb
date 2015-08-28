@@ -22,25 +22,26 @@ Partial Class search_contact
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.sc_txt_fname = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.sc_txt_lname = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.account_number = New System.Windows.Forms.TextBox()
         Me.sc_btn_search = New System.Windows.Forms.Button()
         Me.sc_btn_cancel = New System.Windows.Forms.Button()
         Me.sc_lbl_notfound = New System.Windows.Forms.Label()
         Me.sc_lbl_found = New System.Windows.Forms.Label()
+        Me.sc_btn_ok = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'TextBox1
+        'sc_txt_fname
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.TextBox1.Location = New System.Drawing.Point(200, 125)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(194, 26)
-        Me.TextBox1.TabIndex = 7
+        Me.sc_txt_fname.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.sc_txt_fname.Location = New System.Drawing.Point(200, 125)
+        Me.sc_txt_fname.Name = "sc_txt_fname"
+        Me.sc_txt_fname.Size = New System.Drawing.Size(194, 26)
+        Me.sc_txt_fname.TabIndex = 7
         '
         'Label1
         '
@@ -66,13 +67,13 @@ Partial Class search_contact
         Me.Label2.TabIndex = 8
         Me.Label2.Text = "Last Name"
         '
-        'TextBox2
+        'sc_txt_lname
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.TextBox2.Location = New System.Drawing.Point(200, 178)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(194, 26)
-        Me.TextBox2.TabIndex = 9
+        Me.sc_txt_lname.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.sc_txt_lname.Location = New System.Drawing.Point(200, 178)
+        Me.sc_txt_lname.Name = "sc_txt_lname"
+        Me.sc_txt_lname.Size = New System.Drawing.Size(194, 26)
+        Me.sc_txt_lname.TabIndex = 9
         '
         'Label3
         '
@@ -153,6 +154,25 @@ Partial Class search_contact
         Me.sc_lbl_found.Text = "Contact Found. Please click ok."
         Me.sc_lbl_found.Visible = False
         '
+        'sc_btn_ok
+        '
+        Me.sc_btn_ok.BackColor = System.Drawing.Color.LightSlateGray
+        Me.sc_btn_ok.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.sc_btn_ok.FlatAppearance.BorderColor = System.Drawing.Color.LightBlue
+        Me.sc_btn_ok.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.sc_btn_ok.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue
+        Me.sc_btn_ok.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.sc_btn_ok.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.sc_btn_ok.ForeColor = System.Drawing.Color.White
+        Me.sc_btn_ok.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.sc_btn_ok.Location = New System.Drawing.Point(0, 502)
+        Me.sc_btn_ok.Name = "sc_btn_ok"
+        Me.sc_btn_ok.Size = New System.Drawing.Size(487, 65)
+        Me.sc_btn_ok.TabIndex = 16
+        Me.sc_btn_ok.Text = "Ok"
+        Me.sc_btn_ok.UseVisualStyleBackColor = False
+        Me.sc_btn_ok.Visible = False
+        '
         'search_contact
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -160,15 +180,16 @@ Partial Class search_contact
         Me.BackColor = System.Drawing.Color.SlateGray
         Me.ClientSize = New System.Drawing.Size(487, 567)
         Me.ControlBox = False
+        Me.Controls.Add(Me.sc_btn_ok)
         Me.Controls.Add(Me.sc_lbl_found)
         Me.Controls.Add(Me.sc_lbl_notfound)
         Me.Controls.Add(Me.sc_btn_cancel)
         Me.Controls.Add(Me.sc_btn_search)
         Me.Controls.Add(Me.account_number)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.sc_txt_lname)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.sc_txt_fname)
         Me.Controls.Add(Me.Label1)
         Me.Name = "search_contact"
         Me.Text = "Search Contact"
@@ -177,14 +198,15 @@ Partial Class search_contact
 
     End Sub
 
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents sc_txt_fname As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents sc_txt_lname As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents account_number As TextBox
     Friend WithEvents sc_btn_search As Button
     Friend WithEvents sc_btn_cancel As Button
     Friend WithEvents sc_lbl_notfound As Label
     Friend WithEvents sc_lbl_found As Label
+    Friend WithEvents sc_btn_ok As Button
 End Class
