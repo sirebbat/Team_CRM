@@ -30,14 +30,6 @@ Partial Class Dashboard
         Me.act_btn_save = New System.Windows.Forms.Button()
         Me.act_btn_create = New System.Windows.Forms.Button()
         Me.act_btn_update = New System.Windows.Forms.Button()
-        Me.act_tbl = New System.Windows.Forms.TableLayoutPanel()
-        Me.act_lbl_activity = New System.Windows.Forms.Label()
-        Me.act_lbl_type = New System.Windows.Forms.Label()
-        Me.act_lbl_lastmodified = New System.Windows.Forms.Label()
-        Me.act_lbl_addedon = New System.Windows.Forms.Label()
-        Me.act_lbl_employee = New System.Windows.Forms.Label()
-        Me.act_lbl_comment = New System.Windows.Forms.Label()
-        Me.act_lbl_status = New System.Windows.Forms.Label()
         Me.gb_ci = New System.Windows.Forms.GroupBox()
         Me.ci_btn_delete = New System.Windows.Forms.Button()
         Me.ci_btn_save = New System.Windows.Forms.Button()
@@ -71,23 +63,27 @@ Partial Class Dashboard
         Me.btnSearch = New System.Windows.Forms.Button()
         Me.btnCreate = New System.Windows.Forms.Button()
         Me.tabEmp = New System.Windows.Forms.TabPage()
-        Me.gb_emp = New System.Windows.Forms.GroupBox()
-        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.emp_lbl_empid = New System.Windows.Forms.Label()
-        Me.emp_lbl_fname = New System.Windows.Forms.Label()
-        Me.emp_lbl_email = New System.Windows.Forms.Label()
-        Me.emp_lbl_phone = New System.Windows.Forms.Label()
-        Me.emp_lbl_lname = New System.Windows.Forms.Label()
         Me.emp_btn_update = New System.Windows.Forms.Button()
         Me.emp_btn_add = New System.Windows.Forms.Button()
+        Me.act_lb = New System.Windows.Forms.ListView()
+        Me.act_lb_activity = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.act_lb_type = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.act_lb_status = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.act_lb_addedon = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.act_lb_lastmodified = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.act_lb_employee = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.act_lb_comment = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.emp_lb = New System.Windows.Forms.ListView()
+        Me.emp_lb_employeeid = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.emp_lb_fname = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.emp_lb_lname = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.emp_lb_phone = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.emp_lb_ = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.dashboard_tab.SuspendLayout()
         Me.tabClient.SuspendLayout()
         Me.gb_activities.SuspendLayout()
-        Me.act_tbl.SuspendLayout()
         Me.gb_ci.SuspendLayout()
         Me.tabEmp.SuspendLayout()
-        Me.gb_emp.SuspendLayout()
-        Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'dashboard_tab
@@ -113,11 +109,11 @@ Partial Class Dashboard
         'gb_activities
         '
         resources.ApplyResources(Me.gb_activities, "gb_activities")
+        Me.gb_activities.Controls.Add(Me.act_lb)
         Me.gb_activities.Controls.Add(Me.act_btn_delete)
         Me.gb_activities.Controls.Add(Me.act_btn_save)
         Me.gb_activities.Controls.Add(Me.act_btn_create)
         Me.gb_activities.Controls.Add(Me.act_btn_update)
-        Me.gb_activities.Controls.Add(Me.act_tbl)
         Me.gb_activities.ForeColor = System.Drawing.Color.White
         Me.gb_activities.Name = "gb_activities"
         Me.gb_activities.TabStop = False
@@ -166,55 +162,9 @@ Partial Class Dashboard
         Me.act_btn_update.Name = "act_btn_update"
         Me.act_btn_update.UseVisualStyleBackColor = False
         '
-        'act_tbl
-        '
-        resources.ApplyResources(Me.act_tbl, "act_tbl")
-        Me.act_tbl.Controls.Add(Me.act_lbl_activity, 0, 0)
-        Me.act_tbl.Controls.Add(Me.act_lbl_type, 1, 0)
-        Me.act_tbl.Controls.Add(Me.act_lbl_lastmodified, 4, 0)
-        Me.act_tbl.Controls.Add(Me.act_lbl_addedon, 3, 0)
-        Me.act_tbl.Controls.Add(Me.act_lbl_employee, 5, 0)
-        Me.act_tbl.Controls.Add(Me.act_lbl_comment, 6, 0)
-        Me.act_tbl.Controls.Add(Me.act_lbl_status, 2, 0)
-        Me.act_tbl.Name = "act_tbl"
-        '
-        'act_lbl_activity
-        '
-        resources.ApplyResources(Me.act_lbl_activity, "act_lbl_activity")
-        Me.act_lbl_activity.Name = "act_lbl_activity"
-        '
-        'act_lbl_type
-        '
-        resources.ApplyResources(Me.act_lbl_type, "act_lbl_type")
-        Me.act_lbl_type.Name = "act_lbl_type"
-        '
-        'act_lbl_lastmodified
-        '
-        resources.ApplyResources(Me.act_lbl_lastmodified, "act_lbl_lastmodified")
-        Me.act_lbl_lastmodified.Name = "act_lbl_lastmodified"
-        '
-        'act_lbl_addedon
-        '
-        resources.ApplyResources(Me.act_lbl_addedon, "act_lbl_addedon")
-        Me.act_lbl_addedon.Name = "act_lbl_addedon"
-        '
-        'act_lbl_employee
-        '
-        resources.ApplyResources(Me.act_lbl_employee, "act_lbl_employee")
-        Me.act_lbl_employee.Name = "act_lbl_employee"
-        '
-        'act_lbl_comment
-        '
-        resources.ApplyResources(Me.act_lbl_comment, "act_lbl_comment")
-        Me.act_lbl_comment.Name = "act_lbl_comment"
-        '
-        'act_lbl_status
-        '
-        resources.ApplyResources(Me.act_lbl_status, "act_lbl_status")
-        Me.act_lbl_status.Name = "act_lbl_status"
-        '
         'gb_ci
         '
+        resources.ApplyResources(Me.gb_ci, "gb_ci")
         Me.gb_ci.Controls.Add(Me.ci_btn_delete)
         Me.gb_ci.Controls.Add(Me.ci_btn_save)
         Me.gb_ci.Controls.Add(Me.ci_btn_update)
@@ -244,7 +194,6 @@ Partial Class Dashboard
         Me.gb_ci.Controls.Add(Me.ci_lbl_company)
         Me.gb_ci.Controls.Add(Me.ci_lbl_lname)
         Me.gb_ci.Controls.Add(Me.ci_lbl_fname)
-        resources.ApplyResources(Me.gb_ci, "gb_ci")
         Me.gb_ci.ForeColor = System.Drawing.Color.White
         Me.gb_ci.Name = "gb_ci"
         Me.gb_ci.TabStop = False
@@ -451,54 +400,11 @@ Partial Class Dashboard
         '
         resources.ApplyResources(Me.tabEmp, "tabEmp")
         Me.tabEmp.BackColor = System.Drawing.Color.SlateGray
-        Me.tabEmp.Controls.Add(Me.gb_emp)
+        Me.tabEmp.Controls.Add(Me.emp_lb)
         Me.tabEmp.Controls.Add(Me.emp_btn_update)
         Me.tabEmp.Controls.Add(Me.emp_btn_add)
         Me.tabEmp.ForeColor = System.Drawing.Color.White
         Me.tabEmp.Name = "tabEmp"
-        '
-        'gb_emp
-        '
-        resources.ApplyResources(Me.gb_emp, "gb_emp")
-        Me.gb_emp.Controls.Add(Me.TableLayoutPanel1)
-        Me.gb_emp.ForeColor = System.Drawing.Color.White
-        Me.gb_emp.Name = "gb_emp"
-        Me.gb_emp.TabStop = False
-        '
-        'TableLayoutPanel1
-        '
-        resources.ApplyResources(Me.TableLayoutPanel1, "TableLayoutPanel1")
-        Me.TableLayoutPanel1.Controls.Add(Me.emp_lbl_empid, 0, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.emp_lbl_fname, 1, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.emp_lbl_email, 4, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.emp_lbl_phone, 3, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.emp_lbl_lname, 2, 0)
-        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-        '
-        'emp_lbl_empid
-        '
-        resources.ApplyResources(Me.emp_lbl_empid, "emp_lbl_empid")
-        Me.emp_lbl_empid.Name = "emp_lbl_empid"
-        '
-        'emp_lbl_fname
-        '
-        resources.ApplyResources(Me.emp_lbl_fname, "emp_lbl_fname")
-        Me.emp_lbl_fname.Name = "emp_lbl_fname"
-        '
-        'emp_lbl_email
-        '
-        resources.ApplyResources(Me.emp_lbl_email, "emp_lbl_email")
-        Me.emp_lbl_email.Name = "emp_lbl_email"
-        '
-        'emp_lbl_phone
-        '
-        resources.ApplyResources(Me.emp_lbl_phone, "emp_lbl_phone")
-        Me.emp_lbl_phone.Name = "emp_lbl_phone"
-        '
-        'emp_lbl_lname
-        '
-        resources.ApplyResources(Me.emp_lbl_lname, "emp_lbl_lname")
-        Me.emp_lbl_lname.Name = "emp_lbl_lname"
         '
         'emp_btn_update
         '
@@ -522,6 +428,71 @@ Partial Class Dashboard
         Me.emp_btn_add.Name = "emp_btn_add"
         Me.emp_btn_add.UseVisualStyleBackColor = False
         '
+        'act_lb
+        '
+        Me.act_lb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.act_lb.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.act_lb_activity, Me.act_lb_type, Me.act_lb_status, Me.act_lb_addedon, Me.act_lb_lastmodified, Me.act_lb_employee, Me.act_lb_comment})
+        resources.ApplyResources(Me.act_lb, "act_lb")
+        Me.act_lb.Name = "act_lb"
+        Me.act_lb.UseCompatibleStateImageBehavior = False
+        Me.act_lb.View = System.Windows.Forms.View.Details
+        '
+        'act_lb_activity
+        '
+        resources.ApplyResources(Me.act_lb_activity, "act_lb_activity")
+        '
+        'act_lb_type
+        '
+        resources.ApplyResources(Me.act_lb_type, "act_lb_type")
+        '
+        'act_lb_status
+        '
+        resources.ApplyResources(Me.act_lb_status, "act_lb_status")
+        '
+        'act_lb_addedon
+        '
+        resources.ApplyResources(Me.act_lb_addedon, "act_lb_addedon")
+        '
+        'act_lb_lastmodified
+        '
+        resources.ApplyResources(Me.act_lb_lastmodified, "act_lb_lastmodified")
+        '
+        'act_lb_employee
+        '
+        resources.ApplyResources(Me.act_lb_employee, "act_lb_employee")
+        '
+        'act_lb_comment
+        '
+        resources.ApplyResources(Me.act_lb_comment, "act_lb_comment")
+        '
+        'emp_lb
+        '
+        Me.emp_lb.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.emp_lb_employeeid, Me.emp_lb_fname, Me.emp_lb_lname, Me.emp_lb_phone, Me.emp_lb_})
+        resources.ApplyResources(Me.emp_lb, "emp_lb")
+        Me.emp_lb.Name = "emp_lb"
+        Me.emp_lb.UseCompatibleStateImageBehavior = False
+        Me.emp_lb.View = System.Windows.Forms.View.Details
+        '
+        'emp_lb_employeeid
+        '
+        resources.ApplyResources(Me.emp_lb_employeeid, "emp_lb_employeeid")
+        '
+        'emp_lb_fname
+        '
+        resources.ApplyResources(Me.emp_lb_fname, "emp_lb_fname")
+        '
+        'emp_lb_lname
+        '
+        resources.ApplyResources(Me.emp_lb_lname, "emp_lb_lname")
+        '
+        'emp_lb_phone
+        '
+        resources.ApplyResources(Me.emp_lb_phone, "emp_lb_phone")
+        '
+        'emp_lb_
+        '
+        resources.ApplyResources(Me.emp_lb_, "emp_lb_")
+        '
         'Dashboard
         '
         resources.ApplyResources(Me, "$this")
@@ -533,19 +504,14 @@ Partial Class Dashboard
         Me.MinimizeBox = False
         Me.Name = "Dashboard"
         Me.ShowIcon = False
+        Me.TopMost = True
         Me.dashboard_tab.ResumeLayout(False)
         Me.tabClient.ResumeLayout(False)
         Me.tabClient.PerformLayout()
         Me.gb_activities.ResumeLayout(False)
-        Me.act_tbl.ResumeLayout(False)
-        Me.act_tbl.PerformLayout()
         Me.gb_ci.ResumeLayout(False)
         Me.gb_ci.PerformLayout()
         Me.tabEmp.ResumeLayout(False)
-        Me.tabEmp.PerformLayout()
-        Me.gb_emp.ResumeLayout(False)
-        Me.TableLayoutPanel1.ResumeLayout(False)
-        Me.TableLayoutPanel1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -571,14 +537,6 @@ Partial Class Dashboard
     Friend WithEvents ci_txt_createddate As TextBox
     Friend WithEvents ci_txt_company As TextBox
     Friend WithEvents ci_txt_lname As TextBox
-    Friend WithEvents act_tbl As TableLayoutPanel
-    Friend WithEvents act_lbl_addedon As Label
-    Friend WithEvents act_lbl_activity As Label
-    Friend WithEvents act_lbl_type As Label
-    Friend WithEvents act_lbl_lastmodified As Label
-    Friend WithEvents act_lbl_status As Label
-    Friend WithEvents act_lbl_employee As Label
-    Friend WithEvents act_lbl_comment As Label
     Friend WithEvents ci_lbl_officen As Label
     Friend WithEvents act_btn_create As Button
     Friend WithEvents act_btn_update As Button
@@ -594,17 +552,24 @@ Partial Class Dashboard
     Friend WithEvents adr_lbl_city As Label
     Friend WithEvents adr_lbl_streetadd As Label
     Friend WithEvents tabEmp As TabPage
-    Friend WithEvents gb_emp As GroupBox
-    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
-    Friend WithEvents emp_lbl_empid As Label
-    Friend WithEvents emp_lbl_fname As Label
-    Friend WithEvents emp_lbl_email As Label
-    Friend WithEvents emp_lbl_phone As Label
-    Friend WithEvents emp_lbl_lname As Label
     Friend WithEvents emp_btn_update As Button
     Friend WithEvents emp_btn_add As Button
     Friend WithEvents act_btn_save As Button
     Friend WithEvents ci_btn_save As Button
     Friend WithEvents act_btn_delete As Button
     Friend WithEvents ci_btn_delete As Button
+    Friend WithEvents act_lb As ListView
+    Friend WithEvents act_lb_activity As ColumnHeader
+    Friend WithEvents act_lb_type As ColumnHeader
+    Friend WithEvents act_lb_status As ColumnHeader
+    Friend WithEvents act_lb_addedon As ColumnHeader
+    Friend WithEvents act_lb_lastmodified As ColumnHeader
+    Friend WithEvents act_lb_employee As ColumnHeader
+    Friend WithEvents act_lb_comment As ColumnHeader
+    Friend WithEvents emp_lb As ListView
+    Friend WithEvents emp_lb_employeeid As ColumnHeader
+    Friend WithEvents emp_lb_fname As ColumnHeader
+    Friend WithEvents emp_lb_lname As ColumnHeader
+    Friend WithEvents emp_lb_phone As ColumnHeader
+    Friend WithEvents emp_lb_ As ColumnHeader
 End Class

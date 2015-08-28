@@ -117,15 +117,79 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="tabClient.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tabClient.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="gb_activities.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="act_lb_activity.Text" xml:space="preserve">
+    <value>Activity</value>
+  </data>
+  <data name="act_lb_activity.Width" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="act_lb_type.Text" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="act_lb_type.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="act_lb_status.Text" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="act_lb_status.Width" type="System.Int32, mscorlib">
+    <value>114</value>
+  </data>
+  <data name="act_lb_addedon.Text" xml:space="preserve">
+    <value>Added On</value>
+  </data>
+  <data name="act_lb_addedon.Width" type="System.Int32, mscorlib">
+    <value>131</value>
+  </data>
+  <data name="act_lb_lastmodified.Text" xml:space="preserve">
+    <value>Last Modified</value>
+  </data>
+  <data name="act_lb_lastmodified.Width" type="System.Int32, mscorlib">
+    <value>130</value>
+  </data>
+  <data name="act_lb_employee.Text" xml:space="preserve">
+    <value>Employee</value>
+  </data>
+  <data name="act_lb_employee.Width" type="System.Int32, mscorlib">
+    <value>205</value>
+  </data>
+  <data name="act_lb_comment.Text" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="act_lb_comment.Width" type="System.Int32, mscorlib">
+    <value>432</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="act_lb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="act_lb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 78</value>
+  </data>
+  <data name="act_lb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1179, 250</value>
+  </data>
+  <data name="act_lb.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;act_lb.Name" xml:space="preserve">
+    <value>act_lb</value>
+  </data>
+  <data name="&gt;&gt;act_lb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;act_lb.Parent" xml:space="preserve">
+    <value>gb_activities</value>
+  </data>
+  <data name="&gt;&gt;act_lb.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="act_btn_delete.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -134,7 +198,6 @@
   <data name="act_btn_delete.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="act_btn_delete.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 12pt, style=Bold</value>
   </data>
@@ -166,7 +229,7 @@
     <value>gb_activities</value>
   </data>
   <data name="&gt;&gt;act_btn_delete.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="act_btn_save.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -205,7 +268,7 @@
     <value>gb_activities</value>
   </data>
   <data name="&gt;&gt;act_btn_save.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="act_btn_create.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -241,7 +304,7 @@
     <value>gb_activities</value>
   </data>
   <data name="&gt;&gt;act_btn_create.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="act_btn_update.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -277,292 +340,7 @@
     <value>gb_activities</value>
   </data>
   <data name="&gt;&gt;act_btn_update.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="act_tbl.CellBorderStyle" type="System.Windows.Forms.TableLayoutPanelCellBorderStyle, System.Windows.Forms">
-    <value>Inset</value>
-  </data>
-  <data name="act_tbl.ColumnCount" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="act_lbl_activity.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="act_lbl_activity.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="act_lbl_activity.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 12pt, style=Bold</value>
-  </data>
-  <data name="act_lbl_activity.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 2</value>
-  </data>
-  <data name="act_lbl_activity.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 25</value>
-  </data>
-  <data name="act_lbl_activity.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="act_lbl_activity.Text" xml:space="preserve">
-    <value>Activity</value>
-  </data>
-  <data name="&gt;&gt;act_lbl_activity.Name" xml:space="preserve">
-    <value>act_lbl_activity</value>
-  </data>
-  <data name="&gt;&gt;act_lbl_activity.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;act_lbl_activity.Parent" xml:space="preserve">
-    <value>act_tbl</value>
-  </data>
-  <data name="&gt;&gt;act_lbl_activity.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="act_lbl_type.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="act_lbl_type.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="act_lbl_type.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 12pt, style=Bold</value>
-  </data>
-  <data name="act_lbl_type.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="act_lbl_type.Location" type="System.Drawing.Point, System.Drawing">
-    <value>96, 2</value>
-  </data>
-  <data name="act_lbl_type.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 19</value>
-  </data>
-  <data name="act_lbl_type.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="act_lbl_type.Text" xml:space="preserve">
-    <value>Type</value>
-  </data>
-  <data name="&gt;&gt;act_lbl_type.Name" xml:space="preserve">
-    <value>act_lbl_type</value>
-  </data>
-  <data name="&gt;&gt;act_lbl_type.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;act_lbl_type.Parent" xml:space="preserve">
-    <value>act_tbl</value>
-  </data>
-  <data name="&gt;&gt;act_lbl_type.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="act_lbl_lastmodified.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="act_lbl_lastmodified.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="act_lbl_lastmodified.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 12pt, style=Bold</value>
-  </data>
-  <data name="act_lbl_lastmodified.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="act_lbl_lastmodified.Location" type="System.Drawing.Point, System.Drawing">
-    <value>427, 2</value>
-  </data>
-  <data name="act_lbl_lastmodified.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 19</value>
-  </data>
-  <data name="act_lbl_lastmodified.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="act_lbl_lastmodified.Text" xml:space="preserve">
-    <value>Last Modified</value>
-  </data>
-  <data name="&gt;&gt;act_lbl_lastmodified.Name" xml:space="preserve">
-    <value>act_lbl_lastmodified</value>
-  </data>
-  <data name="&gt;&gt;act_lbl_lastmodified.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;act_lbl_lastmodified.Parent" xml:space="preserve">
-    <value>act_tbl</value>
-  </data>
-  <data name="&gt;&gt;act_lbl_lastmodified.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="act_lbl_addedon.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="act_lbl_addedon.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="act_lbl_addedon.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 12pt, style=Bold</value>
-  </data>
-  <data name="act_lbl_addedon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="act_lbl_addedon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>308, 2</value>
-  </data>
-  <data name="act_lbl_addedon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 19</value>
-  </data>
-  <data name="act_lbl_addedon.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="act_lbl_addedon.Text" xml:space="preserve">
-    <value>Added On</value>
-  </data>
-  <data name="&gt;&gt;act_lbl_addedon.Name" xml:space="preserve">
-    <value>act_lbl_addedon</value>
-  </data>
-  <data name="&gt;&gt;act_lbl_addedon.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;act_lbl_addedon.Parent" xml:space="preserve">
-    <value>act_tbl</value>
-  </data>
-  <data name="&gt;&gt;act_lbl_addedon.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="act_lbl_employee.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="act_lbl_employee.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="act_lbl_employee.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 12pt, style=Bold</value>
-  </data>
-  <data name="act_lbl_employee.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="act_lbl_employee.Location" type="System.Drawing.Point, System.Drawing">
-    <value>666, 2</value>
-  </data>
-  <data name="act_lbl_employee.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 19</value>
-  </data>
-  <data name="act_lbl_employee.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="act_lbl_employee.Text" xml:space="preserve">
-    <value>Employee</value>
-  </data>
-  <data name="act_lbl_employee.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopCenter</value>
-  </data>
-  <data name="&gt;&gt;act_lbl_employee.Name" xml:space="preserve">
-    <value>act_lbl_employee</value>
-  </data>
-  <data name="&gt;&gt;act_lbl_employee.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;act_lbl_employee.Parent" xml:space="preserve">
-    <value>act_tbl</value>
-  </data>
-  <data name="&gt;&gt;act_lbl_employee.ZOrder" xml:space="preserve">
     <value>4</value>
-  </data>
-  <data name="act_lbl_comment.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="act_lbl_comment.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="act_lbl_comment.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 12pt, style=Bold</value>
-  </data>
-  <data name="act_lbl_comment.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="act_lbl_comment.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1008, 2</value>
-  </data>
-  <data name="act_lbl_comment.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 19</value>
-  </data>
-  <data name="act_lbl_comment.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="act_lbl_comment.Text" xml:space="preserve">
-    <value>Comment</value>
-  </data>
-  <data name="&gt;&gt;act_lbl_comment.Name" xml:space="preserve">
-    <value>act_lbl_comment</value>
-  </data>
-  <data name="&gt;&gt;act_lbl_comment.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;act_lbl_comment.Parent" xml:space="preserve">
-    <value>act_tbl</value>
-  </data>
-  <data name="&gt;&gt;act_lbl_comment.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="act_lbl_status.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="act_lbl_status.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="act_lbl_status.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 12pt, style=Bold</value>
-  </data>
-  <data name="act_lbl_status.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="act_lbl_status.Location" type="System.Drawing.Point, System.Drawing">
-    <value>195, 2</value>
-  </data>
-  <data name="act_lbl_status.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 19</value>
-  </data>
-  <data name="act_lbl_status.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="act_lbl_status.Text" xml:space="preserve">
-    <value>Status</value>
-  </data>
-  <data name="&gt;&gt;act_lbl_status.Name" xml:space="preserve">
-    <value>act_lbl_status</value>
-  </data>
-  <data name="&gt;&gt;act_lbl_status.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;act_lbl_status.Parent" xml:space="preserve">
-    <value>act_tbl</value>
-  </data>
-  <data name="&gt;&gt;act_lbl_status.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="act_tbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 85</value>
-  </data>
-  <data name="act_tbl.RowCount" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="act_tbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1232, 102</value>
-  </data>
-  <data name="act_tbl.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;act_tbl.Name" xml:space="preserve">
-    <value>act_tbl</value>
-  </data>
-  <data name="&gt;&gt;act_tbl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;act_tbl.Parent" xml:space="preserve">
-    <value>gb_activities</value>
-  </data>
-  <data name="&gt;&gt;act_tbl.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="act_tbl.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="act_lbl_activity" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="act_lbl_type" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="act_lbl_lastmodified" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="act_lbl_addedon" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="act_lbl_employee" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="act_lbl_comment" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="act_lbl_status" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,44.01709,Percent,55.98291,Absolute,117,Absolute,131,Absolute,130,Absolute,317,Absolute,360" /&gt;&lt;Rows Styles="Percent,26.6055,Percent,73.39449" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="gb_activities.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 20.25pt, style=Bold</value>
@@ -571,7 +349,7 @@
     <value>8, 544</value>
   </data>
   <data name="gb_activities.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1258, 337</value>
+    <value>1200, 366</value>
   </data>
   <data name="gb_activities.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -590,6 +368,12 @@
   </data>
   <data name="&gt;&gt;gb_activities.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="gb_ci.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gb_ci.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
   </data>
   <data name="ci_btn_delete.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -1429,10 +1213,10 @@
     <value>Arial, 20.25pt, style=Bold</value>
   </data>
   <data name="gb_ci.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 115</value>
+    <value>8, 103</value>
   </data>
   <data name="gb_ci.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1258, 403</value>
+    <value>1202, 435</value>
   </data>
   <data name="gb_ci.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1522,7 +1306,7 @@
     <value>3, 3, 3, 6</value>
   </data>
   <data name="tabClient.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1276, 892</value>
+    <value>1223, 974</value>
   </data>
   <data name="tabClient.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1551,244 +1335,58 @@
   <data name="tabEmp.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="gb_emp.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="TableLayoutPanel1.CellBorderStyle" type="System.Windows.Forms.TableLayoutPanelCellBorderStyle, System.Windows.Forms">
-    <value>Inset</value>
-  </data>
-  <data name="TableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="emp_lbl_empid.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="emp_lbl_empid.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="emp_lbl_empid.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 12pt, style=Bold</value>
-  </data>
-  <data name="emp_lbl_empid.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="emp_lbl_empid.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 2</value>
-  </data>
-  <data name="emp_lbl_empid.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 19</value>
-  </data>
-  <data name="emp_lbl_empid.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="emp_lbl_empid.Text" xml:space="preserve">
+  <data name="emp_lb_employeeid.Text" xml:space="preserve">
     <value>Employee ID</value>
   </data>
-  <data name="&gt;&gt;emp_lbl_empid.Name" xml:space="preserve">
-    <value>emp_lbl_empid</value>
+  <data name="emp_lb_employeeid.Width" type="System.Int32, mscorlib">
+    <value>115</value>
   </data>
-  <data name="&gt;&gt;emp_lbl_empid.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;emp_lbl_empid.Parent" xml:space="preserve">
-    <value>TableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;emp_lbl_empid.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="emp_lbl_fname.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="emp_lbl_fname.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="emp_lbl_fname.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 12pt, style=Bold</value>
-  </data>
-  <data name="emp_lbl_fname.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="emp_lbl_fname.Location" type="System.Drawing.Point, System.Drawing">
-    <value>170, 2</value>
-  </data>
-  <data name="emp_lbl_fname.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 19</value>
-  </data>
-  <data name="emp_lbl_fname.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="emp_lbl_fname.Text" xml:space="preserve">
+  <data name="emp_lb_fname.Text" xml:space="preserve">
     <value>First Name</value>
   </data>
-  <data name="&gt;&gt;emp_lbl_fname.Name" xml:space="preserve">
-    <value>emp_lbl_fname</value>
+  <data name="emp_lb_fname.Width" type="System.Int32, mscorlib">
+    <value>198</value>
   </data>
-  <data name="&gt;&gt;emp_lbl_fname.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;emp_lbl_fname.Parent" xml:space="preserve">
-    <value>TableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;emp_lbl_fname.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="emp_lbl_email.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="emp_lbl_email.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="emp_lbl_email.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 12pt, style=Bold</value>
-  </data>
-  <data name="emp_lbl_email.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="emp_lbl_email.Location" type="System.Drawing.Point, System.Drawing">
-    <value>988, 2</value>
-  </data>
-  <data name="emp_lbl_email.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 19</value>
-  </data>
-  <data name="emp_lbl_email.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="emp_lbl_email.Text" xml:space="preserve">
-    <value>Email</value>
-  </data>
-  <data name="&gt;&gt;emp_lbl_email.Name" xml:space="preserve">
-    <value>emp_lbl_email</value>
-  </data>
-  <data name="&gt;&gt;emp_lbl_email.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;emp_lbl_email.Parent" xml:space="preserve">
-    <value>TableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;emp_lbl_email.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="emp_lbl_phone.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="emp_lbl_phone.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="emp_lbl_phone.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 12pt, style=Bold</value>
-  </data>
-  <data name="emp_lbl_phone.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="emp_lbl_phone.Location" type="System.Drawing.Point, System.Drawing">
-    <value>651, 2</value>
-  </data>
-  <data name="emp_lbl_phone.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 19</value>
-  </data>
-  <data name="emp_lbl_phone.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="emp_lbl_phone.Text" xml:space="preserve">
-    <value>Phone </value>
-  </data>
-  <data name="&gt;&gt;emp_lbl_phone.Name" xml:space="preserve">
-    <value>emp_lbl_phone</value>
-  </data>
-  <data name="&gt;&gt;emp_lbl_phone.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;emp_lbl_phone.Parent" xml:space="preserve">
-    <value>TableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;emp_lbl_phone.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="emp_lbl_lname.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="emp_lbl_lname.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="emp_lbl_lname.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 12pt, style=Bold</value>
-  </data>
-  <data name="emp_lbl_lname.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="emp_lbl_lname.Location" type="System.Drawing.Point, System.Drawing">
-    <value>396, 2</value>
-  </data>
-  <data name="emp_lbl_lname.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 19</value>
-  </data>
-  <data name="emp_lbl_lname.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="emp_lbl_lname.Text" xml:space="preserve">
+  <data name="emp_lb_lname.Text" xml:space="preserve">
     <value>Last Name</value>
   </data>
-  <data name="&gt;&gt;emp_lbl_lname.Name" xml:space="preserve">
-    <value>emp_lbl_lname</value>
+  <data name="emp_lb_lname.Width" type="System.Int32, mscorlib">
+    <value>253</value>
   </data>
-  <data name="&gt;&gt;emp_lbl_lname.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="emp_lb_phone.Text" xml:space="preserve">
+    <value>Phone</value>
   </data>
-  <data name="&gt;&gt;emp_lbl_lname.Parent" xml:space="preserve">
-    <value>TableLayoutPanel1</value>
+  <data name="emp_lb_phone.Width" type="System.Int32, mscorlib">
+    <value>224</value>
   </data>
-  <data name="&gt;&gt;emp_lbl_lname.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="emp_lb_.Text" xml:space="preserve">
+    <value>Email</value>
   </data>
-  <data name="TableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 38</value>
+  <data name="emp_lb_.Width" type="System.Int32, mscorlib">
+    <value>327</value>
   </data>
-  <data name="TableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
+  <data name="emp_lb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="emp_lb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 97</value>
+  </data>
+  <data name="emp_lb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1121, 352</value>
+  </data>
+  <data name="emp_lb.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="TableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1232, 79</value>
+  <data name="&gt;&gt;emp_lb.Name" xml:space="preserve">
+    <value>emp_lb</value>
   </data>
-  <data name="TableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="&gt;&gt;emp_lb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;TableLayoutPanel1.Name" xml:space="preserve">
-    <value>TableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;TableLayoutPanel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TableLayoutPanel1.Parent" xml:space="preserve">
-    <value>gb_emp</value>
-  </data>
-  <data name="&gt;&gt;TableLayoutPanel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="TableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="emp_lbl_empid" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="emp_lbl_fname" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="emp_lbl_email" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="emp_lbl_phone" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="emp_lbl_lname" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,37.46313,Percent,62.53687,Absolute,254,Absolute,226,Absolute,431" /&gt;&lt;Rows Styles="Percent,42.24138,Percent,57.75862" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="gb_emp.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 20.25pt, style=Bold</value>
-  </data>
-  <data name="gb_emp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 97</value>
-  </data>
-  <data name="gb_emp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1258, 774</value>
-  </data>
-  <data name="gb_emp.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;gb_emp.Name" xml:space="preserve">
-    <value>gb_emp</value>
-  </data>
-  <data name="&gt;&gt;gb_emp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gb_emp.Parent" xml:space="preserve">
+  <data name="&gt;&gt;emp_lb.Parent" xml:space="preserve">
     <value>tabEmp</value>
   </data>
-  <data name="&gt;&gt;gb_emp.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;emp_lb.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="emp_btn_update.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
@@ -1867,7 +1465,7 @@
     <value>3, 3, 3, 6</value>
   </data>
   <data name="tabEmp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1276, 892</value>
+    <value>1223, 974</value>
   </data>
   <data name="tabEmp.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1900,7 +1498,7 @@
     <value>True</value>
   </data>
   <data name="dashboard_tab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1284, 918</value>
+    <value>1231, 1000</value>
   </data>
   <data name="dashboard_tab.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1923,14 +1521,92 @@
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
+  <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="$this.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1284, 905</value>
+    <value>1248, 961</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Dashboard</value>
+  </data>
+  <data name="&gt;&gt;act_lb_activity.Name" xml:space="preserve">
+    <value>act_lb_activity</value>
+  </data>
+  <data name="&gt;&gt;act_lb_activity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;act_lb_type.Name" xml:space="preserve">
+    <value>act_lb_type</value>
+  </data>
+  <data name="&gt;&gt;act_lb_type.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;act_lb_status.Name" xml:space="preserve">
+    <value>act_lb_status</value>
+  </data>
+  <data name="&gt;&gt;act_lb_status.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;act_lb_addedon.Name" xml:space="preserve">
+    <value>act_lb_addedon</value>
+  </data>
+  <data name="&gt;&gt;act_lb_addedon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;act_lb_lastmodified.Name" xml:space="preserve">
+    <value>act_lb_lastmodified</value>
+  </data>
+  <data name="&gt;&gt;act_lb_lastmodified.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;act_lb_employee.Name" xml:space="preserve">
+    <value>act_lb_employee</value>
+  </data>
+  <data name="&gt;&gt;act_lb_employee.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;act_lb_comment.Name" xml:space="preserve">
+    <value>act_lb_comment</value>
+  </data>
+  <data name="&gt;&gt;act_lb_comment.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;emp_lb_employeeid.Name" xml:space="preserve">
+    <value>emp_lb_employeeid</value>
+  </data>
+  <data name="&gt;&gt;emp_lb_employeeid.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;emp_lb_fname.Name" xml:space="preserve">
+    <value>emp_lb_fname</value>
+  </data>
+  <data name="&gt;&gt;emp_lb_fname.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;emp_lb_lname.Name" xml:space="preserve">
+    <value>emp_lb_lname</value>
+  </data>
+  <data name="&gt;&gt;emp_lb_lname.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;emp_lb_phone.Name" xml:space="preserve">
+    <value>emp_lb_phone</value>
+  </data>
+  <data name="&gt;&gt;emp_lb_phone.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;emp_lb_.Name" xml:space="preserve">
+    <value>emp_lb_</value>
+  </data>
+  <data name="&gt;&gt;emp_lb_.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Dashboard</value>
