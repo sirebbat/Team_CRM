@@ -95,7 +95,7 @@ Partial Class create_contact
         Me.adr_txt_state.Location = New System.Drawing.Point(567, 324)
         Me.adr_txt_state.Name = "adr_txt_state"
         Me.adr_txt_state.Size = New System.Drawing.Size(100, 26)
-        Me.adr_txt_state.TabIndex = 37
+        Me.adr_txt_state.TabIndex = 10
         '
         'ci_created_date
         '
@@ -104,7 +104,7 @@ Partial Class create_contact
         Me.ci_created_date.Mask = "00/00/0000"
         Me.ci_created_date.Name = "ci_created_date"
         Me.ci_created_date.Size = New System.Drawing.Size(100, 26)
-        Me.ci_created_date.TabIndex = 36
+        Me.ci_created_date.TabIndex = 13
         Me.ci_created_date.ValidatingType = GetType(Date)
         '
         'adr_txt_zip
@@ -114,7 +114,7 @@ Partial Class create_contact
         Me.adr_txt_zip.Mask = "00000"
         Me.adr_txt_zip.Name = "adr_txt_zip"
         Me.adr_txt_zip.Size = New System.Drawing.Size(100, 26)
-        Me.adr_txt_zip.TabIndex = 35
+        Me.adr_txt_zip.TabIndex = 12
         '
         'ci_txt_cellp
         '
@@ -123,7 +123,7 @@ Partial Class create_contact
         Me.ci_txt_cellp.Mask = "(999) 000-0000"
         Me.ci_txt_cellp.Name = "ci_txt_cellp"
         Me.ci_txt_cellp.Size = New System.Drawing.Size(130, 26)
-        Me.ci_txt_cellp.TabIndex = 34
+        Me.ci_txt_cellp.TabIndex = 5
         '
         'ci_txt_officen
         '
@@ -132,7 +132,7 @@ Partial Class create_contact
         Me.ci_txt_officen.Mask = "(999) 000-0000"
         Me.ci_txt_officen.Name = "ci_txt_officen"
         Me.ci_txt_officen.Size = New System.Drawing.Size(130, 26)
-        Me.ci_txt_officen.TabIndex = 33
+        Me.ci_txt_officen.TabIndex = 4
         '
         'adr_txt_city
         '
@@ -140,7 +140,7 @@ Partial Class create_contact
         Me.adr_txt_city.Location = New System.Drawing.Point(567, 272)
         Me.adr_txt_city.Name = "adr_txt_city"
         Me.adr_txt_city.Size = New System.Drawing.Size(100, 26)
-        Me.adr_txt_city.TabIndex = 29
+        Me.adr_txt_city.TabIndex = 9
         '
         'adr_lbl_zip
         '
@@ -159,7 +159,7 @@ Partial Class create_contact
         Me.ci_txt_addrtwo.Location = New System.Drawing.Point(147, 319)
         Me.ci_txt_addrtwo.Name = "ci_txt_addrtwo"
         Me.ci_txt_addrtwo.Size = New System.Drawing.Size(266, 26)
-        Me.ci_txt_addrtwo.TabIndex = 27
+        Me.ci_txt_addrtwo.TabIndex = 8
         '
         'ci_txt_addrone
         '
@@ -167,7 +167,7 @@ Partial Class create_contact
         Me.ci_txt_addrone.Location = New System.Drawing.Point(147, 269)
         Me.ci_txt_addrone.Name = "ci_txt_addrone"
         Me.ci_txt_addrone.Size = New System.Drawing.Size(266, 26)
-        Me.ci_txt_addrone.TabIndex = 26
+        Me.ci_txt_addrone.TabIndex = 7
         '
         'adr_lbl_streetad
         '
@@ -220,7 +220,7 @@ Partial Class create_contact
         Me.ci_txt_url.Location = New System.Drawing.Point(567, 183)
         Me.ci_txt_url.Name = "ci_txt_url"
         Me.ci_txt_url.Size = New System.Drawing.Size(297, 26)
-        Me.ci_txt_url.TabIndex = 21
+        Me.ci_txt_url.TabIndex = 6
         '
         'ci_txt_company
         '
@@ -228,7 +228,7 @@ Partial Class create_contact
         Me.ci_txt_company.Location = New System.Drawing.Point(147, 186)
         Me.ci_txt_company.Name = "ci_txt_company"
         Me.ci_txt_company.Size = New System.Drawing.Size(100, 26)
-        Me.ci_txt_company.TabIndex = 17
+        Me.ci_txt_company.TabIndex = 3
         '
         'ci_txt_lname
         '
@@ -236,7 +236,7 @@ Partial Class create_contact
         Me.ci_txt_lname.Location = New System.Drawing.Point(147, 134)
         Me.ci_txt_lname.Name = "ci_txt_lname"
         Me.ci_txt_lname.Size = New System.Drawing.Size(100, 26)
-        Me.ci_txt_lname.TabIndex = 16
+        Me.ci_txt_lname.TabIndex = 2
         '
         'ci_lbl_url
         '
@@ -288,7 +288,7 @@ Partial Class create_contact
         Me.ci_txt_fname.Location = New System.Drawing.Point(147, 88)
         Me.ci_txt_fname.Name = "ci_txt_fname"
         Me.ci_txt_fname.Size = New System.Drawing.Size(100, 26)
-        Me.ci_txt_fname.TabIndex = 5
+        Me.ci_txt_fname.TabIndex = 1
         '
         'ci_lbl_company
         '
@@ -336,7 +336,7 @@ Partial Class create_contact
         Me.ci_btn_update.Location = New System.Drawing.Point(356, 471)
         Me.ci_btn_update.Name = "ci_btn_update"
         Me.ci_btn_update.Size = New System.Drawing.Size(198, 65)
-        Me.ci_btn_update.TabIndex = 5
+        Me.ci_btn_update.TabIndex = 14
         Me.ci_btn_update.Text = "Save"
         Me.ci_btn_update.UseVisualStyleBackColor = False
         '
@@ -353,7 +353,7 @@ Partial Class create_contact
         Me.ci_btn_cancel.Location = New System.Drawing.Point(673, 471)
         Me.ci_btn_cancel.Name = "ci_btn_cancel"
         Me.ci_btn_cancel.Size = New System.Drawing.Size(198, 65)
-        Me.ci_btn_cancel.TabIndex = 6
+        Me.ci_btn_cancel.TabIndex = 15
         Me.ci_btn_cancel.Text = "Cancel"
         Me.ci_btn_cancel.UseVisualStyleBackColor = False
         '

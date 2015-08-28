@@ -16,6 +16,13 @@ Public Class search_contact
 
 
 
+        ' Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ruben\Documents\GitHub\Team_CRM\db\crm_db.accdb
+
+        Dim myConnString As String = "Provider=Microsoft.ACE.OLEDB.12.0; Data Source =" & Environment.CurrentDirectory & "\crm_db.accdb"
+
+
+
+        Dim MyConnection As New OleDbCommand("INSERT INTO  (patient")
 
 
 

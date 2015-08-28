@@ -3,6 +3,10 @@
 
 
 Public Class create_contact
+
+    Dim myConnString As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source =" & Environment.CurrentDirectory & "\crm_db.accdb"
+
+
     Private Sub Button1_MouseClick(sender As Object, e As MouseEventArgs) Handles ci_btn_cancel.MouseClick
         Me.Close()
         Dashboard.BringToFront()
@@ -16,61 +20,47 @@ Public Class create_contact
 
 
         'Variables for the Access database
-        Dim provider As String
-        Dim dataFile As String
-        Dim connString As String
-        Dim myConnection As OleDbConnection = New OleDbConnection
-        provider = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source ="
+        Dim myConnection As New OleDbConnection(myConnString)
 
-
-
-        dataFile = "C:\Users\ruben\Documents\GitHub\Team_CRM\db\crm_db.accdb"
-
-        connString = provider & dataFile
-
-        myConnection.ConnectionString = connString
-
-        ' starts the connection
-
-        myConnection.Open()
-
-        Dim str As String
-
-        'creates SQL expression
-
-        str = "insert into crm_contact ([fname], [lname], [company], [office_number], [cell_phone], [url],[created_date], [street_one], [street_two], [city], [state], [zip_code]) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
-
-        Dim cmd As OleDbCommand = New OleDbCommand(str, myConnection)
-
-        cmd.Parameters.Add(New OleDbParameter("fname", CType(ci_txt_fname.Text, String)))
-
-        cmd.Parameters.Add(New OleDbParameter("lname", CType(ci_txt_lname.Text, String)))
-
-        cmd.Parameters.Add(New OleDbParameter("company", CType(ci_txt_company.Text, String)))
-
-        cmd.Parameters.Add(New OleDbParameter("office_number", CType(ci_txt_officen.Text, String)))
-
-        cmd.Parameters.Add(New OleDbParameter("cell_phone", CType(ci_txt_cellp.Text, String)))
-
-        cmd.Parameters.Add(New OleDbParameter("url", CType(ci_txt_url.Text, String)))
-
-        cmd.Parameters.Add(New OleDbParameter("created_date", CType(ci_created_date.Text, String)))
-
-        cmd.Parameters.Add(New OleDbParameter("street_one", CType(ci_txt_addrone.Text, String)))
-
-        cmd.Parameters.Add(New OleDbParameter("street_two", CType(ci_txt_addrtwo.Text, String)))
-
-        cmd.Parameters.Add(New OleDbParameter("city", CType(adr_txt_city.Text, String)))
-
-        cmd.Parameters.Add(New OleDbParameter("state", CType(adr_txt_state.Text, String)))
-
-        cmd.Parameters.Add(New OleDbParameter("zip_code", CType(adr_txt_zip.Text, String)))
         Try
 
-            ' excute SQL expression
-            cmd.ExecuteNonQuery()
+            'opens the connection
+            myConnection.Open()
 
-            cmd.Dispose()
+            'Creates the INSERT query
+            Dim myCommand As New OleDbCommand("INSERT INTO crm_contact (fname, lname, company, office_number, cell_phone, url, created_date, street_one, street_two, city, state, zip_code) VALUES (@fname, @lname, @company, @office_number, @cell_phone, @url, @created_date, @street_one, @street_two, @city, @state, @zip_code)", myConnection)
+
+            'VALUES of the INSERT query
+
+            myCommand.Parameters.AddWithValue("@fname", CType(ci_txt_fname.Text, String))
+
+            myCommand.Parameters.AddWithValue("@lname", CType(ci_txt_lname.Text, String))
+
+            myCommand.Parameters.AddWithValue("@company", CType(ci_txt_company.Text, String))
+
+            myCommand.Parameters.AddWithValue("@office_number", CType(ci_txt_officen.Text, String))
+
+            myCommand.Parameters.AddWithValue("@cell_phone", CType(ci_txt_cellp.Text, String))
+
+            myCommand.Parameters.AddWithValue("@url", CType(ci_txt_url.Text, String))
+
+            myCommand.Parameters.AddWithValue("@created_date", CType(ci_created_date.Text, String))
+
+            myCommand.Parameters.AddWithValue("@street_one", CType(ci_txt_addrone.Text, String))
+
+            myCommand.Parameters.AddWithValue("@street_two", CType(ci_txt_addrtwo.Text, String))
+
+            myCommand.Parameters.AddWithValue("@city", CType(adr_txt_city.Text, String))
+
+            myCommand.Parameters.AddWithValue("@state", CType(adr_txt_state.Text, String))
+
+            myCommand.Parameters.AddWithValue("@zip_code", CType(adr_txt_zip.Text, String))
+
+
+            ' excute SQL expression
+            myCommand.ExecuteNonQuery()
+
+            myCommand.Dispose()
 
             myConnection.Close()
 
