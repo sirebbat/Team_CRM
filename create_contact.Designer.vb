@@ -23,13 +23,12 @@ Partial Class create_contact
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.gb_ci = New System.Windows.Forms.GroupBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.adr_txt_zip = New System.Windows.Forms.TextBox()
         Me.adr_txt_state = New System.Windows.Forms.TextBox()
         Me.adr_txt_city = New System.Windows.Forms.TextBox()
         Me.adr_lbl_zip = New System.Windows.Forms.Label()
-        Me.adr_txt_streetadd = New System.Windows.Forms.TextBox()
-        Me.adr_txt_streetad = New System.Windows.Forms.TextBox()
+        Me.ci_txt_addrtwo = New System.Windows.Forms.TextBox()
+        Me.ci_txt_addrone = New System.Windows.Forms.TextBox()
         Me.adr_lbl_streetad = New System.Windows.Forms.Label()
         Me.adr_lbl_state = New System.Windows.Forms.Label()
         Me.adr_lbl_city = New System.Windows.Forms.Label()
@@ -42,27 +41,26 @@ Partial Class create_contact
         Me.ci_lbl_url = New System.Windows.Forms.Label()
         Me.ci_lbl_cellp = New System.Windows.Forms.Label()
         Me.ci_lbl_officen = New System.Windows.Forms.Label()
-        Me.ci_lbl_createddate = New System.Windows.Forms.Label()
         Me.ci_txt_fname = New System.Windows.Forms.TextBox()
-        Me.ci_txt_account = New System.Windows.Forms.TextBox()
-        Me.ci_lbl_account = New System.Windows.Forms.Label()
         Me.ci_lbl_company = New System.Windows.Forms.Label()
         Me.ci_lbl_lname = New System.Windows.Forms.Label()
         Me.ci_lbl_fname = New System.Windows.Forms.Label()
         Me.ci_btn_update = New System.Windows.Forms.Button()
         Me.ci_btn_cancel = New System.Windows.Forms.Button()
+        Me.ci_lbl_createddate = New System.Windows.Forms.Label()
+        Me.ci_created_date = New System.Windows.Forms.DateTimePicker()
         Me.gb_ci.SuspendLayout()
         Me.SuspendLayout()
         '
         'gb_ci
         '
-        Me.gb_ci.Controls.Add(Me.DateTimePicker1)
+        Me.gb_ci.Controls.Add(Me.ci_created_date)
         Me.gb_ci.Controls.Add(Me.adr_txt_zip)
         Me.gb_ci.Controls.Add(Me.adr_txt_state)
         Me.gb_ci.Controls.Add(Me.adr_txt_city)
         Me.gb_ci.Controls.Add(Me.adr_lbl_zip)
-        Me.gb_ci.Controls.Add(Me.adr_txt_streetadd)
-        Me.gb_ci.Controls.Add(Me.adr_txt_streetad)
+        Me.gb_ci.Controls.Add(Me.ci_txt_addrtwo)
+        Me.gb_ci.Controls.Add(Me.ci_txt_addrone)
         Me.gb_ci.Controls.Add(Me.adr_lbl_streetad)
         Me.gb_ci.Controls.Add(Me.adr_lbl_state)
         Me.gb_ci.Controls.Add(Me.adr_lbl_city)
@@ -77,8 +75,6 @@ Partial Class create_contact
         Me.gb_ci.Controls.Add(Me.ci_lbl_officen)
         Me.gb_ci.Controls.Add(Me.ci_lbl_createddate)
         Me.gb_ci.Controls.Add(Me.ci_txt_fname)
-        Me.gb_ci.Controls.Add(Me.ci_txt_account)
-        Me.gb_ci.Controls.Add(Me.ci_lbl_account)
         Me.gb_ci.Controls.Add(Me.ci_lbl_company)
         Me.gb_ci.Controls.Add(Me.ci_lbl_lname)
         Me.gb_ci.Controls.Add(Me.ci_lbl_fname)
@@ -90,16 +86,6 @@ Partial Class create_contact
         Me.gb_ci.TabIndex = 4
         Me.gb_ci.TabStop = False
         Me.gb_ci.Text = "Contact Information"
-        '
-        'DateTimePicker1
-        '
-        Me.DateTimePicker1.CustomFormat = ""
-        Me.DateTimePicker1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateTimePicker1.Location = New System.Drawing.Point(1084, 35)
-        Me.DateTimePicker1.MinDate = New Date(1990, 1, 1, 0, 0, 0, 0)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(258, 26)
-        Me.DateTimePicker1.TabIndex = 32
         '
         'adr_txt_zip
         '
@@ -136,21 +122,21 @@ Partial Class create_contact
         Me.adr_lbl_zip.TabIndex = 28
         Me.adr_lbl_zip.Text = "Zip Code"
         '
-        'adr_txt_streetadd
+        'ci_txt_addrtwo
         '
-        Me.adr_txt_streetadd.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.adr_txt_streetadd.Location = New System.Drawing.Point(147, 319)
-        Me.adr_txt_streetadd.Name = "adr_txt_streetadd"
-        Me.adr_txt_streetadd.Size = New System.Drawing.Size(266, 26)
-        Me.adr_txt_streetadd.TabIndex = 27
+        Me.ci_txt_addrtwo.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.ci_txt_addrtwo.Location = New System.Drawing.Point(147, 319)
+        Me.ci_txt_addrtwo.Name = "ci_txt_addrtwo"
+        Me.ci_txt_addrtwo.Size = New System.Drawing.Size(266, 26)
+        Me.ci_txt_addrtwo.TabIndex = 27
         '
-        'adr_txt_streetad
+        'ci_txt_addrone
         '
-        Me.adr_txt_streetad.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.adr_txt_streetad.Location = New System.Drawing.Point(147, 269)
-        Me.adr_txt_streetad.Name = "adr_txt_streetad"
-        Me.adr_txt_streetad.Size = New System.Drawing.Size(266, 26)
-        Me.adr_txt_streetad.TabIndex = 26
+        Me.ci_txt_addrone.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.ci_txt_addrone.Location = New System.Drawing.Point(147, 269)
+        Me.ci_txt_addrone.Name = "ci_txt_addrone"
+        Me.ci_txt_addrone.Size = New System.Drawing.Size(266, 26)
+        Me.ci_txt_addrone.TabIndex = 26
         '
         'adr_lbl_streetad
         '
@@ -270,17 +256,6 @@ Partial Class create_contact
         Me.ci_lbl_officen.TabIndex = 10
         Me.ci_lbl_officen.Text = "Office Number"
         '
-        'ci_lbl_createddate
-        '
-        Me.ci_lbl_createddate.AutoSize = True
-        Me.ci_lbl_createddate.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.ci_lbl_createddate.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.ci_lbl_createddate.Location = New System.Drawing.Point(942, 41)
-        Me.ci_lbl_createddate.Name = "ci_lbl_createddate"
-        Me.ci_lbl_createddate.Size = New System.Drawing.Size(103, 18)
-        Me.ci_lbl_createddate.TabIndex = 8
-        Me.ci_lbl_createddate.Text = "Created Date"
-        '
         'ci_txt_fname
         '
         Me.ci_txt_fname.Font = New System.Drawing.Font("Arial", 12.0!)
@@ -288,26 +263,6 @@ Partial Class create_contact
         Me.ci_txt_fname.Name = "ci_txt_fname"
         Me.ci_txt_fname.Size = New System.Drawing.Size(100, 26)
         Me.ci_txt_fname.TabIndex = 5
-        '
-        'ci_txt_account
-        '
-        Me.ci_txt_account.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.ci_txt_account.Location = New System.Drawing.Point(147, 38)
-        Me.ci_txt_account.Name = "ci_txt_account"
-        Me.ci_txt_account.ReadOnly = True
-        Me.ci_txt_account.Size = New System.Drawing.Size(100, 26)
-        Me.ci_txt_account.TabIndex = 4
-        '
-        'ci_lbl_account
-        '
-        Me.ci_lbl_account.AutoSize = True
-        Me.ci_lbl_account.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.ci_lbl_account.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.ci_lbl_account.Location = New System.Drawing.Point(6, 41)
-        Me.ci_lbl_account.Name = "ci_lbl_account"
-        Me.ci_lbl_account.Size = New System.Drawing.Size(68, 18)
-        Me.ci_lbl_account.TabIndex = 3
-        Me.ci_lbl_account.Text = "Account "
         '
         'ci_lbl_company
         '
@@ -376,6 +331,27 @@ Partial Class create_contact
         Me.ci_btn_cancel.Text = "Cancel"
         Me.ci_btn_cancel.UseVisualStyleBackColor = False
         '
+        'ci_lbl_createddate
+        '
+        Me.ci_lbl_createddate.AutoSize = True
+        Me.ci_lbl_createddate.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.ci_lbl_createddate.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.ci_lbl_createddate.Location = New System.Drawing.Point(942, 41)
+        Me.ci_lbl_createddate.Name = "ci_lbl_createddate"
+        Me.ci_lbl_createddate.Size = New System.Drawing.Size(103, 18)
+        Me.ci_lbl_createddate.TabIndex = 8
+        Me.ci_lbl_createddate.Text = "Created Date"
+        '
+        'ci_created_date
+        '
+        Me.ci_created_date.CustomFormat = ""
+        Me.ci_created_date.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ci_created_date.Location = New System.Drawing.Point(1084, 35)
+        Me.ci_created_date.MinDate = New Date(1990, 1, 1, 0, 0, 0, 0)
+        Me.ci_created_date.Name = "ci_created_date"
+        Me.ci_created_date.Size = New System.Drawing.Size(258, 26)
+        Me.ci_created_date.TabIndex = 32
+        '
         'create_contact
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -395,13 +371,12 @@ Partial Class create_contact
     End Sub
 
     Friend WithEvents gb_ci As GroupBox
-    Friend WithEvents DateTimePicker1 As DateTimePicker
     Friend WithEvents adr_txt_zip As TextBox
     Friend WithEvents adr_txt_state As TextBox
     Friend WithEvents adr_txt_city As TextBox
     Friend WithEvents adr_lbl_zip As Label
-    Friend WithEvents adr_txt_streetadd As TextBox
-    Friend WithEvents adr_txt_streetad As TextBox
+    Friend WithEvents ci_txt_addrtwo As TextBox
+    Friend WithEvents ci_txt_addrone As TextBox
     Friend WithEvents adr_lbl_streetad As Label
     Friend WithEvents adr_lbl_state As Label
     Friend WithEvents adr_lbl_city As Label
@@ -414,13 +389,12 @@ Partial Class create_contact
     Friend WithEvents ci_lbl_url As Label
     Friend WithEvents ci_lbl_cellp As Label
     Friend WithEvents ci_lbl_officen As Label
-    Friend WithEvents ci_lbl_createddate As Label
     Friend WithEvents ci_txt_fname As TextBox
-    Friend WithEvents ci_txt_account As TextBox
-    Friend WithEvents ci_lbl_account As Label
     Friend WithEvents ci_lbl_company As Label
     Friend WithEvents ci_lbl_lname As Label
     Friend WithEvents ci_lbl_fname As Label
     Friend WithEvents ci_btn_update As Button
     Friend WithEvents ci_btn_cancel As Button
+    Friend WithEvents ci_created_date As DateTimePicker
+    Friend WithEvents ci_lbl_createddate As Label
 End Class
