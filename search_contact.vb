@@ -34,7 +34,7 @@ Public Class search_contact
             myConnection.Open()
 
             'Search by account number
-            If account_number IsNot String.Empty Then
+            If account_number.Text IsNot String.Empty Then
                 'query
                 Dim myCommand As New OleDbCommand("SELECT account, fname, lname FROM crm_contact WHERE account=" & account_number.Text, myConnection)
                 Dim myReader As OleDbDataReader = myCommand.ExecuteReader
@@ -60,13 +60,13 @@ Public Class search_contact
                     sc_btn_ok.Visible = True
 
                 End If
-
+                account_number.ResetText()
             End If
 
 
             'search by first name
-            If sc_txt_fname IsNot String.Empty Or sc_txt_lname IsNot String.Empty Then
-                Dim myCommand As New OleDbCommand("SELECT account, fname, lname FROM crm_contact WHERE fname =" & sc_txt_fname.Text, myConnection)
+            If sc_txt_fname.Text IsNot String.Empty Then
+                Dim myCommand As New OleDbCommand("SELECT account, fname, lname FROM crm_contact WHERE fname='" & sc_txt_fname.Text & "'", myConnection)
                 Dim myReader As OleDbDataReader = myCommand.ExecuteReader
 
                 'reads the query
@@ -90,11 +90,12 @@ Public Class search_contact
                     sc_btn_ok.Visible = True
 
                 End If
+                sc_txt_fname.ResetText()
             End If
 
             'search by last name
-            If sc_txt_lname IsNot String.Empty Or sc_txt_lname IsNot String.Empty Then
-                Dim myCommand As New OleDbCommand("SELECT account, fname, lname FROM crm_contact WHERE lname =" & sc_txt_lname.Text, myConnection)
+            If sc_txt_lname.Text IsNot String.Empty Then
+                Dim myCommand As New OleDbCommand("SELECT account, fname, lname FROM crm_contact WHERE lname= '" & sc_txt_lname.Text & "'", myConnection)
                 Dim myReader As OleDbDataReader = myCommand.ExecuteReader
 
                 'reads the query
@@ -118,6 +119,7 @@ Public Class search_contact
                     sc_btn_ok.Visible = True
 
                 End If
+                sc_txt_lname.ResetText()
             End If
 
         Catch ex As Exception
@@ -132,7 +134,7 @@ Public Class search_contact
 
     End Sub
 
-
-
-
+    Private Sub sc_btn_ok_Click(sender As Object, e As EventArgs) Handles sc_btn_ok.Click
+        Me.Close()
+    End Sub
 End Class
