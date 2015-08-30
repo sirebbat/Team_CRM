@@ -48,6 +48,7 @@ Public Class search_contact
                     sc_lbl_found.Visible = True
                     recordCount = recordCount + 1
 
+                    'Adds items to the dashboard
                     Dim sc_listviewitem As New ListViewItem
                     Dashboard.ci_txt_account.Text = myReader.GetInt32(0)
                     Dashboard.ci_txt_fname.Text = myReader.GetString(1)
@@ -97,6 +98,22 @@ Public Class search_contact
                     sc_lbl_found.Visible = True
                     recordCount = recordCount + 1
 
+                    'Adds items to the dashboard
+                    Dashboard.ci_txt_account.Text = myReader.GetInt32(0)
+                    Dashboard.ci_txt_fname.Text = myReader.GetString(1)
+                    Dashboard.ci_txt_lname.Text = myReader.GetString(2)
+                    Dashboard.ci_txt_company.Text = myReader.GetString(3)
+                    Dashboard.ci_txt_officen.Text = myReader.GetString(4)
+                    Dashboard.ci_txt_cellp.Text = myReader.GetString(5)
+                    Dashboard.ci_txt_url.Text = myReader.GetString(6)
+                    Dashboard.ci_created_date.Text = myReader.GetDateTime(7)
+                    Dashboard.adr_txt_streetad.Text = myReader.GetString(8)
+                    Dashboard.adr_txt_streetadd.Text = myReader.GetString(9)
+                    Dashboard.adr_txt_city.Text = myReader.GetString(10)
+                    Dashboard.adr_txt_state.Text = myReader.GetString(11)
+                    Dashboard.adr_txt_zip.Text = myReader.GetString(12)
+                    Dashboard.ci_txt_email.Text = myReader.GetString(13)
+
                 End While
                 sc_lbl_notfound.Enabled = True
                 sc_lbl_notfound.Enabled = True
@@ -129,6 +146,22 @@ Public Class search_contact
                 End While
                 sc_lbl_notfound.Enabled = True
                 sc_lbl_notfound.Enabled = True
+
+                'Adds items to the dashboard
+                Dashboard.ci_txt_account.Text = myReader.GetInt32(0)
+                Dashboard.ci_txt_fname.Text = myReader.GetString(1)
+                Dashboard.ci_txt_lname.Text = myReader.GetString(2)
+                Dashboard.ci_txt_company.Text = myReader.GetString(3)
+                Dashboard.ci_txt_officen.Text = myReader.GetString(4)
+                Dashboard.ci_txt_cellp.Text = myReader.GetString(5)
+                Dashboard.ci_txt_url.Text = myReader.GetString(6)
+                Dashboard.ci_created_date.Text = myReader.GetDateTime(7)
+                Dashboard.adr_txt_streetad.Text = myReader.GetString(8)
+                Dashboard.adr_txt_streetadd.Text = myReader.GetString(9)
+                Dashboard.adr_txt_city.Text = myReader.GetString(10)
+                Dashboard.adr_txt_state.Text = myReader.GetString(11)
+                Dashboard.adr_txt_zip.Text = myReader.GetString(12)
+                Dashboard.ci_txt_email.Text = myReader.GetString(13)
 
                 'checks for the records
                 If recordCount = 0 Then

@@ -41,7 +41,7 @@ Partial Class search_contact
         Me.sc_txt_fname.Location = New System.Drawing.Point(200, 125)
         Me.sc_txt_fname.Name = "sc_txt_fname"
         Me.sc_txt_fname.Size = New System.Drawing.Size(194, 26)
-        Me.sc_txt_fname.TabIndex = 7
+        Me.sc_txt_fname.TabIndex = 2
         '
         'Label1
         '
@@ -73,7 +73,7 @@ Partial Class search_contact
         Me.sc_txt_lname.Location = New System.Drawing.Point(200, 178)
         Me.sc_txt_lname.Name = "sc_txt_lname"
         Me.sc_txt_lname.Size = New System.Drawing.Size(194, 26)
-        Me.sc_txt_lname.TabIndex = 9
+        Me.sc_txt_lname.TabIndex = 3
         '
         'Label3
         '
@@ -93,7 +93,7 @@ Partial Class search_contact
         Me.account_number.Location = New System.Drawing.Point(200, 68)
         Me.account_number.Name = "account_number"
         Me.account_number.Size = New System.Drawing.Size(194, 26)
-        Me.account_number.TabIndex = 11
+        Me.account_number.TabIndex = 1
         '
         'sc_btn_search
         '
@@ -108,7 +108,7 @@ Partial Class search_contact
         Me.sc_btn_search.Location = New System.Drawing.Point(82, 288)
         Me.sc_btn_search.Name = "sc_btn_search"
         Me.sc_btn_search.Size = New System.Drawing.Size(115, 65)
-        Me.sc_btn_search.TabIndex = 12
+        Me.sc_btn_search.TabIndex = 4
         Me.sc_btn_search.Text = "Search"
         Me.sc_btn_search.UseVisualStyleBackColor = False
         '
@@ -125,7 +125,7 @@ Partial Class search_contact
         Me.sc_btn_cancel.Location = New System.Drawing.Point(279, 288)
         Me.sc_btn_cancel.Name = "sc_btn_cancel"
         Me.sc_btn_cancel.Size = New System.Drawing.Size(115, 65)
-        Me.sc_btn_cancel.TabIndex = 13
+        Me.sc_btn_cancel.TabIndex = 5
         Me.sc_btn_cancel.Text = "Cancel"
         Me.sc_btn_cancel.UseVisualStyleBackColor = False
         '
