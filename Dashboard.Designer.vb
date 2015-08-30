@@ -26,7 +26,7 @@ Partial Class Dashboard
         Me.dashboard_tab = New System.Windows.Forms.TabControl()
         Me.tabClient = New System.Windows.Forms.TabPage()
         Me.gb_activities = New System.Windows.Forms.GroupBox()
-        Me.act_lb = New System.Windows.Forms.ListView()
+        Me.act_lv = New System.Windows.Forms.ListView()
         Me.act_lb_activity = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.act_lb_type = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.act_lb_status = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -55,7 +55,6 @@ Partial Class Dashboard
         Me.ci_txt_url = New System.Windows.Forms.TextBox()
         Me.ci_txt_cellp = New System.Windows.Forms.TextBox()
         Me.ci_txt_officen = New System.Windows.Forms.TextBox()
-        Me.ci_txt_createddate = New System.Windows.Forms.TextBox()
         Me.ci_txt_company = New System.Windows.Forms.TextBox()
         Me.ci_txt_lname = New System.Windows.Forms.TextBox()
         Me.ci_lbl_url = New System.Windows.Forms.Label()
@@ -79,6 +78,9 @@ Partial Class Dashboard
         Me.emp_lb_ = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.emp_btn_update = New System.Windows.Forms.Button()
         Me.emp_btn_add = New System.Windows.Forms.Button()
+        Me.ci_lbl_email = New System.Windows.Forms.Label()
+        Me.ci_txt_email = New System.Windows.Forms.TextBox()
+        Me.ci_created_date = New System.Windows.Forms.MaskedTextBox()
         Me.dashboard_tab.SuspendLayout()
         Me.tabClient.SuspendLayout()
         Me.gb_activities.SuspendLayout()
@@ -109,7 +111,7 @@ Partial Class Dashboard
         'gb_activities
         '
         resources.ApplyResources(Me.gb_activities, "gb_activities")
-        Me.gb_activities.Controls.Add(Me.act_lb)
+        Me.gb_activities.Controls.Add(Me.act_lv)
         Me.gb_activities.Controls.Add(Me.act_btn_delete)
         Me.gb_activities.Controls.Add(Me.act_btn_save)
         Me.gb_activities.Controls.Add(Me.act_btn_create)
@@ -118,14 +120,14 @@ Partial Class Dashboard
         Me.gb_activities.Name = "gb_activities"
         Me.gb_activities.TabStop = False
         '
-        'act_lb
+        'act_lv
         '
-        Me.act_lb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.act_lb.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.act_lb_activity, Me.act_lb_type, Me.act_lb_status, Me.act_lb_addedon, Me.act_lb_lastmodified, Me.act_lb_employee, Me.act_lb_comment})
-        resources.ApplyResources(Me.act_lb, "act_lb")
-        Me.act_lb.Name = "act_lb"
-        Me.act_lb.UseCompatibleStateImageBehavior = False
-        Me.act_lb.View = System.Windows.Forms.View.Details
+        Me.act_lv.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.act_lv.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.act_lb_activity, Me.act_lb_type, Me.act_lb_status, Me.act_lb_addedon, Me.act_lb_lastmodified, Me.act_lb_employee, Me.act_lb_comment})
+        resources.ApplyResources(Me.act_lv, "act_lv")
+        Me.act_lv.Name = "act_lv"
+        Me.act_lv.UseCompatibleStateImageBehavior = False
+        Me.act_lv.View = System.Windows.Forms.View.Details
         '
         'act_lb_activity
         '
@@ -202,6 +204,9 @@ Partial Class Dashboard
         'gb_ci
         '
         resources.ApplyResources(Me.gb_ci, "gb_ci")
+        Me.gb_ci.Controls.Add(Me.ci_created_date)
+        Me.gb_ci.Controls.Add(Me.ci_txt_email)
+        Me.gb_ci.Controls.Add(Me.ci_lbl_email)
         Me.gb_ci.Controls.Add(Me.ci_btn_delete)
         Me.gb_ci.Controls.Add(Me.ci_btn_save)
         Me.gb_ci.Controls.Add(Me.ci_btn_update)
@@ -218,7 +223,6 @@ Partial Class Dashboard
         Me.gb_ci.Controls.Add(Me.ci_txt_url)
         Me.gb_ci.Controls.Add(Me.ci_txt_cellp)
         Me.gb_ci.Controls.Add(Me.ci_txt_officen)
-        Me.gb_ci.Controls.Add(Me.ci_txt_createddate)
         Me.gb_ci.Controls.Add(Me.ci_txt_company)
         Me.gb_ci.Controls.Add(Me.ci_txt_lname)
         Me.gb_ci.Controls.Add(Me.ci_lbl_url)
@@ -340,12 +344,6 @@ Partial Class Dashboard
         resources.ApplyResources(Me.ci_txt_officen, "ci_txt_officen")
         Me.ci_txt_officen.Name = "ci_txt_officen"
         Me.ci_txt_officen.ReadOnly = True
-        '
-        'ci_txt_createddate
-        '
-        resources.ApplyResources(Me.ci_txt_createddate, "ci_txt_createddate")
-        Me.ci_txt_createddate.Name = "ci_txt_createddate"
-        Me.ci_txt_createddate.ReadOnly = True
         '
         'ci_txt_company
         '
@@ -493,6 +491,24 @@ Partial Class Dashboard
         Me.emp_btn_add.Name = "emp_btn_add"
         Me.emp_btn_add.UseVisualStyleBackColor = False
         '
+        'ci_lbl_email
+        '
+        resources.ApplyResources(Me.ci_lbl_email, "ci_lbl_email")
+        Me.ci_lbl_email.Name = "ci_lbl_email"
+        '
+        'ci_txt_email
+        '
+        resources.ApplyResources(Me.ci_txt_email, "ci_txt_email")
+        Me.ci_txt_email.Name = "ci_txt_email"
+        Me.ci_txt_email.ReadOnly = True
+        '
+        'ci_created_date
+        '
+        resources.ApplyResources(Me.ci_created_date, "ci_created_date")
+        Me.ci_created_date.Name = "ci_created_date"
+        Me.ci_created_date.ReadOnly = True
+        Me.ci_created_date.ValidatingType = GetType(Date)
+        '
         'Dashboard
         '
         resources.ApplyResources(Me, "$this")
@@ -533,7 +549,6 @@ Partial Class Dashboard
     Friend WithEvents ci_txt_url As TextBox
     Friend WithEvents ci_txt_cellp As TextBox
     Friend WithEvents ci_txt_officen As TextBox
-    Friend WithEvents ci_txt_createddate As TextBox
     Friend WithEvents ci_txt_company As TextBox
     Friend WithEvents ci_txt_lname As TextBox
     Friend WithEvents ci_lbl_officen As Label
@@ -557,7 +572,7 @@ Partial Class Dashboard
     Friend WithEvents ci_btn_save As Button
     Friend WithEvents act_btn_delete As Button
     Friend WithEvents ci_btn_delete As Button
-    Friend WithEvents act_lb As ListView
+    Friend WithEvents act_lv As ListView
     Friend WithEvents act_lb_activity As ColumnHeader
     Friend WithEvents act_lb_type As ColumnHeader
     Friend WithEvents act_lb_status As ColumnHeader
@@ -571,4 +586,7 @@ Partial Class Dashboard
     Friend WithEvents emp_lb_lname As ColumnHeader
     Friend WithEvents emp_lb_phone As ColumnHeader
     Friend WithEvents emp_lb_ As ColumnHeader
+    Friend WithEvents ci_txt_email As TextBox
+    Friend WithEvents ci_lbl_email As Label
+    Friend WithEvents ci_created_date As MaskedTextBox
 End Class

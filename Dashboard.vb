@@ -1,5 +1,5 @@
 ﻿'Dashboard
-Imports System.Globalization
+
 
 Public Class Dashboard
 
@@ -15,7 +15,7 @@ Public Class Dashboard
 
     'Dashboard - Search Button
     Private Sub btnSearch_Click(sender As Object, e As EventArgs) Handles btnSearch.Click
-
+        Me.SendToBack()
         search_contact.Visible = True
         search_contact.BringToFront()
 

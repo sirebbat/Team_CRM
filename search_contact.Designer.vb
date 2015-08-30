@@ -180,11 +180,11 @@ Partial Class search_contact
         Me.BackColor = System.Drawing.Color.SlateGray
         Me.ClientSize = New System.Drawing.Size(487, 567)
         Me.ControlBox = False
+        Me.Controls.Add(Me.sc_btn_search)
         Me.Controls.Add(Me.sc_btn_ok)
         Me.Controls.Add(Me.sc_lbl_found)
         Me.Controls.Add(Me.sc_lbl_notfound)
         Me.Controls.Add(Me.sc_btn_cancel)
-        Me.Controls.Add(Me.sc_btn_search)
         Me.Controls.Add(Me.account_number)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.sc_txt_lname)

@@ -30,7 +30,7 @@ Public Class create_contact
 
             If ci_txt_fname.Text IsNot String.Empty And ci_txt_lname.Text IsNot String.Empty And ci_txt_email IsNot String.Empty Then
                 'Creates the INSERT query
-                Dim myCommand As New OleDbCommand("INSERT INTO crm_contact (fname, lname, company, office_number, cell_phone, url, created_date, street_one, street_two, city, state, zip_code) VALUES (@fname, @lname, @company, @office_number, @cell_phone, @url, @created_date, @street_one, @street_two, @city, @state, @zip_code)", myConnection)
+                Dim myCommand As New OleDbCommand("INSERT INTO crm_contact (fname, lname, company, office_number, cell_phone, email,  url, created_date, street_one, street_two, city, state, zip_code) VALUES (@fname, @lname, @company, @office_number, @cell_phone, @email, @url, @created_date, @street_one, @street_two, @city, @state, @zip_code)", myConnection)
 
                 'VALUES of the INSERT query
 
@@ -43,6 +43,8 @@ Public Class create_contact
                 myCommand.Parameters.AddWithValue("@office_number", CType(ci_txt_officen.Text, String))
 
                 myCommand.Parameters.AddWithValue("@cell_phone", CType(ci_txt_cellp.Text, String))
+
+                myCommand.Parameters.AddWithValue("@email", CType(ci_txt_email.Text, String))
 
                 myCommand.Parameters.AddWithValue("@url", CType(ci_txt_url.Text, String))
 
@@ -80,6 +82,7 @@ Public Class create_contact
                 adr_txt_city.Clear()
                 adr_txt_state.ResetText()
                 adr_txt_zip.Clear()
+                ci_txt_email.Clear()
 
 
                 'Saved message
