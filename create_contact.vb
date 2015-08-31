@@ -49,7 +49,7 @@ Public Class create_contact
 
             myConnection.Close()
 
-            If ci_txt_fname.Text IsNot String.Empty And ci_txt_lname.Text IsNot String.Empty And ci_txt_email IsNot String.Empty Then
+            If ci_txt_fname.Text IsNot String.Empty And ci_txt_lname.Text IsNot String.Empty And ci_txt_email IsNot String.Empty And ci_txt_officen.MaskCompleted And ci_txt_email IsNot String.Empty Then
 
                 myConnection.Open()
                 'Creates the INSERT query
@@ -118,7 +118,7 @@ Public Class create_contact
 
                 MessageBox.Show("Contact Not Saved. Please Enter Required Fields", "Missing Fields", MessageBoxButtons.OK, MessageBoxIcon.Error)
 
-
+                ci_txt_fname.Focus()
             End If
 
         Catch xe As ApplicationException
@@ -155,7 +155,7 @@ Public Class create_contact
         Dim email As String = ci_txt_email.Text
 
         'If not in correct format changes email label to red
-        If EmailAddressCheck(email) = False Then
+        If EmailAddressCheck(email) = False Or email Is String.Empty Then
             ci_lbl_email.ForeColor = ColorTranslator.FromHtml("#e74c3c")
 
         Else
@@ -222,7 +222,7 @@ Public Class create_contact
     'Validates required office number textbox is not empty
     Private Sub ci_txt_officen_Validating(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles ci_txt_officen.Validating
 
-        If ci_txt_officen.Text Is String.Empty Then
+        If ci_txt_officen.Text Is String.Empty Or Not ci_txt_officen.MaskCompleted Then
             ci_lbl_officen.ForeColor = ColorTranslator.FromHtml("#e74c3c")  ' if empty then office number label to red
 
 
@@ -232,5 +232,7 @@ Public Class create_contact
         End If
     End Sub
 
+    Private Sub create_contact_MouseClick(sender As Object, e As MouseEventArgs) Handles Me.MouseClick
 
+    End Sub
 End Class
