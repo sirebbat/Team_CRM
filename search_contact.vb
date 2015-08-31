@@ -61,7 +61,7 @@ Public Class search_contact
                     Dashboard.adr_txt_streetad.Text = myReader.GetString(8)
                     Dashboard.adr_txt_streetadd.Text = myReader.GetString(9)
                     Dashboard.adr_txt_city.Text = myReader.GetString(10)
-                    Dashboard.adr_txt_state.Text = myReader.GetString(11)
+                    Dashboard.adr_txt_state.SelectedText = myReader.GetString(11)
                     Dashboard.adr_txt_zip.Text = myReader.GetString(12)
                     Dashboard.ci_txt_email.Text = myReader.GetString(13)
                 End While
@@ -110,7 +110,7 @@ Public Class search_contact
                     Dashboard.adr_txt_streetad.Text = myReader.GetString(8)
                     Dashboard.adr_txt_streetadd.Text = myReader.GetString(9)
                     Dashboard.adr_txt_city.Text = myReader.GetString(10)
-                    Dashboard.adr_txt_state.Text = myReader.GetString(11)
+                    Dashboard.adr_txt_state.SelectedText = myReader.GetString(11)
                     Dashboard.adr_txt_zip.Text = myReader.GetString(12)
                     Dashboard.ci_txt_email.Text = myReader.GetString(13)
 
@@ -159,7 +159,7 @@ Public Class search_contact
                 Dashboard.adr_txt_streetad.Text = myReader.GetString(8)
                 Dashboard.adr_txt_streetadd.Text = myReader.GetString(9)
                 Dashboard.adr_txt_city.Text = myReader.GetString(10)
-                Dashboard.adr_txt_state.Text = myReader.GetString(11)
+                Dashboard.adr_txt_state.SelectedText = myReader.GetString(11)
                 Dashboard.adr_txt_zip.Text = myReader.GetString(12)
                 Dashboard.ci_txt_email.Text = myReader.GetString(13)
 
@@ -178,7 +178,7 @@ Public Class search_contact
             End If
 
         Catch ex As Exception
-            MsgBox(ex.Message)
+            MsgBox(ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
 
 

@@ -375,14 +375,263 @@
   <data name="gb_ci.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
+  <data name="ci_btn_cancel.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ci_btn_cancel.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="ci_btn_cancel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="ci_btn_cancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ci_btn_cancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>214, 363</value>
+  </data>
+  <data name="ci_btn_cancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 34</value>
+  </data>
+  <data name="ci_btn_cancel.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="ci_btn_cancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ci_btn_cancel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ci_btn_cancel.Name" xml:space="preserve">
+    <value>ci_btn_cancel</value>
+  </data>
+  <data name="&gt;&gt;ci_btn_cancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ci_btn_cancel.Parent" xml:space="preserve">
+    <value>gb_ci</value>
+  </data>
+  <data name="&gt;&gt;ci_btn_cancel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="adr_txt_state.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="adr_txt_state.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt</value>
+  </data>
+  <data name="adr_txt_state.Items" xml:space="preserve">
+    <value>AA </value>
+  </data>
+  <data name="adr_txt_state.Items1" xml:space="preserve">
+    <value>AE </value>
+  </data>
+  <data name="adr_txt_state.Items2" xml:space="preserve">
+    <value>AP </value>
+  </data>
+  <data name="adr_txt_state.Items3" xml:space="preserve">
+    <value>AL </value>
+  </data>
+  <data name="adr_txt_state.Items4" xml:space="preserve">
+    <value>AK </value>
+  </data>
+  <data name="adr_txt_state.Items5" xml:space="preserve">
+    <value>AS </value>
+  </data>
+  <data name="adr_txt_state.Items6" xml:space="preserve">
+    <value>AZ </value>
+  </data>
+  <data name="adr_txt_state.Items7" xml:space="preserve">
+    <value>AR </value>
+  </data>
+  <data name="adr_txt_state.Items8" xml:space="preserve">
+    <value>CA </value>
+  </data>
+  <data name="adr_txt_state.Items9" xml:space="preserve">
+    <value>CO </value>
+  </data>
+  <data name="adr_txt_state.Items10" xml:space="preserve">
+    <value>CT </value>
+  </data>
+  <data name="adr_txt_state.Items11" xml:space="preserve">
+    <value>DE </value>
+  </data>
+  <data name="adr_txt_state.Items12" xml:space="preserve">
+    <value>DC </value>
+  </data>
+  <data name="adr_txt_state.Items13" xml:space="preserve">
+    <value>FM </value>
+  </data>
+  <data name="adr_txt_state.Items14" xml:space="preserve">
+    <value>FL </value>
+  </data>
+  <data name="adr_txt_state.Items15" xml:space="preserve">
+    <value>GA </value>
+  </data>
+  <data name="adr_txt_state.Items16" xml:space="preserve">
+    <value>GU </value>
+  </data>
+  <data name="adr_txt_state.Items17" xml:space="preserve">
+    <value>HI </value>
+  </data>
+  <data name="adr_txt_state.Items18" xml:space="preserve">
+    <value>ID </value>
+  </data>
+  <data name="adr_txt_state.Items19" xml:space="preserve">
+    <value>IL </value>
+  </data>
+  <data name="adr_txt_state.Items20" xml:space="preserve">
+    <value>IN </value>
+  </data>
+  <data name="adr_txt_state.Items21" xml:space="preserve">
+    <value>IA </value>
+  </data>
+  <data name="adr_txt_state.Items22" xml:space="preserve">
+    <value>KS </value>
+  </data>
+  <data name="adr_txt_state.Items23" xml:space="preserve">
+    <value>KY </value>
+  </data>
+  <data name="adr_txt_state.Items24" xml:space="preserve">
+    <value>LA </value>
+  </data>
+  <data name="adr_txt_state.Items25" xml:space="preserve">
+    <value>ME </value>
+  </data>
+  <data name="adr_txt_state.Items26" xml:space="preserve">
+    <value>MH </value>
+  </data>
+  <data name="adr_txt_state.Items27" xml:space="preserve">
+    <value>MD </value>
+  </data>
+  <data name="adr_txt_state.Items28" xml:space="preserve">
+    <value>MA </value>
+  </data>
+  <data name="adr_txt_state.Items29" xml:space="preserve">
+    <value>MI </value>
+  </data>
+  <data name="adr_txt_state.Items30" xml:space="preserve">
+    <value>MN </value>
+  </data>
+  <data name="adr_txt_state.Items31" xml:space="preserve">
+    <value>MS </value>
+  </data>
+  <data name="adr_txt_state.Items32" xml:space="preserve">
+    <value>MO </value>
+  </data>
+  <data name="adr_txt_state.Items33" xml:space="preserve">
+    <value>MT </value>
+  </data>
+  <data name="adr_txt_state.Items34" xml:space="preserve">
+    <value>NE </value>
+  </data>
+  <data name="adr_txt_state.Items35" xml:space="preserve">
+    <value>NV </value>
+  </data>
+  <data name="adr_txt_state.Items36" xml:space="preserve">
+    <value>NH </value>
+  </data>
+  <data name="adr_txt_state.Items37" xml:space="preserve">
+    <value>NJ </value>
+  </data>
+  <data name="adr_txt_state.Items38" xml:space="preserve">
+    <value>NM </value>
+  </data>
+  <data name="adr_txt_state.Items39" xml:space="preserve">
+    <value>NY </value>
+  </data>
+  <data name="adr_txt_state.Items40" xml:space="preserve">
+    <value>NC </value>
+  </data>
+  <data name="adr_txt_state.Items41" xml:space="preserve">
+    <value>ND </value>
+  </data>
+  <data name="adr_txt_state.Items42" xml:space="preserve">
+    <value>MP </value>
+  </data>
+  <data name="adr_txt_state.Items43" xml:space="preserve">
+    <value>OH </value>
+  </data>
+  <data name="adr_txt_state.Items44" xml:space="preserve">
+    <value>OK </value>
+  </data>
+  <data name="adr_txt_state.Items45" xml:space="preserve">
+    <value>OR </value>
+  </data>
+  <data name="adr_txt_state.Items46" xml:space="preserve">
+    <value>PW </value>
+  </data>
+  <data name="adr_txt_state.Items47" xml:space="preserve">
+    <value>PA </value>
+  </data>
+  <data name="adr_txt_state.Items48" xml:space="preserve">
+    <value>PR </value>
+  </data>
+  <data name="adr_txt_state.Items49" xml:space="preserve">
+    <value>RI </value>
+  </data>
+  <data name="adr_txt_state.Items50" xml:space="preserve">
+    <value>SC </value>
+  </data>
+  <data name="adr_txt_state.Items51" xml:space="preserve">
+    <value>SD </value>
+  </data>
+  <data name="adr_txt_state.Items52" xml:space="preserve">
+    <value>TN </value>
+  </data>
+  <data name="adr_txt_state.Items53" xml:space="preserve">
+    <value>TX </value>
+  </data>
+  <data name="adr_txt_state.Items54" xml:space="preserve">
+    <value>UT </value>
+  </data>
+  <data name="adr_txt_state.Items55" xml:space="preserve">
+    <value>VT </value>
+  </data>
+  <data name="adr_txt_state.Items56" xml:space="preserve">
+    <value>VI </value>
+  </data>
+  <data name="adr_txt_state.Items57" xml:space="preserve">
+    <value>VA </value>
+  </data>
+  <data name="adr_txt_state.Items58" xml:space="preserve">
+    <value>WA </value>
+  </data>
+  <data name="adr_txt_state.Items59" xml:space="preserve">
+    <value>WV </value>
+  </data>
+  <data name="adr_txt_state.Items60" xml:space="preserve">
+    <value>WI </value>
+  </data>
+  <data name="adr_txt_state.Items61" xml:space="preserve">
+    <value>WY</value>
+  </data>
+  <data name="adr_txt_state.Location" type="System.Drawing.Point, System.Drawing">
+    <value>582, 327</value>
+  </data>
+  <data name="adr_txt_state.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 26</value>
+  </data>
+  <data name="adr_txt_state.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;adr_txt_state.Name" xml:space="preserve">
+    <value>adr_txt_state</value>
+  </data>
+  <data name="&gt;&gt;adr_txt_state.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;adr_txt_state.Parent" xml:space="preserve">
+    <value>gb_ci</value>
+  </data>
+  <data name="&gt;&gt;adr_txt_state.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="ci_created_date.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 12pt</value>
   </data>
   <data name="ci_created_date.Location" type="System.Drawing.Point, System.Drawing">
     <value>1051, 38</value>
-  </data>
-  <data name="ci_created_date.Mask" xml:space="preserve">
-    <value>00/00/0000</value>
   </data>
   <data name="ci_created_date.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 26</value>
@@ -400,7 +649,7 @@
     <value>gb_ci</value>
   </data>
   <data name="&gt;&gt;ci_created_date.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="ci_txt_email.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 12pt</value>
@@ -424,7 +673,7 @@
     <value>gb_ci</value>
   </data>
   <data name="&gt;&gt;ci_txt_email.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="ci_lbl_email.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -457,7 +706,7 @@
     <value>gb_ci</value>
   </data>
   <data name="&gt;&gt;ci_lbl_email.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="ci_btn_delete.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -496,7 +745,7 @@
     <value>gb_ci</value>
   </data>
   <data name="&gt;&gt;ci_btn_delete.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="ci_btn_save.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -535,7 +784,7 @@
     <value>gb_ci</value>
   </data>
   <data name="&gt;&gt;ci_btn_save.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="ci_btn_update.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -574,7 +823,7 @@
     <value>gb_ci</value>
   </data>
   <data name="&gt;&gt;ci_btn_update.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="adr_txt_zip.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 12pt</value>
@@ -598,31 +847,7 @@
     <value>gb_ci</value>
   </data>
   <data name="&gt;&gt;adr_txt_zip.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="adr_txt_state.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 12pt</value>
-  </data>
-  <data name="adr_txt_state.Location" type="System.Drawing.Point, System.Drawing">
-    <value>584, 319</value>
-  </data>
-  <data name="adr_txt_state.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 26</value>
-  </data>
-  <data name="adr_txt_state.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="&gt;&gt;adr_txt_state.Name" xml:space="preserve">
-    <value>adr_txt_state</value>
-  </data>
-  <data name="&gt;&gt;adr_txt_state.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;adr_txt_state.Parent" xml:space="preserve">
-    <value>gb_ci</value>
-  </data>
-  <data name="&gt;&gt;adr_txt_state.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="adr_txt_city.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 12pt</value>
@@ -646,7 +871,7 @@
     <value>gb_ci</value>
   </data>
   <data name="&gt;&gt;adr_txt_city.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="adr_lbl_zip.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -679,7 +904,7 @@
     <value>gb_ci</value>
   </data>
   <data name="&gt;&gt;adr_lbl_zip.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="adr_txt_streetadd.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 12pt</value>
@@ -703,7 +928,7 @@
     <value>gb_ci</value>
   </data>
   <data name="&gt;&gt;adr_txt_streetadd.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="adr_txt_streetad.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 12pt</value>
@@ -727,7 +952,7 @@
     <value>gb_ci</value>
   </data>
   <data name="&gt;&gt;adr_txt_streetad.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="adr_lbl_streetad.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -760,7 +985,7 @@
     <value>gb_ci</value>
   </data>
   <data name="&gt;&gt;adr_lbl_streetad.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="adr_lbl_state.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -793,7 +1018,7 @@
     <value>gb_ci</value>
   </data>
   <data name="&gt;&gt;adr_lbl_state.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="adr_lbl_city.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -829,7 +1054,7 @@
     <value>gb_ci</value>
   </data>
   <data name="&gt;&gt;adr_lbl_city.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="adr_lbl_streetadd.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -862,7 +1087,7 @@
     <value>gb_ci</value>
   </data>
   <data name="&gt;&gt;adr_lbl_streetadd.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="ci_txt_url.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 12pt</value>
@@ -886,7 +1111,7 @@
     <value>gb_ci</value>
   </data>
   <data name="&gt;&gt;ci_txt_url.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="ci_txt_cellp.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 12pt</value>
@@ -910,7 +1135,7 @@
     <value>gb_ci</value>
   </data>
   <data name="&gt;&gt;ci_txt_cellp.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="ci_txt_officen.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 12pt</value>
@@ -934,7 +1159,7 @@
     <value>gb_ci</value>
   </data>
   <data name="&gt;&gt;ci_txt_officen.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>19</value>
   </data>
   <data name="ci_txt_company.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 12pt</value>
@@ -958,7 +1183,7 @@
     <value>gb_ci</value>
   </data>
   <data name="&gt;&gt;ci_txt_company.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>20</value>
   </data>
   <data name="ci_txt_lname.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 12pt</value>
@@ -982,7 +1207,7 @@
     <value>gb_ci</value>
   </data>
   <data name="&gt;&gt;ci_txt_lname.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>21</value>
   </data>
   <data name="ci_lbl_url.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1012,7 +1237,7 @@
     <value>gb_ci</value>
   </data>
   <data name="&gt;&gt;ci_lbl_url.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>22</value>
   </data>
   <data name="ci_lbl_cellp.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1042,7 +1267,7 @@
     <value>gb_ci</value>
   </data>
   <data name="&gt;&gt;ci_lbl_cellp.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>23</value>
   </data>
   <data name="ci_lbl_officen.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1072,7 +1297,7 @@
     <value>gb_ci</value>
   </data>
   <data name="&gt;&gt;ci_lbl_officen.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>24</value>
   </data>
   <data name="ci_lbl_createddate.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1102,7 +1327,7 @@
     <value>gb_ci</value>
   </data>
   <data name="&gt;&gt;ci_lbl_createddate.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>25</value>
   </data>
   <data name="ci_txt_fname.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 12pt</value>
@@ -1126,7 +1351,7 @@
     <value>gb_ci</value>
   </data>
   <data name="&gt;&gt;ci_txt_fname.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>26</value>
   </data>
   <data name="ci_txt_account.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 12pt</value>
@@ -1150,7 +1375,7 @@
     <value>gb_ci</value>
   </data>
   <data name="&gt;&gt;ci_txt_account.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>27</value>
   </data>
   <data name="ci_lbl_account.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1180,7 +1405,7 @@
     <value>gb_ci</value>
   </data>
   <data name="&gt;&gt;ci_lbl_account.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>28</value>
   </data>
   <data name="ci_lbl_company.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1210,7 +1435,7 @@
     <value>gb_ci</value>
   </data>
   <data name="&gt;&gt;ci_lbl_company.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>29</value>
   </data>
   <data name="ci_lbl_lname.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1240,7 +1465,7 @@
     <value>gb_ci</value>
   </data>
   <data name="&gt;&gt;ci_lbl_lname.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>30</value>
   </data>
   <data name="ci_lbl_fname.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1270,7 +1495,7 @@
     <value>gb_ci</value>
   </data>
   <data name="&gt;&gt;ci_lbl_fname.ZOrder" xml:space="preserve">
-    <value>30</value>
+    <value>31</value>
   </data>
   <data name="gb_ci.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 20.25pt, style=Bold</value>

@@ -39,11 +39,13 @@ Partial Class Dashboard
         Me.act_btn_create = New System.Windows.Forms.Button()
         Me.act_btn_update = New System.Windows.Forms.Button()
         Me.gb_ci = New System.Windows.Forms.GroupBox()
+        Me.ci_created_date = New System.Windows.Forms.MaskedTextBox()
+        Me.ci_txt_email = New System.Windows.Forms.TextBox()
+        Me.ci_lbl_email = New System.Windows.Forms.Label()
         Me.ci_btn_delete = New System.Windows.Forms.Button()
         Me.ci_btn_save = New System.Windows.Forms.Button()
         Me.ci_btn_update = New System.Windows.Forms.Button()
         Me.adr_txt_zip = New System.Windows.Forms.TextBox()
-        Me.adr_txt_state = New System.Windows.Forms.TextBox()
         Me.adr_txt_city = New System.Windows.Forms.TextBox()
         Me.adr_lbl_zip = New System.Windows.Forms.Label()
         Me.adr_txt_streetadd = New System.Windows.Forms.TextBox()
@@ -78,9 +80,8 @@ Partial Class Dashboard
         Me.emp_lb_ = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.emp_btn_update = New System.Windows.Forms.Button()
         Me.emp_btn_add = New System.Windows.Forms.Button()
-        Me.ci_lbl_email = New System.Windows.Forms.Label()
-        Me.ci_txt_email = New System.Windows.Forms.TextBox()
-        Me.ci_created_date = New System.Windows.Forms.MaskedTextBox()
+        Me.adr_txt_state = New System.Windows.Forms.ComboBox()
+        Me.ci_btn_cancel = New System.Windows.Forms.Button()
         Me.dashboard_tab.SuspendLayout()
         Me.tabClient.SuspendLayout()
         Me.gb_activities.SuspendLayout()
@@ -204,6 +205,8 @@ Partial Class Dashboard
         'gb_ci
         '
         resources.ApplyResources(Me.gb_ci, "gb_ci")
+        Me.gb_ci.Controls.Add(Me.ci_btn_cancel)
+        Me.gb_ci.Controls.Add(Me.adr_txt_state)
         Me.gb_ci.Controls.Add(Me.ci_created_date)
         Me.gb_ci.Controls.Add(Me.ci_txt_email)
         Me.gb_ci.Controls.Add(Me.ci_lbl_email)
@@ -211,7 +214,6 @@ Partial Class Dashboard
         Me.gb_ci.Controls.Add(Me.ci_btn_save)
         Me.gb_ci.Controls.Add(Me.ci_btn_update)
         Me.gb_ci.Controls.Add(Me.adr_txt_zip)
-        Me.gb_ci.Controls.Add(Me.adr_txt_state)
         Me.gb_ci.Controls.Add(Me.adr_txt_city)
         Me.gb_ci.Controls.Add(Me.adr_lbl_zip)
         Me.gb_ci.Controls.Add(Me.adr_txt_streetadd)
@@ -238,6 +240,23 @@ Partial Class Dashboard
         Me.gb_ci.ForeColor = System.Drawing.Color.White
         Me.gb_ci.Name = "gb_ci"
         Me.gb_ci.TabStop = False
+        '
+        'ci_created_date
+        '
+        resources.ApplyResources(Me.ci_created_date, "ci_created_date")
+        Me.ci_created_date.Name = "ci_created_date"
+        Me.ci_created_date.ReadOnly = True
+        '
+        'ci_txt_email
+        '
+        resources.ApplyResources(Me.ci_txt_email, "ci_txt_email")
+        Me.ci_txt_email.Name = "ci_txt_email"
+        Me.ci_txt_email.ReadOnly = True
+        '
+        'ci_lbl_email
+        '
+        resources.ApplyResources(Me.ci_lbl_email, "ci_lbl_email")
+        Me.ci_lbl_email.Name = "ci_lbl_email"
         '
         'ci_btn_delete
         '
@@ -277,12 +296,6 @@ Partial Class Dashboard
         resources.ApplyResources(Me.adr_txt_zip, "adr_txt_zip")
         Me.adr_txt_zip.Name = "adr_txt_zip"
         Me.adr_txt_zip.ReadOnly = True
-        '
-        'adr_txt_state
-        '
-        resources.ApplyResources(Me.adr_txt_state, "adr_txt_state")
-        Me.adr_txt_state.Name = "adr_txt_state"
-        Me.adr_txt_state.ReadOnly = True
         '
         'adr_txt_city
         '
@@ -385,6 +398,7 @@ Partial Class Dashboard
         '
         'ci_txt_account
         '
+        Me.ci_txt_account.BackColor = System.Drawing.SystemColors.Control
         resources.ApplyResources(Me.ci_txt_account, "ci_txt_account")
         Me.ci_txt_account.Name = "ci_txt_account"
         Me.ci_txt_account.ReadOnly = True
@@ -491,23 +505,23 @@ Partial Class Dashboard
         Me.emp_btn_add.Name = "emp_btn_add"
         Me.emp_btn_add.UseVisualStyleBackColor = False
         '
-        'ci_lbl_email
+        'adr_txt_state
         '
-        resources.ApplyResources(Me.ci_lbl_email, "ci_lbl_email")
-        Me.ci_lbl_email.Name = "ci_lbl_email"
+        resources.ApplyResources(Me.adr_txt_state, "adr_txt_state")
+        Me.adr_txt_state.FormattingEnabled = True
+        Me.adr_txt_state.Items.AddRange(New Object() {resources.GetString("adr_txt_state.Items"), resources.GetString("adr_txt_state.Items1"), resources.GetString("adr_txt_state.Items2"), resources.GetString("adr_txt_state.Items3"), resources.GetString("adr_txt_state.Items4"), resources.GetString("adr_txt_state.Items5"), resources.GetString("adr_txt_state.Items6"), resources.GetString("adr_txt_state.Items7"), resources.GetString("adr_txt_state.Items8"), resources.GetString("adr_txt_state.Items9"), resources.GetString("adr_txt_state.Items10"), resources.GetString("adr_txt_state.Items11"), resources.GetString("adr_txt_state.Items12"), resources.GetString("adr_txt_state.Items13"), resources.GetString("adr_txt_state.Items14"), resources.GetString("adr_txt_state.Items15"), resources.GetString("adr_txt_state.Items16"), resources.GetString("adr_txt_state.Items17"), resources.GetString("adr_txt_state.Items18"), resources.GetString("adr_txt_state.Items19"), resources.GetString("adr_txt_state.Items20"), resources.GetString("adr_txt_state.Items21"), resources.GetString("adr_txt_state.Items22"), resources.GetString("adr_txt_state.Items23"), resources.GetString("adr_txt_state.Items24"), resources.GetString("adr_txt_state.Items25"), resources.GetString("adr_txt_state.Items26"), resources.GetString("adr_txt_state.Items27"), resources.GetString("adr_txt_state.Items28"), resources.GetString("adr_txt_state.Items29"), resources.GetString("adr_txt_state.Items30"), resources.GetString("adr_txt_state.Items31"), resources.GetString("adr_txt_state.Items32"), resources.GetString("adr_txt_state.Items33"), resources.GetString("adr_txt_state.Items34"), resources.GetString("adr_txt_state.Items35"), resources.GetString("adr_txt_state.Items36"), resources.GetString("adr_txt_state.Items37"), resources.GetString("adr_txt_state.Items38"), resources.GetString("adr_txt_state.Items39"), resources.GetString("adr_txt_state.Items40"), resources.GetString("adr_txt_state.Items41"), resources.GetString("adr_txt_state.Items42"), resources.GetString("adr_txt_state.Items43"), resources.GetString("adr_txt_state.Items44"), resources.GetString("adr_txt_state.Items45"), resources.GetString("adr_txt_state.Items46"), resources.GetString("adr_txt_state.Items47"), resources.GetString("adr_txt_state.Items48"), resources.GetString("adr_txt_state.Items49"), resources.GetString("adr_txt_state.Items50"), resources.GetString("adr_txt_state.Items51"), resources.GetString("adr_txt_state.Items52"), resources.GetString("adr_txt_state.Items53"), resources.GetString("adr_txt_state.Items54"), resources.GetString("adr_txt_state.Items55"), resources.GetString("adr_txt_state.Items56"), resources.GetString("adr_txt_state.Items57"), resources.GetString("adr_txt_state.Items58"), resources.GetString("adr_txt_state.Items59"), resources.GetString("adr_txt_state.Items60"), resources.GetString("adr_txt_state.Items61")})
+        Me.adr_txt_state.Name = "adr_txt_state"
         '
-        'ci_txt_email
+        'ci_btn_cancel
         '
-        resources.ApplyResources(Me.ci_txt_email, "ci_txt_email")
-        Me.ci_txt_email.Name = "ci_txt_email"
-        Me.ci_txt_email.ReadOnly = True
-        '
-        'ci_created_date
-        '
-        resources.ApplyResources(Me.ci_created_date, "ci_created_date")
-        Me.ci_created_date.Name = "ci_created_date"
-        Me.ci_created_date.ReadOnly = True
-        Me.ci_created_date.ValidatingType = GetType(Date)
+        Me.ci_btn_cancel.BackColor = System.Drawing.Color.LightSlateGray
+        resources.ApplyResources(Me.ci_btn_cancel, "ci_btn_cancel")
+        Me.ci_btn_cancel.FlatAppearance.BorderColor = System.Drawing.Color.LightBlue
+        Me.ci_btn_cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.ci_btn_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue
+        Me.ci_btn_cancel.ForeColor = System.Drawing.Color.White
+        Me.ci_btn_cancel.Name = "ci_btn_cancel"
+        Me.ci_btn_cancel.UseVisualStyleBackColor = False
         '
         'Dashboard
         '
@@ -556,7 +570,6 @@ Partial Class Dashboard
     Friend WithEvents act_btn_update As Button
     Friend WithEvents ci_btn_update As Button
     Friend WithEvents adr_txt_zip As TextBox
-    Friend WithEvents adr_txt_state As TextBox
     Friend WithEvents adr_txt_city As TextBox
     Friend WithEvents adr_lbl_zip As Label
     Friend WithEvents adr_txt_streetadd As TextBox
@@ -589,4 +602,6 @@ Partial Class Dashboard
     Friend WithEvents ci_txt_email As TextBox
     Friend WithEvents ci_lbl_email As Label
     Friend WithEvents ci_created_date As MaskedTextBox
+    Friend WithEvents adr_txt_state As ComboBox
+    Friend WithEvents ci_btn_cancel As Button
 End Class

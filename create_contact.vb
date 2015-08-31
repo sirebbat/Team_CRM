@@ -27,10 +27,33 @@ Public Class create_contact
 
             'opens the connection
             myConnection.Open()
+            Dim recordCount As New Integer
+            Dim myFirstCommand As New OleDbCommand("SELECT * FROM crm_contact WHERE fname =@fname AND lname =@lname", myConnection)
+            myFirstCommand.Parameters.AddWithValue("@fname", CType(ci_txt_fname.Text, String))
+            myFirstCommand.Parameters.AddWithValue("@lname", CType(ci_txt_lname.Text, String))
+            Dim myReader As OleDbDataReader = myFirstCommand.ExecuteReader
+
+            'reads the query
+            While myReader.Read
+
+                recordCount = recordCount + 1
+            End While
+            'checks for the records
+
+            If recordCount <> 0 Then
+
+                Throw New ApplicationException
+
+
+            End If
+
+            myConnection.Close()
 
             If ci_txt_fname.Text IsNot String.Empty And ci_txt_lname.Text IsNot String.Empty And ci_txt_email IsNot String.Empty Then
+
+                myConnection.Open()
                 'Creates the INSERT query
-                Dim myCommand As New OleDbCommand("INSERT INTO crm_contact (fname, lname, company, office_number, cell_phone, email,  url, created_date, street_one, street_two, city, state, zip_code) VALUES (@fname, @lname, @company, @office_number, @cell_phone, @email, @url, @created_date, @street_one, @street_two, @city, @state, @zip_code)", myConnection)
+                Dim myCommand As New OleDbCommand("INSERT INTO crm_contact (fname, lname, company, office_number, cell_phone, email, url, created_date, street_one, street_two, city, state, zip_code) VALUES (@fname, @lname, @company, @office_number, @cell_phone, @email, @url, @created_date, @street_one, @street_two, @city, @state, @zip_code)", myConnection)
 
                 'VALUES of the INSERT query
 
@@ -48,7 +71,7 @@ Public Class create_contact
 
                 myCommand.Parameters.AddWithValue("@url", CType(ci_txt_url.Text, String))
 
-                myCommand.Parameters.AddWithValue("@created_date", CType(ci_created_date.Text, String))
+                myCommand.Parameters.AddWithValue("@created_date", CDate(ci_created_date.Text))
 
                 myCommand.Parameters.AddWithValue("@street_one", CType(ci_txt_addrone.Text, String))
 
@@ -61,10 +84,12 @@ Public Class create_contact
                 myCommand.Parameters.AddWithValue("@zip_code", CType(adr_txt_zip.Text, String))
 
 
+
                 ' excute SQL expression
                 myCommand.ExecuteNonQuery()
 
                 myCommand.Dispose()
+
 
                 myConnection.Close()
 
@@ -85,7 +110,7 @@ Public Class create_contact
                 ci_txt_email.Clear()
 
 
-                'Saved message
+
 
                 MessageBox.Show("Contact Saved", "Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
@@ -96,7 +121,8 @@ Public Class create_contact
 
             End If
 
-
+        Catch xe As ApplicationException
+            MessageBox.Show("Contact " & vbNewLine & ci_txt_fname.Text & " " & ci_txt_lname.Text & " found in the database." & vbNewLine & "Please correct name or search for the contact", "Contact Found", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
         Catch ex As Exception
 
@@ -117,7 +143,7 @@ Public Class create_contact
     End Sub
 
     Private Sub create_contact_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim dt As Date = Date.Today
+        Dim dt As Date = Date.Now
 
         ci_created_date.Text = dt.ToString("MM/dd/yyyy", CultureInfo.CurrentCulture)
     End Sub
@@ -167,7 +193,7 @@ Public Class create_contact
     Private Sub ci_txt_fname_Validating(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles ci_txt_fname.Validating
 
 
-        If ci_txt_fname.Text Is String.Empty Then
+        If ci_txt_fname.Text Is String.Empty Or Not Regex.Match(ci_txt_fname.Text, "^[a-z]*$", RegexOptions.IgnoreCase).Success Then
             ci_lbl_fname.ForeColor = ColorTranslator.FromHtml("#e74c3c")  ' if empty then first name label to red
 
 
@@ -182,7 +208,7 @@ Public Class create_contact
     'Validates required last name textbox is not empty
     Private Sub ci_txt_lname_Validating(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles ci_txt_lname.Validating
 
-        If ci_txt_lname.Text Is String.Empty Then
+        If ci_txt_lname.Text Is String.Empty Or Not Regex.Match(ci_txt_lname.Text, "^[a-z]*$", RegexOptions.IgnoreCase).Success Then
             ci_lbl_lname.ForeColor = ColorTranslator.FromHtml("#e74c3c")  ' if empty then last name label to red
 
 
