@@ -74,7 +74,7 @@ Partial Class Dashboard
         Me.btnSearch = New System.Windows.Forms.Button()
         Me.btnCreate = New System.Windows.Forms.Button()
         Me.tabEmp = New System.Windows.Forms.TabPage()
-        Me.emp_lb = New System.Windows.Forms.ListView()
+        Me.emp_lv = New System.Windows.Forms.ListView()
         Me.emp_lb_employeeid = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.emp_lb_fname = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.emp_lb_lname = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -83,6 +83,7 @@ Partial Class Dashboard
         Me.emp_btn_delete = New System.Windows.Forms.Button()
         Me.emp_btn_add = New System.Windows.Forms.Button()
         Me.emp_btn_load = New System.Windows.Forms.Button()
+        Me.emp_btn_cancel = New System.Windows.Forms.Button()
         Me.dashboard_tab.SuspendLayout()
         Me.tabClient.SuspendLayout()
         Me.gb_activities.SuspendLayout()
@@ -468,20 +469,21 @@ Partial Class Dashboard
         '
         resources.ApplyResources(Me.tabEmp, "tabEmp")
         Me.tabEmp.BackColor = System.Drawing.Color.SlateGray
+        Me.tabEmp.Controls.Add(Me.emp_btn_cancel)
         Me.tabEmp.Controls.Add(Me.emp_btn_load)
-        Me.tabEmp.Controls.Add(Me.emp_lb)
+        Me.tabEmp.Controls.Add(Me.emp_lv)
         Me.tabEmp.Controls.Add(Me.emp_btn_delete)
         Me.tabEmp.Controls.Add(Me.emp_btn_add)
         Me.tabEmp.ForeColor = System.Drawing.Color.White
         Me.tabEmp.Name = "tabEmp"
         '
-        'emp_lb
+        'emp_lv
         '
-        Me.emp_lb.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.emp_lb_employeeid, Me.emp_lb_fname, Me.emp_lb_lname, Me.emp_lb_phone, Me.emp_lb_})
-        resources.ApplyResources(Me.emp_lb, "emp_lb")
-        Me.emp_lb.Name = "emp_lb"
-        Me.emp_lb.UseCompatibleStateImageBehavior = False
-        Me.emp_lb.View = System.Windows.Forms.View.Details
+        Me.emp_lv.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.emp_lb_employeeid, Me.emp_lb_fname, Me.emp_lb_lname, Me.emp_lb_phone, Me.emp_lb_})
+        resources.ApplyResources(Me.emp_lv, "emp_lv")
+        Me.emp_lv.Name = "emp_lv"
+        Me.emp_lv.UseCompatibleStateImageBehavior = False
+        Me.emp_lv.View = System.Windows.Forms.View.Details
         '
         'emp_lb_employeeid
         '
@@ -535,6 +537,17 @@ Partial Class Dashboard
         Me.emp_btn_load.ForeColor = System.Drawing.Color.White
         Me.emp_btn_load.Name = "emp_btn_load"
         Me.emp_btn_load.UseVisualStyleBackColor = False
+        '
+        'emp_btn_cancel
+        '
+        Me.emp_btn_cancel.BackColor = System.Drawing.Color.LightSlateGray
+        Me.emp_btn_cancel.FlatAppearance.BorderColor = System.Drawing.Color.LightBlue
+        Me.emp_btn_cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.emp_btn_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue
+        resources.ApplyResources(Me.emp_btn_cancel, "emp_btn_cancel")
+        Me.emp_btn_cancel.ForeColor = System.Drawing.Color.White
+        Me.emp_btn_cancel.Name = "emp_btn_cancel"
+        Me.emp_btn_cancel.UseVisualStyleBackColor = False
         '
         'Dashboard
         '
@@ -606,7 +619,7 @@ Partial Class Dashboard
     Friend WithEvents act_lb_lastmodified As ColumnHeader
     Friend WithEvents act_lb_employee As ColumnHeader
     Friend WithEvents act_lb_comment As ColumnHeader
-    Friend WithEvents emp_lb As ListView
+    Friend WithEvents emp_lv As ListView
     Friend WithEvents emp_lb_employeeid As ColumnHeader
     Friend WithEvents emp_lb_fname As ColumnHeader
     Friend WithEvents emp_lb_lname As ColumnHeader
@@ -618,4 +631,5 @@ Partial Class Dashboard
     Friend WithEvents adr_txt_state As ComboBox
     Friend WithEvents ci_btn_cancel As Button
     Friend WithEvents emp_btn_load As Button
+    Friend WithEvents emp_btn_cancel As Button
 End Class

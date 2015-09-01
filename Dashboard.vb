@@ -399,9 +399,111 @@ Public Class Dashboard
 
 
 
+    End Sub
+    '|------------ EMPLOYEE TAB - LOAD BUTTON-------------|
+    Private Sub emp_btn_load_Click(sender As Object, e As EventArgs) Handles emp_btn_load.Click
+
+        Dim myConnString As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source =" & Environment.CurrentDirectory & "\crm_db.accdb"
+
+        'clears list view items
+        emp_lv.Items.Clear()
+
+
+        'Variables for the Access database
+        Dim myConnection As New OleDbConnection(myConnString)
+        Try
+
+            'opens the connection
+            myConnection.Open()
+
+            'Search by account number
+
+            'query
+            Dim myCommand As New OleDbCommand("SELECT * FROM crm_employee", myConnection)
+            Dim myReader As OleDbDataReader = myCommand.ExecuteReader
+
+            'reads the query
+            While myReader.Read
+
+                'Adds items to the dashboard
+                Dim emp_listviewitem As New ListViewItem
+                emp_listviewitem.Text = myReader.GetInt32(0)
+                emp_listviewitem.SubItems.Add(myReader.GetString(1))
+                emp_listviewitem.SubItems.Add(myReader.GetString(2))
+                emp_listviewitem.SubItems.Add(myReader.GetString(3))
+                emp_listviewitem.SubItems.Add(myReader.GetString(4))
+
+
+                emp_lv.Items.Add(emp_listviewitem)
+            End While
+
+            emp_btn_delete.Visible = True
+            emp_btn_cancel.Visible = True
+
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+
+        End Try
 
 
 
+
+    End Sub
+
+    '|-----------------CANCEL BUTTON-------------------------|
+    Private Sub emp_btn_cancel_Click(sender As Object, e As EventArgs) Handles emp_btn_cancel.Click
+
+        'hides delete and cancel button
+        emp_btn_delete.Visible = False
+        emp_btn_cancel.Visible = False
+
+
+
+    End Sub
+
+    '|----DELETE BUTTON ----|
+    Private Sub emp_btn_delete_Click(sender As Object, e As EventArgs) Handles emp_btn_delete.Click
+
+        Dim myConnString As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source =" & Environment.CurrentDirectory & "\crm_db.accdb"
+
+        If (emp_lv.SelectedItems.Count > 0) Then
+
+
+
+            For Each i As ListViewItem In emp_lv.SelectedItems
+                Try
+
+                    Dim myConnection As New OleDbConnection(myConnString)
+                    myConnection.Open()
+                    Dim myCommand As New OleDbCommand("DELETE FROM crm_employee WHERE ID =@employeeID", myConnection)
+                    myCommand.Parameters.AddWithValue("@employeeID", i.Text)
+
+
+                    myCommand.ExecuteNonQuery()
+
+                    emp_lv.Items.Remove(i)
+
+
+                Catch ex As Exception
+                    MessageBox.Show(ex.Message)
+
+                End Try
+
+
+
+
+                'Removes the item for the list view
+
+
+
+
+            Next
+
+
+
+
+
+        End If
 
 
 
