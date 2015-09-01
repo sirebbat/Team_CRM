@@ -39,6 +39,8 @@ Partial Class Dashboard
         Me.act_btn_create = New System.Windows.Forms.Button()
         Me.act_btn_update = New System.Windows.Forms.Button()
         Me.gb_ci = New System.Windows.Forms.GroupBox()
+        Me.ci_btn_cancel = New System.Windows.Forms.Button()
+        Me.adr_txt_state = New System.Windows.Forms.ComboBox()
         Me.ci_created_date = New System.Windows.Forms.MaskedTextBox()
         Me.ci_txt_email = New System.Windows.Forms.TextBox()
         Me.ci_lbl_email = New System.Windows.Forms.Label()
@@ -78,10 +80,8 @@ Partial Class Dashboard
         Me.emp_lb_lname = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.emp_lb_phone = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.emp_lb_ = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.emp_btn_update = New System.Windows.Forms.Button()
+        Me.emp_btn_delete = New System.Windows.Forms.Button()
         Me.emp_btn_add = New System.Windows.Forms.Button()
-        Me.adr_txt_state = New System.Windows.Forms.ComboBox()
-        Me.ci_btn_cancel = New System.Windows.Forms.Button()
         Me.dashboard_tab.SuspendLayout()
         Me.tabClient.SuspendLayout()
         Me.gb_activities.SuspendLayout()
@@ -240,6 +240,24 @@ Partial Class Dashboard
         Me.gb_ci.ForeColor = System.Drawing.Color.White
         Me.gb_ci.Name = "gb_ci"
         Me.gb_ci.TabStop = False
+        '
+        'ci_btn_cancel
+        '
+        Me.ci_btn_cancel.BackColor = System.Drawing.Color.LightSlateGray
+        resources.ApplyResources(Me.ci_btn_cancel, "ci_btn_cancel")
+        Me.ci_btn_cancel.FlatAppearance.BorderColor = System.Drawing.Color.LightBlue
+        Me.ci_btn_cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.ci_btn_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue
+        Me.ci_btn_cancel.ForeColor = System.Drawing.Color.White
+        Me.ci_btn_cancel.Name = "ci_btn_cancel"
+        Me.ci_btn_cancel.UseVisualStyleBackColor = False
+        '
+        'adr_txt_state
+        '
+        resources.ApplyResources(Me.adr_txt_state, "adr_txt_state")
+        Me.adr_txt_state.FormattingEnabled = True
+        Me.adr_txt_state.Items.AddRange(New Object() {resources.GetString("adr_txt_state.Items"), resources.GetString("adr_txt_state.Items1"), resources.GetString("adr_txt_state.Items2"), resources.GetString("adr_txt_state.Items3"), resources.GetString("adr_txt_state.Items4"), resources.GetString("adr_txt_state.Items5"), resources.GetString("adr_txt_state.Items6"), resources.GetString("adr_txt_state.Items7"), resources.GetString("adr_txt_state.Items8"), resources.GetString("adr_txt_state.Items9"), resources.GetString("adr_txt_state.Items10"), resources.GetString("adr_txt_state.Items11"), resources.GetString("adr_txt_state.Items12"), resources.GetString("adr_txt_state.Items13"), resources.GetString("adr_txt_state.Items14"), resources.GetString("adr_txt_state.Items15"), resources.GetString("adr_txt_state.Items16"), resources.GetString("adr_txt_state.Items17"), resources.GetString("adr_txt_state.Items18"), resources.GetString("adr_txt_state.Items19"), resources.GetString("adr_txt_state.Items20"), resources.GetString("adr_txt_state.Items21"), resources.GetString("adr_txt_state.Items22"), resources.GetString("adr_txt_state.Items23"), resources.GetString("adr_txt_state.Items24"), resources.GetString("adr_txt_state.Items25"), resources.GetString("adr_txt_state.Items26"), resources.GetString("adr_txt_state.Items27"), resources.GetString("adr_txt_state.Items28"), resources.GetString("adr_txt_state.Items29"), resources.GetString("adr_txt_state.Items30"), resources.GetString("adr_txt_state.Items31"), resources.GetString("adr_txt_state.Items32"), resources.GetString("adr_txt_state.Items33"), resources.GetString("adr_txt_state.Items34"), resources.GetString("adr_txt_state.Items35"), resources.GetString("adr_txt_state.Items36"), resources.GetString("adr_txt_state.Items37"), resources.GetString("adr_txt_state.Items38"), resources.GetString("adr_txt_state.Items39"), resources.GetString("adr_txt_state.Items40"), resources.GetString("adr_txt_state.Items41"), resources.GetString("adr_txt_state.Items42"), resources.GetString("adr_txt_state.Items43"), resources.GetString("adr_txt_state.Items44"), resources.GetString("adr_txt_state.Items45"), resources.GetString("adr_txt_state.Items46"), resources.GetString("adr_txt_state.Items47"), resources.GetString("adr_txt_state.Items48"), resources.GetString("adr_txt_state.Items49"), resources.GetString("adr_txt_state.Items50"), resources.GetString("adr_txt_state.Items51"), resources.GetString("adr_txt_state.Items52"), resources.GetString("adr_txt_state.Items53"), resources.GetString("adr_txt_state.Items54"), resources.GetString("adr_txt_state.Items55"), resources.GetString("adr_txt_state.Items56"), resources.GetString("adr_txt_state.Items57"), resources.GetString("adr_txt_state.Items58"), resources.GetString("adr_txt_state.Items59"), resources.GetString("adr_txt_state.Items60"), resources.GetString("adr_txt_state.Items61")})
+        Me.adr_txt_state.Name = "adr_txt_state"
         '
         'ci_created_date
         '
@@ -450,7 +468,7 @@ Partial Class Dashboard
         resources.ApplyResources(Me.tabEmp, "tabEmp")
         Me.tabEmp.BackColor = System.Drawing.Color.SlateGray
         Me.tabEmp.Controls.Add(Me.emp_lb)
-        Me.tabEmp.Controls.Add(Me.emp_btn_update)
+        Me.tabEmp.Controls.Add(Me.emp_btn_delete)
         Me.tabEmp.Controls.Add(Me.emp_btn_add)
         Me.tabEmp.ForeColor = System.Drawing.Color.White
         Me.tabEmp.Name = "tabEmp"
@@ -483,16 +501,16 @@ Partial Class Dashboard
         '
         resources.ApplyResources(Me.emp_lb_, "emp_lb_")
         '
-        'emp_btn_update
+        'emp_btn_delete
         '
-        Me.emp_btn_update.BackColor = System.Drawing.Color.LightSlateGray
-        Me.emp_btn_update.FlatAppearance.BorderColor = System.Drawing.Color.LightBlue
-        Me.emp_btn_update.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.emp_btn_update.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue
-        resources.ApplyResources(Me.emp_btn_update, "emp_btn_update")
-        Me.emp_btn_update.ForeColor = System.Drawing.Color.White
-        Me.emp_btn_update.Name = "emp_btn_update"
-        Me.emp_btn_update.UseVisualStyleBackColor = False
+        Me.emp_btn_delete.BackColor = System.Drawing.Color.LightSlateGray
+        Me.emp_btn_delete.FlatAppearance.BorderColor = System.Drawing.Color.LightBlue
+        Me.emp_btn_delete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.emp_btn_delete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue
+        resources.ApplyResources(Me.emp_btn_delete, "emp_btn_delete")
+        Me.emp_btn_delete.ForeColor = System.Drawing.Color.White
+        Me.emp_btn_delete.Name = "emp_btn_delete"
+        Me.emp_btn_delete.UseVisualStyleBackColor = False
         '
         'emp_btn_add
         '
@@ -504,24 +522,6 @@ Partial Class Dashboard
         Me.emp_btn_add.ForeColor = System.Drawing.Color.White
         Me.emp_btn_add.Name = "emp_btn_add"
         Me.emp_btn_add.UseVisualStyleBackColor = False
-        '
-        'adr_txt_state
-        '
-        resources.ApplyResources(Me.adr_txt_state, "adr_txt_state")
-        Me.adr_txt_state.FormattingEnabled = True
-        Me.adr_txt_state.Items.AddRange(New Object() {resources.GetString("adr_txt_state.Items"), resources.GetString("adr_txt_state.Items1"), resources.GetString("adr_txt_state.Items2"), resources.GetString("adr_txt_state.Items3"), resources.GetString("adr_txt_state.Items4"), resources.GetString("adr_txt_state.Items5"), resources.GetString("adr_txt_state.Items6"), resources.GetString("adr_txt_state.Items7"), resources.GetString("adr_txt_state.Items8"), resources.GetString("adr_txt_state.Items9"), resources.GetString("adr_txt_state.Items10"), resources.GetString("adr_txt_state.Items11"), resources.GetString("adr_txt_state.Items12"), resources.GetString("adr_txt_state.Items13"), resources.GetString("adr_txt_state.Items14"), resources.GetString("adr_txt_state.Items15"), resources.GetString("adr_txt_state.Items16"), resources.GetString("adr_txt_state.Items17"), resources.GetString("adr_txt_state.Items18"), resources.GetString("adr_txt_state.Items19"), resources.GetString("adr_txt_state.Items20"), resources.GetString("adr_txt_state.Items21"), resources.GetString("adr_txt_state.Items22"), resources.GetString("adr_txt_state.Items23"), resources.GetString("adr_txt_state.Items24"), resources.GetString("adr_txt_state.Items25"), resources.GetString("adr_txt_state.Items26"), resources.GetString("adr_txt_state.Items27"), resources.GetString("adr_txt_state.Items28"), resources.GetString("adr_txt_state.Items29"), resources.GetString("adr_txt_state.Items30"), resources.GetString("adr_txt_state.Items31"), resources.GetString("adr_txt_state.Items32"), resources.GetString("adr_txt_state.Items33"), resources.GetString("adr_txt_state.Items34"), resources.GetString("adr_txt_state.Items35"), resources.GetString("adr_txt_state.Items36"), resources.GetString("adr_txt_state.Items37"), resources.GetString("adr_txt_state.Items38"), resources.GetString("adr_txt_state.Items39"), resources.GetString("adr_txt_state.Items40"), resources.GetString("adr_txt_state.Items41"), resources.GetString("adr_txt_state.Items42"), resources.GetString("adr_txt_state.Items43"), resources.GetString("adr_txt_state.Items44"), resources.GetString("adr_txt_state.Items45"), resources.GetString("adr_txt_state.Items46"), resources.GetString("adr_txt_state.Items47"), resources.GetString("adr_txt_state.Items48"), resources.GetString("adr_txt_state.Items49"), resources.GetString("adr_txt_state.Items50"), resources.GetString("adr_txt_state.Items51"), resources.GetString("adr_txt_state.Items52"), resources.GetString("adr_txt_state.Items53"), resources.GetString("adr_txt_state.Items54"), resources.GetString("adr_txt_state.Items55"), resources.GetString("adr_txt_state.Items56"), resources.GetString("adr_txt_state.Items57"), resources.GetString("adr_txt_state.Items58"), resources.GetString("adr_txt_state.Items59"), resources.GetString("adr_txt_state.Items60"), resources.GetString("adr_txt_state.Items61")})
-        Me.adr_txt_state.Name = "adr_txt_state"
-        '
-        'ci_btn_cancel
-        '
-        Me.ci_btn_cancel.BackColor = System.Drawing.Color.LightSlateGray
-        resources.ApplyResources(Me.ci_btn_cancel, "ci_btn_cancel")
-        Me.ci_btn_cancel.FlatAppearance.BorderColor = System.Drawing.Color.LightBlue
-        Me.ci_btn_cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.ci_btn_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue
-        Me.ci_btn_cancel.ForeColor = System.Drawing.Color.White
-        Me.ci_btn_cancel.Name = "ci_btn_cancel"
-        Me.ci_btn_cancel.UseVisualStyleBackColor = False
         '
         'Dashboard
         '
@@ -579,7 +579,7 @@ Partial Class Dashboard
     Friend WithEvents adr_lbl_city As Label
     Friend WithEvents adr_lbl_streetadd As Label
     Friend WithEvents tabEmp As TabPage
-    Friend WithEvents emp_btn_update As Button
+    Friend WithEvents emp_btn_delete As Button
     Friend WithEvents emp_btn_add As Button
     Friend WithEvents act_btn_save As Button
     Friend WithEvents ci_btn_save As Button

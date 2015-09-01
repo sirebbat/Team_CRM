@@ -1677,37 +1677,37 @@
   <data name="&gt;&gt;emp_lb.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="emp_btn_update.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="emp_btn_delete.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="emp_btn_update.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="emp_btn_delete.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 12pt, style=Bold</value>
   </data>
-  <data name="emp_btn_update.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="emp_btn_delete.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="emp_btn_update.Location" type="System.Drawing.Point, System.Drawing">
-    <value>127, 57</value>
+  <data name="emp_btn_delete.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1071, 57</value>
   </data>
-  <data name="emp_btn_update.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="emp_btn_delete.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 34</value>
   </data>
-  <data name="emp_btn_update.TabIndex" type="System.Int32, mscorlib">
+  <data name="emp_btn_delete.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="emp_btn_update.Text" xml:space="preserve">
-    <value>Update</value>
+  <data name="emp_btn_delete.Text" xml:space="preserve">
+    <value>Delete</value>
   </data>
-  <data name="&gt;&gt;emp_btn_update.Name" xml:space="preserve">
-    <value>emp_btn_update</value>
+  <data name="&gt;&gt;emp_btn_delete.Name" xml:space="preserve">
+    <value>emp_btn_delete</value>
   </data>
-  <data name="&gt;&gt;emp_btn_update.Type" xml:space="preserve">
+  <data name="&gt;&gt;emp_btn_delete.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;emp_btn_update.Parent" xml:space="preserve">
+  <data name="&gt;&gt;emp_btn_delete.Parent" xml:space="preserve">
     <value>tabEmp</value>
   </data>
-  <data name="&gt;&gt;emp_btn_update.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;emp_btn_delete.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="emp_btn_add.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">

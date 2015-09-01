@@ -22,123 +22,123 @@ Partial Class add_employee
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.adde_btn_cancel = New System.Windows.Forms.Button()
-        Me.adde_btn_save = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.adde_lbl_fname = New System.Windows.Forms.Label()
-        Me.adde_lbl_lname = New System.Windows.Forms.Label()
-        Me.adde_lbl_email = New System.Windows.Forms.Label()
-        Me.adde_lbl_phone = New System.Windows.Forms.Label()
+        Me.add_emp_btn_cancel = New System.Windows.Forms.Button()
+        Me.add_emp_btn_save = New System.Windows.Forms.Button()
+        Me.add_emp_txt_fname = New System.Windows.Forms.TextBox()
+        Me.add_emp_txt_lname = New System.Windows.Forms.TextBox()
+        Me.add_emp_txt_email = New System.Windows.Forms.TextBox()
+        Me.add_emp_lbl_fname = New System.Windows.Forms.Label()
+        Me.add_emp_lbl_lname = New System.Windows.Forms.Label()
+        Me.add_emp_lbl_email = New System.Windows.Forms.Label()
+        Me.add_emp_lbl_phone = New System.Windows.Forms.Label()
+        Me.add_emp_txt_phone = New System.Windows.Forms.MaskedTextBox()
         Me.SuspendLayout()
         '
-        'adde_btn_cancel
+        'add_emp_btn_cancel
         '
-        Me.adde_btn_cancel.BackColor = System.Drawing.Color.LightSlateGray
-        Me.adde_btn_cancel.FlatAppearance.BorderColor = System.Drawing.Color.LightBlue
-        Me.adde_btn_cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.adde_btn_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue
-        Me.adde_btn_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.adde_btn_cancel.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.adde_btn_cancel.ForeColor = System.Drawing.Color.White
-        Me.adde_btn_cancel.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.adde_btn_cancel.Location = New System.Drawing.Point(372, 163)
-        Me.adde_btn_cancel.Name = "adde_btn_cancel"
-        Me.adde_btn_cancel.Size = New System.Drawing.Size(198, 65)
-        Me.adde_btn_cancel.TabIndex = 7
-        Me.adde_btn_cancel.Text = "Cancel"
-        Me.adde_btn_cancel.UseVisualStyleBackColor = False
+        Me.add_emp_btn_cancel.BackColor = System.Drawing.Color.LightSlateGray
+        Me.add_emp_btn_cancel.FlatAppearance.BorderColor = System.Drawing.Color.LightBlue
+        Me.add_emp_btn_cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.add_emp_btn_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue
+        Me.add_emp_btn_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.add_emp_btn_cancel.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.add_emp_btn_cancel.ForeColor = System.Drawing.Color.White
+        Me.add_emp_btn_cancel.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.add_emp_btn_cancel.Location = New System.Drawing.Point(372, 163)
+        Me.add_emp_btn_cancel.Name = "add_emp_btn_cancel"
+        Me.add_emp_btn_cancel.Size = New System.Drawing.Size(198, 65)
+        Me.add_emp_btn_cancel.TabIndex = 7
+        Me.add_emp_btn_cancel.Text = "Cancel"
+        Me.add_emp_btn_cancel.UseVisualStyleBackColor = False
         '
-        'adde_btn_save
+        'add_emp_btn_save
         '
-        Me.adde_btn_save.BackColor = System.Drawing.Color.LightSlateGray
-        Me.adde_btn_save.FlatAppearance.BorderColor = System.Drawing.Color.LightBlue
-        Me.adde_btn_save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.adde_btn_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue
-        Me.adde_btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.adde_btn_save.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.adde_btn_save.ForeColor = System.Drawing.Color.White
-        Me.adde_btn_save.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.adde_btn_save.Location = New System.Drawing.Point(122, 163)
-        Me.adde_btn_save.Name = "adde_btn_save"
-        Me.adde_btn_save.Size = New System.Drawing.Size(198, 65)
-        Me.adde_btn_save.TabIndex = 8
-        Me.adde_btn_save.Text = "Save"
-        Me.adde_btn_save.UseVisualStyleBackColor = False
+        Me.add_emp_btn_save.BackColor = System.Drawing.Color.LightSlateGray
+        Me.add_emp_btn_save.FlatAppearance.BorderColor = System.Drawing.Color.LightBlue
+        Me.add_emp_btn_save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.add_emp_btn_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue
+        Me.add_emp_btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.add_emp_btn_save.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.add_emp_btn_save.ForeColor = System.Drawing.Color.White
+        Me.add_emp_btn_save.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.add_emp_btn_save.Location = New System.Drawing.Point(122, 163)
+        Me.add_emp_btn_save.Name = "add_emp_btn_save"
+        Me.add_emp_btn_save.Size = New System.Drawing.Size(198, 65)
+        Me.add_emp_btn_save.TabIndex = 8
+        Me.add_emp_btn_save.Text = "Save"
+        Me.add_emp_btn_save.UseVisualStyleBackColor = False
         '
-        'TextBox1
+        'add_emp_txt_fname
         '
-        Me.TextBox1.Location = New System.Drawing.Point(113, 13)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 9
+        Me.add_emp_txt_fname.Location = New System.Drawing.Point(113, 13)
+        Me.add_emp_txt_fname.Name = "add_emp_txt_fname"
+        Me.add_emp_txt_fname.Size = New System.Drawing.Size(100, 20)
+        Me.add_emp_txt_fname.TabIndex = 9
         '
-        'TextBox2
+        'add_emp_txt_lname
         '
-        Me.TextBox2.Location = New System.Drawing.Point(113, 53)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 10
+        Me.add_emp_txt_lname.Location = New System.Drawing.Point(113, 53)
+        Me.add_emp_txt_lname.Name = "add_emp_txt_lname"
+        Me.add_emp_txt_lname.Size = New System.Drawing.Size(100, 20)
+        Me.add_emp_txt_lname.TabIndex = 10
         '
-        'TextBox3
+        'add_emp_txt_email
         '
-        Me.TextBox3.Location = New System.Drawing.Point(113, 91)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(324, 20)
-        Me.TextBox3.TabIndex = 11
+        Me.add_emp_txt_email.Location = New System.Drawing.Point(113, 91)
+        Me.add_emp_txt_email.Name = "add_emp_txt_email"
+        Me.add_emp_txt_email.Size = New System.Drawing.Size(324, 20)
+        Me.add_emp_txt_email.TabIndex = 11
         '
-        'TextBox4
+        'add_emp_lbl_fname
         '
-        Me.TextBox4.Location = New System.Drawing.Point(470, 12)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(112, 20)
-        Me.TextBox4.TabIndex = 12
+        Me.add_emp_lbl_fname.AutoSize = True
+        Me.add_emp_lbl_fname.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.add_emp_lbl_fname.ForeColor = System.Drawing.Color.White
+        Me.add_emp_lbl_fname.Location = New System.Drawing.Point(12, 20)
+        Me.add_emp_lbl_fname.Name = "add_emp_lbl_fname"
+        Me.add_emp_lbl_fname.Size = New System.Drawing.Size(85, 18)
+        Me.add_emp_lbl_fname.TabIndex = 13
+        Me.add_emp_lbl_fname.Text = "First Name"
         '
-        'adde_lbl_fname
+        'add_emp_lbl_lname
         '
-        Me.adde_lbl_fname.AutoSize = True
-        Me.adde_lbl_fname.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.adde_lbl_fname.ForeColor = System.Drawing.Color.White
-        Me.adde_lbl_fname.Location = New System.Drawing.Point(12, 20)
-        Me.adde_lbl_fname.Name = "adde_lbl_fname"
-        Me.adde_lbl_fname.Size = New System.Drawing.Size(85, 18)
-        Me.adde_lbl_fname.TabIndex = 13
-        Me.adde_lbl_fname.Text = "First Name"
+        Me.add_emp_lbl_lname.AutoSize = True
+        Me.add_emp_lbl_lname.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.add_emp_lbl_lname.ForeColor = System.Drawing.Color.White
+        Me.add_emp_lbl_lname.Location = New System.Drawing.Point(12, 55)
+        Me.add_emp_lbl_lname.Name = "add_emp_lbl_lname"
+        Me.add_emp_lbl_lname.Size = New System.Drawing.Size(84, 18)
+        Me.add_emp_lbl_lname.TabIndex = 14
+        Me.add_emp_lbl_lname.Text = "Last Name"
         '
-        'adde_lbl_lname
+        'add_emp_lbl_email
         '
-        Me.adde_lbl_lname.AutoSize = True
-        Me.adde_lbl_lname.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.adde_lbl_lname.ForeColor = System.Drawing.Color.White
-        Me.adde_lbl_lname.Location = New System.Drawing.Point(12, 55)
-        Me.adde_lbl_lname.Name = "adde_lbl_lname"
-        Me.adde_lbl_lname.Size = New System.Drawing.Size(84, 18)
-        Me.adde_lbl_lname.TabIndex = 14
-        Me.adde_lbl_lname.Text = "Last Name"
+        Me.add_emp_lbl_email.AutoSize = True
+        Me.add_emp_lbl_email.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.add_emp_lbl_email.ForeColor = System.Drawing.Color.White
+        Me.add_emp_lbl_email.Location = New System.Drawing.Point(12, 93)
+        Me.add_emp_lbl_email.Name = "add_emp_lbl_email"
+        Me.add_emp_lbl_email.Size = New System.Drawing.Size(48, 18)
+        Me.add_emp_lbl_email.TabIndex = 15
+        Me.add_emp_lbl_email.Text = "Email"
         '
-        'adde_lbl_email
+        'add_emp_lbl_phone
         '
-        Me.adde_lbl_email.AutoSize = True
-        Me.adde_lbl_email.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.adde_lbl_email.ForeColor = System.Drawing.Color.White
-        Me.adde_lbl_email.Location = New System.Drawing.Point(12, 93)
-        Me.adde_lbl_email.Name = "adde_lbl_email"
-        Me.adde_lbl_email.Size = New System.Drawing.Size(48, 18)
-        Me.adde_lbl_email.TabIndex = 15
-        Me.adde_lbl_email.Text = "Email"
+        Me.add_emp_lbl_phone.AutoSize = True
+        Me.add_emp_lbl_phone.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.add_emp_lbl_phone.ForeColor = System.Drawing.Color.White
+        Me.add_emp_lbl_phone.Location = New System.Drawing.Point(406, 15)
+        Me.add_emp_lbl_phone.Name = "add_emp_lbl_phone"
+        Me.add_emp_lbl_phone.Size = New System.Drawing.Size(53, 18)
+        Me.add_emp_lbl_phone.TabIndex = 16
+        Me.add_emp_lbl_phone.Text = "Phone"
         '
-        'adde_lbl_phone
+        'add_emp_txt_phone
         '
-        Me.adde_lbl_phone.AutoSize = True
-        Me.adde_lbl_phone.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.adde_lbl_phone.ForeColor = System.Drawing.Color.White
-        Me.adde_lbl_phone.Location = New System.Drawing.Point(406, 15)
-        Me.adde_lbl_phone.Name = "adde_lbl_phone"
-        Me.adde_lbl_phone.Size = New System.Drawing.Size(53, 18)
-        Me.adde_lbl_phone.TabIndex = 16
-        Me.adde_lbl_phone.Text = "Phone"
+        Me.add_emp_txt_phone.Location = New System.Drawing.Point(477, 13)
+        Me.add_emp_txt_phone.Name = "add_emp_txt_phone"
+        Me.add_emp_txt_phone.Size = New System.Drawing.Size(115, 20)
+        Me.add_emp_txt_phone.TabIndex = 17
         '
         'add_employee
         '
@@ -147,16 +147,16 @@ Partial Class add_employee
         Me.BackColor = System.Drawing.Color.SlateGray
         Me.ClientSize = New System.Drawing.Size(687, 264)
         Me.ControlBox = False
-        Me.Controls.Add(Me.adde_lbl_phone)
-        Me.Controls.Add(Me.adde_lbl_email)
-        Me.Controls.Add(Me.adde_lbl_lname)
-        Me.Controls.Add(Me.adde_lbl_fname)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.adde_btn_save)
-        Me.Controls.Add(Me.adde_btn_cancel)
+        Me.Controls.Add(Me.add_emp_txt_phone)
+        Me.Controls.Add(Me.add_emp_lbl_phone)
+        Me.Controls.Add(Me.add_emp_lbl_email)
+        Me.Controls.Add(Me.add_emp_lbl_lname)
+        Me.Controls.Add(Me.add_emp_lbl_fname)
+        Me.Controls.Add(Me.add_emp_txt_email)
+        Me.Controls.Add(Me.add_emp_txt_lname)
+        Me.Controls.Add(Me.add_emp_txt_fname)
+        Me.Controls.Add(Me.add_emp_btn_save)
+        Me.Controls.Add(Me.add_emp_btn_cancel)
         Me.Name = "add_employee"
         Me.Text = "Add Employee"
         Me.ResumeLayout(False)
@@ -164,14 +164,14 @@ Partial Class add_employee
 
     End Sub
 
-    Friend WithEvents adde_btn_cancel As Button
-    Friend WithEvents adde_btn_save As Button
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents adde_lbl_fname As Label
-    Friend WithEvents adde_lbl_lname As Label
-    Friend WithEvents adde_lbl_email As Label
-    Friend WithEvents adde_lbl_phone As Label
+    Friend WithEvents add_emp_btn_cancel As Button
+    Friend WithEvents add_emp_btn_save As Button
+    Friend WithEvents add_emp_txt_fname As TextBox
+    Friend WithEvents add_emp_txt_lname As TextBox
+    Friend WithEvents add_emp_txt_email As TextBox
+    Friend WithEvents add_emp_lbl_fname As Label
+    Friend WithEvents add_emp_lbl_lname As Label
+    Friend WithEvents add_emp_lbl_email As Label
+    Friend WithEvents add_emp_lbl_phone As Label
+    Friend WithEvents add_emp_txt_phone As MaskedTextBox
 End Class
