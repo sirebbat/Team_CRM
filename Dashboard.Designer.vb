@@ -82,6 +82,7 @@ Partial Class Dashboard
         Me.emp_lb_ = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.emp_btn_delete = New System.Windows.Forms.Button()
         Me.emp_btn_add = New System.Windows.Forms.Button()
+        Me.emp_btn_load = New System.Windows.Forms.Button()
         Me.dashboard_tab.SuspendLayout()
         Me.tabClient.SuspendLayout()
         Me.gb_activities.SuspendLayout()
@@ -467,6 +468,7 @@ Partial Class Dashboard
         '
         resources.ApplyResources(Me.tabEmp, "tabEmp")
         Me.tabEmp.BackColor = System.Drawing.Color.SlateGray
+        Me.tabEmp.Controls.Add(Me.emp_btn_load)
         Me.tabEmp.Controls.Add(Me.emp_lb)
         Me.tabEmp.Controls.Add(Me.emp_btn_delete)
         Me.tabEmp.Controls.Add(Me.emp_btn_add)
@@ -522,6 +524,17 @@ Partial Class Dashboard
         Me.emp_btn_add.ForeColor = System.Drawing.Color.White
         Me.emp_btn_add.Name = "emp_btn_add"
         Me.emp_btn_add.UseVisualStyleBackColor = False
+        '
+        'emp_btn_load
+        '
+        Me.emp_btn_load.BackColor = System.Drawing.Color.LightSlateGray
+        Me.emp_btn_load.FlatAppearance.BorderColor = System.Drawing.Color.LightBlue
+        Me.emp_btn_load.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.emp_btn_load.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue
+        resources.ApplyResources(Me.emp_btn_load, "emp_btn_load")
+        Me.emp_btn_load.ForeColor = System.Drawing.Color.White
+        Me.emp_btn_load.Name = "emp_btn_load"
+        Me.emp_btn_load.UseVisualStyleBackColor = False
         '
         'Dashboard
         '
@@ -604,4 +617,5 @@ Partial Class Dashboard
     Friend WithEvents ci_created_date As MaskedTextBox
     Friend WithEvents adr_txt_state As ComboBox
     Friend WithEvents ci_btn_cancel As Button
+    Friend WithEvents emp_btn_load As Button
 End Class

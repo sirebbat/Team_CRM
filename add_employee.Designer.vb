@@ -135,9 +135,10 @@ Partial Class add_employee
         '
         'add_emp_txt_phone
         '
-        Me.add_emp_txt_phone.Location = New System.Drawing.Point(477, 13)
+        Me.add_emp_txt_phone.Location = New System.Drawing.Point(465, 13)
+        Me.add_emp_txt_phone.Mask = "(999) 000-0000"
         Me.add_emp_txt_phone.Name = "add_emp_txt_phone"
-        Me.add_emp_txt_phone.Size = New System.Drawing.Size(115, 20)
+        Me.add_emp_txt_phone.Size = New System.Drawing.Size(84, 20)
         Me.add_emp_txt_phone.TabIndex = 17
         '
         'add_employee

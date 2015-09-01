@@ -1623,6 +1623,39 @@
   <data name="tabEmp.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="emp_btn_load.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="emp_btn_load.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="emp_btn_load.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="emp_btn_load.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 57</value>
+  </data>
+  <data name="emp_btn_load.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 34</value>
+  </data>
+  <data name="emp_btn_load.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="emp_btn_load.Text" xml:space="preserve">
+    <value>Load</value>
+  </data>
+  <data name="&gt;&gt;emp_btn_load.Name" xml:space="preserve">
+    <value>emp_btn_load</value>
+  </data>
+  <data name="&gt;&gt;emp_btn_load.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;emp_btn_load.Parent" xml:space="preserve">
+    <value>tabEmp</value>
+  </data>
+  <data name="&gt;&gt;emp_btn_load.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="emp_lb_employeeid.Text" xml:space="preserve">
     <value>Employee ID</value>
   </data>
@@ -1675,7 +1708,7 @@
     <value>tabEmp</value>
   </data>
   <data name="&gt;&gt;emp_lb.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="emp_btn_delete.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1698,6 +1731,9 @@
   <data name="emp_btn_delete.Text" xml:space="preserve">
     <value>Delete</value>
   </data>
+  <data name="emp_btn_delete.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;emp_btn_delete.Name" xml:space="preserve">
     <value>emp_btn_delete</value>
   </data>
@@ -1708,7 +1744,7 @@
     <value>tabEmp</value>
   </data>
   <data name="&gt;&gt;emp_btn_delete.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="emp_btn_add.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1741,7 +1777,7 @@
     <value>tabEmp</value>
   </data>
   <data name="&gt;&gt;emp_btn_add.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="tabEmp.Font" type="System.Drawing.Font, System.Drawing">
     <value>Comic Sans MS, 9.75pt, style=Bold</value>
