@@ -124,887 +124,6 @@
   <data name="gb_activities.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;act_lv.Name" xml:space="preserve">
-    <value>act_lv</value>
-  </data>
-  <data name="&gt;&gt;act_lv.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;act_lv.Parent" xml:space="preserve">
-    <value>gb_activities</value>
-  </data>
-  <data name="&gt;&gt;act_lv.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;act_btn_delete.Name" xml:space="preserve">
-    <value>act_btn_delete</value>
-  </data>
-  <data name="&gt;&gt;act_btn_delete.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;act_btn_delete.Parent" xml:space="preserve">
-    <value>gb_activities</value>
-  </data>
-  <data name="&gt;&gt;act_btn_delete.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;act_btn_save.Name" xml:space="preserve">
-    <value>act_btn_save</value>
-  </data>
-  <data name="&gt;&gt;act_btn_save.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;act_btn_save.Parent" xml:space="preserve">
-    <value>gb_activities</value>
-  </data>
-  <data name="&gt;&gt;act_btn_save.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;act_btn_create.Name" xml:space="preserve">
-    <value>act_btn_create</value>
-  </data>
-  <data name="&gt;&gt;act_btn_create.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;act_btn_create.Parent" xml:space="preserve">
-    <value>gb_activities</value>
-  </data>
-  <data name="&gt;&gt;act_btn_create.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;act_btn_update.Name" xml:space="preserve">
-    <value>act_btn_update</value>
-  </data>
-  <data name="&gt;&gt;act_btn_update.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;act_btn_update.Parent" xml:space="preserve">
-    <value>gb_activities</value>
-  </data>
-  <data name="&gt;&gt;act_btn_update.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="gb_activities.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 20.25pt, style=Bold</value>
-  </data>
-  <data name="gb_activities.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 544</value>
-  </data>
-  <data name="gb_activities.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1200, 366</value>
-  </data>
-  <data name="gb_activities.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="gb_activities.Text" xml:space="preserve">
-    <value>Activities</value>
-  </data>
-  <data name="&gt;&gt;gb_activities.Name" xml:space="preserve">
-    <value>gb_activities</value>
-  </data>
-  <data name="&gt;&gt;gb_activities.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gb_activities.Parent" xml:space="preserve">
-    <value>tabClient</value>
-  </data>
-  <data name="&gt;&gt;gb_activities.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="gb_ci.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="gb_ci.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
-  </data>
-  <data name="&gt;&gt;ci_btn_cancel.Name" xml:space="preserve">
-    <value>ci_btn_cancel</value>
-  </data>
-  <data name="&gt;&gt;ci_btn_cancel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ci_btn_cancel.Parent" xml:space="preserve">
-    <value>gb_ci</value>
-  </data>
-  <data name="&gt;&gt;ci_btn_cancel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;adr_txt_state.Name" xml:space="preserve">
-    <value>adr_txt_state</value>
-  </data>
-  <data name="&gt;&gt;adr_txt_state.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;adr_txt_state.Parent" xml:space="preserve">
-    <value>gb_ci</value>
-  </data>
-  <data name="&gt;&gt;adr_txt_state.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;ci_created_date.Name" xml:space="preserve">
-    <value>ci_created_date</value>
-  </data>
-  <data name="&gt;&gt;ci_created_date.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ci_created_date.Parent" xml:space="preserve">
-    <value>gb_ci</value>
-  </data>
-  <data name="&gt;&gt;ci_created_date.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;ci_txt_email.Name" xml:space="preserve">
-    <value>ci_txt_email</value>
-  </data>
-  <data name="&gt;&gt;ci_txt_email.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ci_txt_email.Parent" xml:space="preserve">
-    <value>gb_ci</value>
-  </data>
-  <data name="&gt;&gt;ci_txt_email.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;ci_lbl_email.Name" xml:space="preserve">
-    <value>ci_lbl_email</value>
-  </data>
-  <data name="&gt;&gt;ci_lbl_email.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ci_lbl_email.Parent" xml:space="preserve">
-    <value>gb_ci</value>
-  </data>
-  <data name="&gt;&gt;ci_lbl_email.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;ci_btn_delete.Name" xml:space="preserve">
-    <value>ci_btn_delete</value>
-  </data>
-  <data name="&gt;&gt;ci_btn_delete.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ci_btn_delete.Parent" xml:space="preserve">
-    <value>gb_ci</value>
-  </data>
-  <data name="&gt;&gt;ci_btn_delete.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;ci_btn_save.Name" xml:space="preserve">
-    <value>ci_btn_save</value>
-  </data>
-  <data name="&gt;&gt;ci_btn_save.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ci_btn_save.Parent" xml:space="preserve">
-    <value>gb_ci</value>
-  </data>
-  <data name="&gt;&gt;ci_btn_save.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;ci_btn_update.Name" xml:space="preserve">
-    <value>ci_btn_update</value>
-  </data>
-  <data name="&gt;&gt;ci_btn_update.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ci_btn_update.Parent" xml:space="preserve">
-    <value>gb_ci</value>
-  </data>
-  <data name="&gt;&gt;ci_btn_update.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;adr_txt_zip.Name" xml:space="preserve">
-    <value>adr_txt_zip</value>
-  </data>
-  <data name="&gt;&gt;adr_txt_zip.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;adr_txt_zip.Parent" xml:space="preserve">
-    <value>gb_ci</value>
-  </data>
-  <data name="&gt;&gt;adr_txt_zip.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;adr_txt_city.Name" xml:space="preserve">
-    <value>adr_txt_city</value>
-  </data>
-  <data name="&gt;&gt;adr_txt_city.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;adr_txt_city.Parent" xml:space="preserve">
-    <value>gb_ci</value>
-  </data>
-  <data name="&gt;&gt;adr_txt_city.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;adr_lbl_zip.Name" xml:space="preserve">
-    <value>adr_lbl_zip</value>
-  </data>
-  <data name="&gt;&gt;adr_lbl_zip.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;adr_lbl_zip.Parent" xml:space="preserve">
-    <value>gb_ci</value>
-  </data>
-  <data name="&gt;&gt;adr_lbl_zip.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;adr_txt_streetadd.Name" xml:space="preserve">
-    <value>adr_txt_streetadd</value>
-  </data>
-  <data name="&gt;&gt;adr_txt_streetadd.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;adr_txt_streetadd.Parent" xml:space="preserve">
-    <value>gb_ci</value>
-  </data>
-  <data name="&gt;&gt;adr_txt_streetadd.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;adr_txt_streetad.Name" xml:space="preserve">
-    <value>adr_txt_streetad</value>
-  </data>
-  <data name="&gt;&gt;adr_txt_streetad.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;adr_txt_streetad.Parent" xml:space="preserve">
-    <value>gb_ci</value>
-  </data>
-  <data name="&gt;&gt;adr_txt_streetad.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;adr_lbl_streetad.Name" xml:space="preserve">
-    <value>adr_lbl_streetad</value>
-  </data>
-  <data name="&gt;&gt;adr_lbl_streetad.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;adr_lbl_streetad.Parent" xml:space="preserve">
-    <value>gb_ci</value>
-  </data>
-  <data name="&gt;&gt;adr_lbl_streetad.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;adr_lbl_state.Name" xml:space="preserve">
-    <value>adr_lbl_state</value>
-  </data>
-  <data name="&gt;&gt;adr_lbl_state.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;adr_lbl_state.Parent" xml:space="preserve">
-    <value>gb_ci</value>
-  </data>
-  <data name="&gt;&gt;adr_lbl_state.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;adr_lbl_city.Name" xml:space="preserve">
-    <value>adr_lbl_city</value>
-  </data>
-  <data name="&gt;&gt;adr_lbl_city.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;adr_lbl_city.Parent" xml:space="preserve">
-    <value>gb_ci</value>
-  </data>
-  <data name="&gt;&gt;adr_lbl_city.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;adr_lbl_streetadd.Name" xml:space="preserve">
-    <value>adr_lbl_streetadd</value>
-  </data>
-  <data name="&gt;&gt;adr_lbl_streetadd.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;adr_lbl_streetadd.Parent" xml:space="preserve">
-    <value>gb_ci</value>
-  </data>
-  <data name="&gt;&gt;adr_lbl_streetadd.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;ci_txt_url.Name" xml:space="preserve">
-    <value>ci_txt_url</value>
-  </data>
-  <data name="&gt;&gt;ci_txt_url.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ci_txt_url.Parent" xml:space="preserve">
-    <value>gb_ci</value>
-  </data>
-  <data name="&gt;&gt;ci_txt_url.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;ci_txt_cellp.Name" xml:space="preserve">
-    <value>ci_txt_cellp</value>
-  </data>
-  <data name="&gt;&gt;ci_txt_cellp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ci_txt_cellp.Parent" xml:space="preserve">
-    <value>gb_ci</value>
-  </data>
-  <data name="&gt;&gt;ci_txt_cellp.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;ci_txt_officen.Name" xml:space="preserve">
-    <value>ci_txt_officen</value>
-  </data>
-  <data name="&gt;&gt;ci_txt_officen.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ci_txt_officen.Parent" xml:space="preserve">
-    <value>gb_ci</value>
-  </data>
-  <data name="&gt;&gt;ci_txt_officen.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;ci_txt_company.Name" xml:space="preserve">
-    <value>ci_txt_company</value>
-  </data>
-  <data name="&gt;&gt;ci_txt_company.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ci_txt_company.Parent" xml:space="preserve">
-    <value>gb_ci</value>
-  </data>
-  <data name="&gt;&gt;ci_txt_company.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;ci_txt_lname.Name" xml:space="preserve">
-    <value>ci_txt_lname</value>
-  </data>
-  <data name="&gt;&gt;ci_txt_lname.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ci_txt_lname.Parent" xml:space="preserve">
-    <value>gb_ci</value>
-  </data>
-  <data name="&gt;&gt;ci_txt_lname.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;ci_lbl_url.Name" xml:space="preserve">
-    <value>ci_lbl_url</value>
-  </data>
-  <data name="&gt;&gt;ci_lbl_url.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ci_lbl_url.Parent" xml:space="preserve">
-    <value>gb_ci</value>
-  </data>
-  <data name="&gt;&gt;ci_lbl_url.ZOrder" xml:space="preserve">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;ci_lbl_cellp.Name" xml:space="preserve">
-    <value>ci_lbl_cellp</value>
-  </data>
-  <data name="&gt;&gt;ci_lbl_cellp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ci_lbl_cellp.Parent" xml:space="preserve">
-    <value>gb_ci</value>
-  </data>
-  <data name="&gt;&gt;ci_lbl_cellp.ZOrder" xml:space="preserve">
-    <value>23</value>
-  </data>
-  <data name="&gt;&gt;ci_lbl_officen.Name" xml:space="preserve">
-    <value>ci_lbl_officen</value>
-  </data>
-  <data name="&gt;&gt;ci_lbl_officen.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ci_lbl_officen.Parent" xml:space="preserve">
-    <value>gb_ci</value>
-  </data>
-  <data name="&gt;&gt;ci_lbl_officen.ZOrder" xml:space="preserve">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;ci_lbl_createddate.Name" xml:space="preserve">
-    <value>ci_lbl_createddate</value>
-  </data>
-  <data name="&gt;&gt;ci_lbl_createddate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ci_lbl_createddate.Parent" xml:space="preserve">
-    <value>gb_ci</value>
-  </data>
-  <data name="&gt;&gt;ci_lbl_createddate.ZOrder" xml:space="preserve">
-    <value>25</value>
-  </data>
-  <data name="&gt;&gt;ci_txt_fname.Name" xml:space="preserve">
-    <value>ci_txt_fname</value>
-  </data>
-  <data name="&gt;&gt;ci_txt_fname.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ci_txt_fname.Parent" xml:space="preserve">
-    <value>gb_ci</value>
-  </data>
-  <data name="&gt;&gt;ci_txt_fname.ZOrder" xml:space="preserve">
-    <value>26</value>
-  </data>
-  <data name="&gt;&gt;ci_txt_account.Name" xml:space="preserve">
-    <value>ci_txt_account</value>
-  </data>
-  <data name="&gt;&gt;ci_txt_account.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ci_txt_account.Parent" xml:space="preserve">
-    <value>gb_ci</value>
-  </data>
-  <data name="&gt;&gt;ci_txt_account.ZOrder" xml:space="preserve">
-    <value>27</value>
-  </data>
-  <data name="&gt;&gt;ci_lbl_account.Name" xml:space="preserve">
-    <value>ci_lbl_account</value>
-  </data>
-  <data name="&gt;&gt;ci_lbl_account.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ci_lbl_account.Parent" xml:space="preserve">
-    <value>gb_ci</value>
-  </data>
-  <data name="&gt;&gt;ci_lbl_account.ZOrder" xml:space="preserve">
-    <value>28</value>
-  </data>
-  <data name="&gt;&gt;ci_lbl_company.Name" xml:space="preserve">
-    <value>ci_lbl_company</value>
-  </data>
-  <data name="&gt;&gt;ci_lbl_company.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ci_lbl_company.Parent" xml:space="preserve">
-    <value>gb_ci</value>
-  </data>
-  <data name="&gt;&gt;ci_lbl_company.ZOrder" xml:space="preserve">
-    <value>29</value>
-  </data>
-  <data name="&gt;&gt;ci_lbl_lname.Name" xml:space="preserve">
-    <value>ci_lbl_lname</value>
-  </data>
-  <data name="&gt;&gt;ci_lbl_lname.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ci_lbl_lname.Parent" xml:space="preserve">
-    <value>gb_ci</value>
-  </data>
-  <data name="&gt;&gt;ci_lbl_lname.ZOrder" xml:space="preserve">
-    <value>30</value>
-  </data>
-  <data name="&gt;&gt;ci_lbl_fname.Name" xml:space="preserve">
-    <value>ci_lbl_fname</value>
-  </data>
-  <data name="&gt;&gt;ci_lbl_fname.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ci_lbl_fname.Parent" xml:space="preserve">
-    <value>gb_ci</value>
-  </data>
-  <data name="&gt;&gt;ci_lbl_fname.ZOrder" xml:space="preserve">
-    <value>31</value>
-  </data>
-  <data name="gb_ci.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 20.25pt, style=Bold</value>
-  </data>
-  <data name="gb_ci.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 103</value>
-  </data>
-  <data name="gb_ci.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1157, 435</value>
-  </data>
-  <data name="gb_ci.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="gb_ci.Text" xml:space="preserve">
-    <value>Contact Information</value>
-  </data>
-  <data name="&gt;&gt;gb_ci.Name" xml:space="preserve">
-    <value>gb_ci</value>
-  </data>
-  <data name="&gt;&gt;gb_ci.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gb_ci.Parent" xml:space="preserve">
-    <value>tabClient</value>
-  </data>
-  <data name="&gt;&gt;gb_ci.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btnSearch.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnSearch.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 12pt, style=Bold</value>
-  </data>
-  <data name="btnSearch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>127, 57</value>
-  </data>
-  <data name="btnSearch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 34</value>
-  </data>
-  <data name="btnSearch.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="btnSearch.Text" xml:space="preserve">
-    <value>Search</value>
-  </data>
-  <data name="&gt;&gt;btnSearch.Name" xml:space="preserve">
-    <value>btnSearch</value>
-  </data>
-  <data name="&gt;&gt;btnSearch.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnSearch.Parent" xml:space="preserve">
-    <value>tabClient</value>
-  </data>
-  <data name="&gt;&gt;btnSearch.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="btnCreate.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnCreate.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 12pt, style=Bold</value>
-  </data>
-  <data name="btnCreate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 57</value>
-  </data>
-  <data name="btnCreate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 34</value>
-  </data>
-  <data name="btnCreate.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="btnCreate.Text" xml:space="preserve">
-    <value>Create</value>
-  </data>
-  <data name="&gt;&gt;btnCreate.Name" xml:space="preserve">
-    <value>btnCreate</value>
-  </data>
-  <data name="&gt;&gt;btnCreate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnCreate.Parent" xml:space="preserve">
-    <value>tabClient</value>
-  </data>
-  <data name="&gt;&gt;btnCreate.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="tabClient.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comic Sans MS, 9.75pt, style=Bold</value>
-  </data>
-  <data name="tabClient.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabClient.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 6</value>
-  </data>
-  <data name="tabClient.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1240, 974</value>
-  </data>
-  <data name="tabClient.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="tabClient.Text" xml:space="preserve">
-    <value>Clients</value>
-  </data>
-  <data name="tabClient.ToolTipText" xml:space="preserve">
-    <value>Clients</value>
-  </data>
-  <data name="&gt;&gt;tabClient.Name" xml:space="preserve">
-    <value>tabClient</value>
-  </data>
-  <data name="&gt;&gt;tabClient.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabClient.Parent" xml:space="preserve">
-    <value>dashboard_tab</value>
-  </data>
-  <data name="&gt;&gt;tabClient.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="tabEmp.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="tabEmp.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="emp_btn_cancel.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="emp_btn_cancel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 12pt, style=Bold</value>
-  </data>
-  <data name="emp_btn_cancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="emp_btn_cancel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1078, 57</value>
-  </data>
-  <data name="emp_btn_cancel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 34</value>
-  </data>
-  <data name="emp_btn_cancel.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="emp_btn_cancel.Text" xml:space="preserve">
-    <value>Cancel</value>
-  </data>
-  <data name="emp_btn_cancel.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;emp_btn_cancel.Name" xml:space="preserve">
-    <value>emp_btn_cancel</value>
-  </data>
-  <data name="&gt;&gt;emp_btn_cancel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;emp_btn_cancel.Parent" xml:space="preserve">
-    <value>tabEmp</value>
-  </data>
-  <data name="&gt;&gt;emp_btn_cancel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="emp_btn_load.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="emp_btn_load.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 12pt, style=Bold</value>
-  </data>
-  <data name="emp_btn_load.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="emp_btn_load.Location" type="System.Drawing.Point, System.Drawing">
-    <value>106, 57</value>
-  </data>
-  <data name="emp_btn_load.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 34</value>
-  </data>
-  <data name="emp_btn_load.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="emp_btn_load.Text" xml:space="preserve">
-    <value>Load</value>
-  </data>
-  <data name="&gt;&gt;emp_btn_load.Name" xml:space="preserve">
-    <value>emp_btn_load</value>
-  </data>
-  <data name="&gt;&gt;emp_btn_load.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;emp_btn_load.Parent" xml:space="preserve">
-    <value>tabEmp</value>
-  </data>
-  <data name="&gt;&gt;emp_btn_load.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="emp_lb_employeeid.Text" xml:space="preserve">
-    <value>Employee ID</value>
-  </data>
-  <data name="emp_lb_employeeid.Width" type="System.Int32, mscorlib">
-    <value>115</value>
-  </data>
-  <data name="emp_lb_fname.Text" xml:space="preserve">
-    <value>First Name</value>
-  </data>
-  <data name="emp_lb_fname.Width" type="System.Int32, mscorlib">
-    <value>198</value>
-  </data>
-  <data name="emp_lb_lname.Text" xml:space="preserve">
-    <value>Last Name</value>
-  </data>
-  <data name="emp_lb_lname.Width" type="System.Int32, mscorlib">
-    <value>253</value>
-  </data>
-  <data name="emp_lb_phone.Text" xml:space="preserve">
-    <value>Phone</value>
-  </data>
-  <data name="emp_lb_phone.Width" type="System.Int32, mscorlib">
-    <value>224</value>
-  </data>
-  <data name="emp_lb_.Text" xml:space="preserve">
-    <value>Email</value>
-  </data>
-  <data name="emp_lb_.Width" type="System.Int32, mscorlib">
-    <value>327</value>
-  </data>
-  <data name="emp_lv.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 12pt</value>
-  </data>
-  <data name="emp_lv.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 97</value>
-  </data>
-  <data name="emp_lv.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1121, 352</value>
-  </data>
-  <data name="emp_lv.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;emp_lv.Name" xml:space="preserve">
-    <value>emp_lv</value>
-  </data>
-  <data name="&gt;&gt;emp_lv.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;emp_lv.Parent" xml:space="preserve">
-    <value>tabEmp</value>
-  </data>
-  <data name="&gt;&gt;emp_lv.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="emp_btn_delete.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="emp_btn_delete.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 12pt, style=Bold</value>
-  </data>
-  <data name="emp_btn_delete.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="emp_btn_delete.Location" type="System.Drawing.Point, System.Drawing">
-    <value>997, 57</value>
-  </data>
-  <data name="emp_btn_delete.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 34</value>
-  </data>
-  <data name="emp_btn_delete.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="emp_btn_delete.Text" xml:space="preserve">
-    <value>Delete</value>
-  </data>
-  <data name="emp_btn_delete.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;emp_btn_delete.Name" xml:space="preserve">
-    <value>emp_btn_delete</value>
-  </data>
-  <data name="&gt;&gt;emp_btn_delete.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;emp_btn_delete.Parent" xml:space="preserve">
-    <value>tabEmp</value>
-  </data>
-  <data name="&gt;&gt;emp_btn_delete.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="emp_btn_add.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="emp_btn_add.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 12pt, style=Bold</value>
-  </data>
-  <data name="emp_btn_add.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="emp_btn_add.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 57</value>
-  </data>
-  <data name="emp_btn_add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 34</value>
-  </data>
-  <data name="emp_btn_add.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="emp_btn_add.Text" xml:space="preserve">
-    <value>Add</value>
-  </data>
-  <data name="&gt;&gt;emp_btn_add.Name" xml:space="preserve">
-    <value>emp_btn_add</value>
-  </data>
-  <data name="&gt;&gt;emp_btn_add.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;emp_btn_add.Parent" xml:space="preserve">
-    <value>tabEmp</value>
-  </data>
-  <data name="&gt;&gt;emp_btn_add.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="tabEmp.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comic Sans MS, 9.75pt, style=Bold</value>
-  </data>
-  <data name="tabEmp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabEmp.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 6</value>
-  </data>
-  <data name="tabEmp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1240, 974</value>
-  </data>
-  <data name="tabEmp.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tabEmp.Text" xml:space="preserve">
-    <value>Employees</value>
-  </data>
-  <data name="tabEmp.ToolTipText" xml:space="preserve">
-    <value>Clients</value>
-  </data>
-  <data name="&gt;&gt;tabEmp.Name" xml:space="preserve">
-    <value>tabEmp</value>
-  </data>
-  <data name="&gt;&gt;tabEmp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabEmp.Parent" xml:space="preserve">
-    <value>dashboard_tab</value>
-  </data>
-  <data name="&gt;&gt;tabEmp.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="dashboard_tab.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="dashboard_tab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="dashboard_tab.ShowToolTips" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="dashboard_tab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1248, 1000</value>
-  </data>
-  <data name="dashboard_tab.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;dashboard_tab.Name" xml:space="preserve">
-    <value>dashboard_tab</value>
-  </data>
-  <data name="&gt;&gt;dashboard_tab.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dashboard_tab.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;dashboard_tab.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="act_lv.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 12pt, style=Bold</value>
-  </data>
-  <data name="act_lv.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 78</value>
-  </data>
-  <data name="act_lv.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1179, 250</value>
-  </data>
-  <data name="act_lv.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;act_lv.Name" xml:space="preserve">
-    <value>act_lv</value>
-  </data>
-  <data name="&gt;&gt;act_lv.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;act_lv.Parent" xml:space="preserve">
-    <value>gb_activities</value>
-  </data>
-  <data name="&gt;&gt;act_lv.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="act_lb_activity.Text" xml:space="preserve">
     <value>Activity</value>
   </data>
@@ -1047,87 +166,32 @@
   <data name="act_lb_comment.Width" type="System.Int32, mscorlib">
     <value>432</value>
   </data>
-  <data name="act_btn_delete.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="act_btn_delete.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="act_btn_delete.Font" type="System.Drawing.Font, System.Drawing">
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="act_lv.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 12pt, style=Bold</value>
   </data>
-  <data name="act_btn_delete.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="act_lv.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 78</value>
   </data>
-  <data name="act_btn_delete.Location" type="System.Drawing.Point, System.Drawing">
-    <value>214, 38</value>
+  <data name="act_lv.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1179, 250</value>
   </data>
-  <data name="act_btn_delete.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 34</value>
+  <data name="act_lv.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
-  <data name="act_btn_delete.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="&gt;&gt;act_lv.Name" xml:space="preserve">
+    <value>act_lv</value>
   </data>
-  <data name="act_btn_delete.Text" xml:space="preserve">
-    <value>Delete</value>
+  <data name="&gt;&gt;act_lv.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="act_btn_delete.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;act_btn_delete.Name" xml:space="preserve">
-    <value>act_btn_delete</value>
-  </data>
-  <data name="&gt;&gt;act_btn_delete.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;act_btn_delete.Parent" xml:space="preserve">
+  <data name="&gt;&gt;act_lv.Parent" xml:space="preserve">
     <value>gb_activities</value>
   </data>
-  <data name="&gt;&gt;act_btn_delete.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;act_lv.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="act_btn_save.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="act_btn_save.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="act_btn_save.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 12pt, style=Bold</value>
-  </data>
-  <data name="act_btn_save.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="act_btn_save.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 38</value>
-  </data>
-  <data name="act_btn_save.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 34</value>
-  </data>
-  <data name="act_btn_save.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="act_btn_save.Text" xml:space="preserve">
-    <value>Save</value>
-  </data>
-  <data name="act_btn_save.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;act_btn_save.Name" xml:space="preserve">
-    <value>act_btn_save</value>
-  </data>
-  <data name="&gt;&gt;act_btn_save.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;act_btn_save.Parent" xml:space="preserve">
-    <value>gb_activities</value>
-  </data>
-  <data name="&gt;&gt;act_btn_save.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="act_btn_create.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="act_btn_create.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
@@ -1159,43 +223,40 @@
     <value>gb_activities</value>
   </data>
   <data name="&gt;&gt;act_btn_create.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>1</value>
   </data>
-  <data name="act_btn_update.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="gb_activities.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 20.25pt, style=Bold</value>
   </data>
-  <data name="act_btn_update.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="gb_activities.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 544</value>
   </data>
-  <data name="act_btn_update.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 12pt, style=Bold</value>
+  <data name="gb_activities.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1200, 366</value>
   </data>
-  <data name="act_btn_update.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="gb_activities.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="act_btn_update.Location" type="System.Drawing.Point, System.Drawing">
-    <value>79, 38</value>
+  <data name="gb_activities.Text" xml:space="preserve">
+    <value>Activities</value>
   </data>
-  <data name="act_btn_update.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 34</value>
-  </data>
-  <data name="act_btn_update.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="act_btn_update.Text" xml:space="preserve">
-    <value>Update</value>
-  </data>
-  <data name="&gt;&gt;act_btn_update.Name" xml:space="preserve">
-    <value>act_btn_update</value>
-  </data>
-  <data name="&gt;&gt;act_btn_update.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;act_btn_update.Parent" xml:space="preserve">
+  <data name="&gt;&gt;gb_activities.Name" xml:space="preserve">
     <value>gb_activities</value>
   </data>
-  <data name="&gt;&gt;act_btn_update.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;gb_activities.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gb_activities.Parent" xml:space="preserve">
+    <value>tabClient</value>
+  </data>
+  <data name="&gt;&gt;gb_activities.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="gb_ci.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gb_ci.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
   </data>
   <data name="ci_btn_cancel.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -2318,6 +1379,384 @@
   </data>
   <data name="&gt;&gt;ci_lbl_fname.ZOrder" xml:space="preserve">
     <value>31</value>
+  </data>
+  <data name="gb_ci.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 20.25pt, style=Bold</value>
+  </data>
+  <data name="gb_ci.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 103</value>
+  </data>
+  <data name="gb_ci.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1157, 435</value>
+  </data>
+  <data name="gb_ci.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="gb_ci.Text" xml:space="preserve">
+    <value>Contact Information</value>
+  </data>
+  <data name="&gt;&gt;gb_ci.Name" xml:space="preserve">
+    <value>gb_ci</value>
+  </data>
+  <data name="&gt;&gt;gb_ci.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gb_ci.Parent" xml:space="preserve">
+    <value>tabClient</value>
+  </data>
+  <data name="&gt;&gt;gb_ci.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnSearch.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnSearch.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="btnSearch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 57</value>
+  </data>
+  <data name="btnSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 34</value>
+  </data>
+  <data name="btnSearch.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnSearch.Text" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="&gt;&gt;btnSearch.Name" xml:space="preserve">
+    <value>btnSearch</value>
+  </data>
+  <data name="&gt;&gt;btnSearch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSearch.Parent" xml:space="preserve">
+    <value>tabClient</value>
+  </data>
+  <data name="&gt;&gt;btnSearch.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnCreate.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnCreate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="btnCreate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 57</value>
+  </data>
+  <data name="btnCreate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 34</value>
+  </data>
+  <data name="btnCreate.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnCreate.Text" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="&gt;&gt;btnCreate.Name" xml:space="preserve">
+    <value>btnCreate</value>
+  </data>
+  <data name="&gt;&gt;btnCreate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCreate.Parent" xml:space="preserve">
+    <value>tabClient</value>
+  </data>
+  <data name="&gt;&gt;btnCreate.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tabClient.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Comic Sans MS, 9.75pt, style=Bold</value>
+  </data>
+  <data name="tabClient.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabClient.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 6</value>
+  </data>
+  <data name="tabClient.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1240, 974</value>
+  </data>
+  <data name="tabClient.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabClient.Text" xml:space="preserve">
+    <value>Clients</value>
+  </data>
+  <data name="tabClient.ToolTipText" xml:space="preserve">
+    <value>Clients</value>
+  </data>
+  <data name="&gt;&gt;tabClient.Name" xml:space="preserve">
+    <value>tabClient</value>
+  </data>
+  <data name="&gt;&gt;tabClient.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabClient.Parent" xml:space="preserve">
+    <value>dashboard_tab</value>
+  </data>
+  <data name="&gt;&gt;tabClient.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="tabEmp.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="tabEmp.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="emp_btn_cancel.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="emp_btn_cancel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="emp_btn_cancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="emp_btn_cancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1078, 57</value>
+  </data>
+  <data name="emp_btn_cancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 34</value>
+  </data>
+  <data name="emp_btn_cancel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="emp_btn_cancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="emp_btn_cancel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;emp_btn_cancel.Name" xml:space="preserve">
+    <value>emp_btn_cancel</value>
+  </data>
+  <data name="&gt;&gt;emp_btn_cancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;emp_btn_cancel.Parent" xml:space="preserve">
+    <value>tabEmp</value>
+  </data>
+  <data name="&gt;&gt;emp_btn_cancel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="emp_btn_load.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="emp_btn_load.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="emp_btn_load.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="emp_btn_load.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 57</value>
+  </data>
+  <data name="emp_btn_load.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 34</value>
+  </data>
+  <data name="emp_btn_load.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="emp_btn_load.Text" xml:space="preserve">
+    <value>Load</value>
+  </data>
+  <data name="&gt;&gt;emp_btn_load.Name" xml:space="preserve">
+    <value>emp_btn_load</value>
+  </data>
+  <data name="&gt;&gt;emp_btn_load.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;emp_btn_load.Parent" xml:space="preserve">
+    <value>tabEmp</value>
+  </data>
+  <data name="&gt;&gt;emp_btn_load.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="emp_lb_employeeid.Text" xml:space="preserve">
+    <value>Employee ID</value>
+  </data>
+  <data name="emp_lb_employeeid.Width" type="System.Int32, mscorlib">
+    <value>115</value>
+  </data>
+  <data name="emp_lb_fname.Text" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="emp_lb_fname.Width" type="System.Int32, mscorlib">
+    <value>198</value>
+  </data>
+  <data name="emp_lb_lname.Text" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="emp_lb_lname.Width" type="System.Int32, mscorlib">
+    <value>253</value>
+  </data>
+  <data name="emp_lb_phone.Text" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="emp_lb_phone.Width" type="System.Int32, mscorlib">
+    <value>224</value>
+  </data>
+  <data name="emp_lb_.Text" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="emp_lb_.Width" type="System.Int32, mscorlib">
+    <value>327</value>
+  </data>
+  <data name="emp_lv.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt</value>
+  </data>
+  <data name="emp_lv.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 97</value>
+  </data>
+  <data name="emp_lv.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1121, 352</value>
+  </data>
+  <data name="emp_lv.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;emp_lv.Name" xml:space="preserve">
+    <value>emp_lv</value>
+  </data>
+  <data name="&gt;&gt;emp_lv.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;emp_lv.Parent" xml:space="preserve">
+    <value>tabEmp</value>
+  </data>
+  <data name="&gt;&gt;emp_lv.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="emp_btn_delete.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="emp_btn_delete.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="emp_btn_delete.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="emp_btn_delete.Location" type="System.Drawing.Point, System.Drawing">
+    <value>997, 57</value>
+  </data>
+  <data name="emp_btn_delete.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 34</value>
+  </data>
+  <data name="emp_btn_delete.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="emp_btn_delete.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="emp_btn_delete.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;emp_btn_delete.Name" xml:space="preserve">
+    <value>emp_btn_delete</value>
+  </data>
+  <data name="&gt;&gt;emp_btn_delete.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;emp_btn_delete.Parent" xml:space="preserve">
+    <value>tabEmp</value>
+  </data>
+  <data name="&gt;&gt;emp_btn_delete.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="emp_btn_add.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="emp_btn_add.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="emp_btn_add.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="emp_btn_add.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 57</value>
+  </data>
+  <data name="emp_btn_add.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 34</value>
+  </data>
+  <data name="emp_btn_add.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="emp_btn_add.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="&gt;&gt;emp_btn_add.Name" xml:space="preserve">
+    <value>emp_btn_add</value>
+  </data>
+  <data name="&gt;&gt;emp_btn_add.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;emp_btn_add.Parent" xml:space="preserve">
+    <value>tabEmp</value>
+  </data>
+  <data name="&gt;&gt;emp_btn_add.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tabEmp.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Comic Sans MS, 9.75pt, style=Bold</value>
+  </data>
+  <data name="tabEmp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabEmp.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 6</value>
+  </data>
+  <data name="tabEmp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1240, 974</value>
+  </data>
+  <data name="tabEmp.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tabEmp.Text" xml:space="preserve">
+    <value>Employees</value>
+  </data>
+  <data name="tabEmp.ToolTipText" xml:space="preserve">
+    <value>Clients</value>
+  </data>
+  <data name="&gt;&gt;tabEmp.Name" xml:space="preserve">
+    <value>tabEmp</value>
+  </data>
+  <data name="&gt;&gt;tabEmp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabEmp.Parent" xml:space="preserve">
+    <value>dashboard_tab</value>
+  </data>
+  <data name="&gt;&gt;tabEmp.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="dashboard_tab.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="dashboard_tab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="dashboard_tab.ShowToolTips" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="dashboard_tab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1248, 1000</value>
+  </data>
+  <data name="dashboard_tab.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;dashboard_tab.Name" xml:space="preserve">
+    <value>dashboard_tab</value>
+  </data>
+  <data name="&gt;&gt;dashboard_tab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dashboard_tab.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dashboard_tab.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

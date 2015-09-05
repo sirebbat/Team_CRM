@@ -191,12 +191,14 @@ Public Class search_contact
 
     Public Sub sc_btn_ok_Click(sender As Object, e As EventArgs) Handles sc_btn_ok.Click
         Me.Close()
+
+        'makes contact info update button in dashboard visible
         Dashboard.ci_btn_update.Enabled = True
         Dashboard.ci_btn_update.Visible = True
 
-
-
-
+        'makes activities add button in dashboard visible
+        Dashboard.act_btn_create.Enabled = True
+        Dashboard.act_btn_create.Visible = True
 
     End Sub
 End Class

@@ -508,4 +508,14 @@ Public Class Dashboard
 
 
     End Sub
+
+    Private Sub act_btn_create_Click(sender As Object, e As EventArgs) Handles act_btn_create.Click
+
+        'Add button brings up create activity form
+        create_activity.Visible = True
+        create_activity.BringToFront()
+
+
+
+    End Sub
 End Class

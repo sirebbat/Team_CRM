@@ -81,10 +81,10 @@
     <Compile Include="add_employee.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="creatte_activity.Designer.vb">
-      <DependentUpon>add_activity.vb</DependentUpon>
+    <Compile Include="create_activity.Designer.vb">
+      <DependentUpon>create_activity.vb</DependentUpon>
     </Compile>
-    <Compile Include="add_activity.vb">
+    <Compile Include="create_activity.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Dashboard.vb">
@@ -123,11 +123,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="create_activity.resx">
+      <DependentUpon>create_activity.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="add_employee.resx">
       <DependentUpon>add_employee.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="creatte_activity.resx">
-      <DependentUpon>add_activity.vb</DependentUpon>
+      <DependentUpon>create_activity.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.vb</DependentUpon>

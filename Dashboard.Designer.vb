@@ -34,10 +34,7 @@ Partial Class Dashboard
         Me.act_lb_lastmodified = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.act_lb_employee = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.act_lb_comment = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.act_btn_delete = New System.Windows.Forms.Button()
-        Me.act_btn_save = New System.Windows.Forms.Button()
         Me.act_btn_create = New System.Windows.Forms.Button()
-        Me.act_btn_update = New System.Windows.Forms.Button()
         Me.gb_ci = New System.Windows.Forms.GroupBox()
         Me.ci_btn_cancel = New System.Windows.Forms.Button()
         Me.adr_txt_state = New System.Windows.Forms.ComboBox()
@@ -74,6 +71,8 @@ Partial Class Dashboard
         Me.btnSearch = New System.Windows.Forms.Button()
         Me.btnCreate = New System.Windows.Forms.Button()
         Me.tabEmp = New System.Windows.Forms.TabPage()
+        Me.emp_btn_cancel = New System.Windows.Forms.Button()
+        Me.emp_btn_load = New System.Windows.Forms.Button()
         Me.emp_lv = New System.Windows.Forms.ListView()
         Me.emp_lb_employeeid = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.emp_lb_fname = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -82,8 +81,6 @@ Partial Class Dashboard
         Me.emp_lb_ = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.emp_btn_delete = New System.Windows.Forms.Button()
         Me.emp_btn_add = New System.Windows.Forms.Button()
-        Me.emp_btn_load = New System.Windows.Forms.Button()
-        Me.emp_btn_cancel = New System.Windows.Forms.Button()
         Me.dashboard_tab.SuspendLayout()
         Me.tabClient.SuspendLayout()
         Me.gb_activities.SuspendLayout()
@@ -115,10 +112,7 @@ Partial Class Dashboard
         '
         resources.ApplyResources(Me.gb_activities, "gb_activities")
         Me.gb_activities.Controls.Add(Me.act_lv)
-        Me.gb_activities.Controls.Add(Me.act_btn_delete)
-        Me.gb_activities.Controls.Add(Me.act_btn_save)
         Me.gb_activities.Controls.Add(Me.act_btn_create)
-        Me.gb_activities.Controls.Add(Me.act_btn_update)
         Me.gb_activities.ForeColor = System.Drawing.Color.White
         Me.gb_activities.Name = "gb_activities"
         Me.gb_activities.TabStop = False
@@ -160,49 +154,16 @@ Partial Class Dashboard
         '
         resources.ApplyResources(Me.act_lb_comment, "act_lb_comment")
         '
-        'act_btn_delete
-        '
-        Me.act_btn_delete.BackColor = System.Drawing.Color.LightSlateGray
-        resources.ApplyResources(Me.act_btn_delete, "act_btn_delete")
-        Me.act_btn_delete.FlatAppearance.BorderColor = System.Drawing.Color.LightBlue
-        Me.act_btn_delete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.act_btn_delete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue
-        Me.act_btn_delete.ForeColor = System.Drawing.Color.White
-        Me.act_btn_delete.Name = "act_btn_delete"
-        Me.act_btn_delete.UseVisualStyleBackColor = False
-        '
-        'act_btn_save
-        '
-        Me.act_btn_save.BackColor = System.Drawing.Color.LightSlateGray
-        resources.ApplyResources(Me.act_btn_save, "act_btn_save")
-        Me.act_btn_save.FlatAppearance.BorderColor = System.Drawing.Color.LightBlue
-        Me.act_btn_save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.act_btn_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue
-        Me.act_btn_save.ForeColor = System.Drawing.Color.White
-        Me.act_btn_save.Name = "act_btn_save"
-        Me.act_btn_save.UseVisualStyleBackColor = False
-        '
         'act_btn_create
         '
         Me.act_btn_create.BackColor = System.Drawing.Color.LightSlateGray
-        resources.ApplyResources(Me.act_btn_create, "act_btn_create")
         Me.act_btn_create.FlatAppearance.BorderColor = System.Drawing.Color.LightBlue
         Me.act_btn_create.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.act_btn_create.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue
+        resources.ApplyResources(Me.act_btn_create, "act_btn_create")
         Me.act_btn_create.ForeColor = System.Drawing.Color.White
         Me.act_btn_create.Name = "act_btn_create"
         Me.act_btn_create.UseVisualStyleBackColor = False
-        '
-        'act_btn_update
-        '
-        Me.act_btn_update.BackColor = System.Drawing.Color.LightSlateGray
-        resources.ApplyResources(Me.act_btn_update, "act_btn_update")
-        Me.act_btn_update.FlatAppearance.BorderColor = System.Drawing.Color.LightBlue
-        Me.act_btn_update.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.act_btn_update.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue
-        Me.act_btn_update.ForeColor = System.Drawing.Color.White
-        Me.act_btn_update.Name = "act_btn_update"
-        Me.act_btn_update.UseVisualStyleBackColor = False
         '
         'gb_ci
         '
@@ -477,6 +438,28 @@ Partial Class Dashboard
         Me.tabEmp.ForeColor = System.Drawing.Color.White
         Me.tabEmp.Name = "tabEmp"
         '
+        'emp_btn_cancel
+        '
+        Me.emp_btn_cancel.BackColor = System.Drawing.Color.LightSlateGray
+        Me.emp_btn_cancel.FlatAppearance.BorderColor = System.Drawing.Color.LightBlue
+        Me.emp_btn_cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.emp_btn_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue
+        resources.ApplyResources(Me.emp_btn_cancel, "emp_btn_cancel")
+        Me.emp_btn_cancel.ForeColor = System.Drawing.Color.White
+        Me.emp_btn_cancel.Name = "emp_btn_cancel"
+        Me.emp_btn_cancel.UseVisualStyleBackColor = False
+        '
+        'emp_btn_load
+        '
+        Me.emp_btn_load.BackColor = System.Drawing.Color.LightSlateGray
+        Me.emp_btn_load.FlatAppearance.BorderColor = System.Drawing.Color.LightBlue
+        Me.emp_btn_load.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.emp_btn_load.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue
+        resources.ApplyResources(Me.emp_btn_load, "emp_btn_load")
+        Me.emp_btn_load.ForeColor = System.Drawing.Color.White
+        Me.emp_btn_load.Name = "emp_btn_load"
+        Me.emp_btn_load.UseVisualStyleBackColor = False
+        '
         'emp_lv
         '
         Me.emp_lv.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.emp_lb_employeeid, Me.emp_lb_fname, Me.emp_lb_lname, Me.emp_lb_phone, Me.emp_lb_})
@@ -527,28 +510,6 @@ Partial Class Dashboard
         Me.emp_btn_add.Name = "emp_btn_add"
         Me.emp_btn_add.UseVisualStyleBackColor = False
         '
-        'emp_btn_load
-        '
-        Me.emp_btn_load.BackColor = System.Drawing.Color.LightSlateGray
-        Me.emp_btn_load.FlatAppearance.BorderColor = System.Drawing.Color.LightBlue
-        Me.emp_btn_load.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.emp_btn_load.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue
-        resources.ApplyResources(Me.emp_btn_load, "emp_btn_load")
-        Me.emp_btn_load.ForeColor = System.Drawing.Color.White
-        Me.emp_btn_load.Name = "emp_btn_load"
-        Me.emp_btn_load.UseVisualStyleBackColor = False
-        '
-        'emp_btn_cancel
-        '
-        Me.emp_btn_cancel.BackColor = System.Drawing.Color.LightSlateGray
-        Me.emp_btn_cancel.FlatAppearance.BorderColor = System.Drawing.Color.LightBlue
-        Me.emp_btn_cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.emp_btn_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue
-        resources.ApplyResources(Me.emp_btn_cancel, "emp_btn_cancel")
-        Me.emp_btn_cancel.ForeColor = System.Drawing.Color.White
-        Me.emp_btn_cancel.Name = "emp_btn_cancel"
-        Me.emp_btn_cancel.UseVisualStyleBackColor = False
-        '
         'Dashboard
         '
         resources.ApplyResources(Me, "$this")
@@ -593,7 +554,6 @@ Partial Class Dashboard
     Friend WithEvents ci_txt_lname As TextBox
     Friend WithEvents ci_lbl_officen As Label
     Friend WithEvents act_btn_create As Button
-    Friend WithEvents act_btn_update As Button
     Friend WithEvents ci_btn_update As Button
     Friend WithEvents adr_txt_zip As TextBox
     Friend WithEvents adr_txt_city As TextBox
@@ -607,9 +567,7 @@ Partial Class Dashboard
     Friend WithEvents tabEmp As TabPage
     Friend WithEvents emp_btn_delete As Button
     Friend WithEvents emp_btn_add As Button
-    Friend WithEvents act_btn_save As Button
     Friend WithEvents ci_btn_save As Button
-    Friend WithEvents act_btn_delete As Button
     Friend WithEvents ci_btn_delete As Button
     Friend WithEvents act_lv As ListView
     Friend WithEvents act_lb_activity As ColumnHeader
