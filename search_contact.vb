@@ -180,7 +180,7 @@ Public Class search_contact
 
 
             'gets activities
-            Dim myActivity As New OleDbCommand("SELECT * FROM crm_activities", myConnection)
+            Dim myActivity As New OleDbCommand("SELECT * crm_activities", myConnection)
             Dim ActivityReader As OleDbDataReader = myActivity.ExecuteReader
 
             recordCount = 0
@@ -193,7 +193,12 @@ Public Class search_contact
                 'Adds items to the combobox
                 Dim act_listviewitem As New ListViewItem
                 act_listviewitem.Text = ActivityReader.GetInt32(0)
-                act_listviewitem.SubItems.Add(ActivityReader.GetString(1))
+                act_listviewitem.SubItems.Add(ActivityReader.GetInt32(1))
+                act_listviewitem.SubItems.Add(ActivityReader.GetString(2))
+                act_listviewitem.SubItems.Add(ActivityReader.GetString(3))
+
+
+
 
                 Dashboard.act_lv.Items.Add(act_listviewitem)
 

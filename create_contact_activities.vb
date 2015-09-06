@@ -20,9 +20,9 @@ Public Class create_contact_activities
             myConnection.Open()
             Dim myCommand As New OleDbCommand("INSERT INTO crm_activities (account_number, type, employee, created_on, comment) VALUES (@account_number, @type, @employee, @created_on, @comment)", myConnection)
 
-            myCommand.Parameters.AddWithValue("@account_number", CType(Dashboard.ci_txt_account.Text, Integer))
-            myCommand.Parameters.AddWithValue("@type", CType(Dashboard.ci_txt_account.Text, Integer))
-            myCommand.Parameters.AddWithValue("@employee", CType(cca_cb_employee.SelectedText, String))
+            myCommand.Parameters.AddWithValue("@account_number", CType(Dashboard.ci_txt_account.Text, Int32))
+            myCommand.Parameters.AddWithValue("@type", CType(cca_cb_contact_type.SelectedItem, String))
+            myCommand.Parameters.AddWithValue("@employee", CType(cca_cb_employee.SelectedItem, String))
             myCommand.Parameters.AddWithValue("@created_on", CType(cca_dp_created_on.Text, Date))
             myCommand.Parameters.AddWithValue("@comment", CType(cca_txt_comment.Text, String))
 
