@@ -46,6 +46,9 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -81,10 +84,10 @@
     <Compile Include="add_employee.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="create_activity.Designer.vb">
-      <DependentUpon>create_activity.vb</DependentUpon>
+    <Compile Include="create_contact_activities.Designer.vb">
+      <DependentUpon>create_contact_activities.vb</DependentUpon>
     </Compile>
-    <Compile Include="create_activity.vb">
+    <Compile Include="create_contact_activities.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Dashboard.vb">
@@ -123,14 +126,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="create_activity.resx">
-      <DependentUpon>create_activity.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="add_employee.resx">
       <DependentUpon>add_employee.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="creatte_activity.resx">
-      <DependentUpon>create_activity.vb</DependentUpon>
+    <EmbeddedResource Include="create_contact_activities.resx">
+      <DependentUpon>create_contact_activities.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.vb</DependentUpon>
@@ -149,6 +149,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

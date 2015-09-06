@@ -124,35 +124,61 @@
   <data name="gb_activities.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="act_refresh.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="act_refresh.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="act_refresh.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="act_refresh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 38</value>
+  </data>
+  <data name="act_refresh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 34</value>
+  </data>
+  <data name="act_refresh.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="act_refresh.Text" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="act_refresh.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;act_refresh.Name" xml:space="preserve">
+    <value>act_refresh</value>
+  </data>
+  <data name="&gt;&gt;act_refresh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;act_refresh.Parent" xml:space="preserve">
+    <value>gb_activities</value>
+  </data>
+  <data name="&gt;&gt;act_refresh.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="act_lb_activity.Text" xml:space="preserve">
     <value>Activity</value>
   </data>
   <data name="act_lb_activity.Width" type="System.Int32, mscorlib">
     <value>75</value>
   </data>
+  <data name="act_lb_created_on.Text" xml:space="preserve">
+    <value>Created On</value>
+  </data>
+  <data name="act_lb_created_on.Width" type="System.Int32, mscorlib">
+    <value>131</value>
+  </data>
   <data name="act_lb_type.Text" xml:space="preserve">
     <value>Type</value>
   </data>
   <data name="act_lb_type.Width" type="System.Int32, mscorlib">
     <value>90</value>
-  </data>
-  <data name="act_lb_status.Text" xml:space="preserve">
-    <value>Status</value>
-  </data>
-  <data name="act_lb_status.Width" type="System.Int32, mscorlib">
-    <value>114</value>
-  </data>
-  <data name="act_lb_addedon.Text" xml:space="preserve">
-    <value>Added On</value>
-  </data>
-  <data name="act_lb_addedon.Width" type="System.Int32, mscorlib">
-    <value>131</value>
-  </data>
-  <data name="act_lb_lastmodified.Text" xml:space="preserve">
-    <value>Last Modified</value>
-  </data>
-  <data name="act_lb_lastmodified.Width" type="System.Int32, mscorlib">
-    <value>130</value>
   </data>
   <data name="act_lb_employee.Text" xml:space="preserve">
     <value>Employee</value>
@@ -166,7 +192,6 @@
   <data name="act_lb_comment.Width" type="System.Int32, mscorlib">
     <value>432</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="act_lv.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 12pt, style=Bold</value>
   </data>
@@ -189,9 +214,8 @@
     <value>gb_activities</value>
   </data>
   <data name="&gt;&gt;act_lv.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="act_btn_create.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
@@ -213,6 +237,9 @@
   <data name="act_btn_create.Text" xml:space="preserve">
     <value>Add</value>
   </data>
+  <data name="act_btn_create.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;act_btn_create.Name" xml:space="preserve">
     <value>act_btn_create</value>
   </data>
@@ -223,7 +250,7 @@
     <value>gb_activities</value>
   </data>
   <data name="&gt;&gt;act_btn_create.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="gb_activities.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 20.25pt, style=Bold</value>
@@ -1785,28 +1812,16 @@
   <data name="&gt;&gt;act_lb_activity.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;act_lb_created_on.Name" xml:space="preserve">
+    <value>act_lb_created_on</value>
+  </data>
+  <data name="&gt;&gt;act_lb_created_on.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;act_lb_type.Name" xml:space="preserve">
     <value>act_lb_type</value>
   </data>
   <data name="&gt;&gt;act_lb_type.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;act_lb_status.Name" xml:space="preserve">
-    <value>act_lb_status</value>
-  </data>
-  <data name="&gt;&gt;act_lb_status.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;act_lb_addedon.Name" xml:space="preserve">
-    <value>act_lb_addedon</value>
-  </data>
-  <data name="&gt;&gt;act_lb_addedon.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;act_lb_lastmodified.Name" xml:space="preserve">
-    <value>act_lb_lastmodified</value>
-  </data>
-  <data name="&gt;&gt;act_lb_lastmodified.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;act_lb_employee.Name" xml:space="preserve">

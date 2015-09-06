@@ -35,7 +35,7 @@ Public Class Dashboard
         ci_btn_save.Enabled = False
         ci_btn_delete.Enabled = False
 
-        'disables the update button
+        'disables the create button
         ci_btn_update.Enabled = False
         ci_btn_update.Visible = False
 
@@ -511,9 +511,11 @@ Public Class Dashboard
 
     Private Sub act_btn_create_Click(sender As Object, e As EventArgs) Handles act_btn_create.Click
 
+
         'Add button brings up create activity form
-        create_activity.Visible = True
-        create_activity.BringToFront()
+
+        create_contact_activities.Visible = True
+        create_contact_activities.BringToFront()
 
 
 

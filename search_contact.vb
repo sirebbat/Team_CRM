@@ -177,6 +177,49 @@ Public Class search_contact
                 sc_txt_lname.ResetText()
             End If
 
+
+
+            'gets activities
+            Dim myActivity As New OleDbCommand("SELECT * FROM crm_activities", myConnection)
+            Dim ActivityReader As OleDbDataReader = myActivity.ExecuteReader
+
+            recordCount = 0
+
+
+            'reads the query
+            While ActivityReader.Read
+                recordCount = recordCount + 1
+
+                'Adds items to the combobox
+                Dim act_listviewitem As New ListViewItem
+                act_listviewitem.Text = ActivityReader.GetInt32(0)
+                act_listviewitem.SubItems.Add(ActivityReader.GetString(1))
+
+                Dashboard.act_lv.Items.Add(act_listviewitem)
+
+            End While
+            myConnection.Close()
+
+
+            'checks for the records
+            If recordCount = 0 Then
+
+            End If
+
+
+
+
+
+
+
+
+
+
+
+
+            'closes the connection
+            myConnection.Close()
+
         Catch ex As Exception
             MsgBox(ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
@@ -199,6 +242,10 @@ Public Class search_contact
         'makes activities add button in dashboard visible
         Dashboard.act_btn_create.Enabled = True
         Dashboard.act_btn_create.Visible = True
+
+
+        Dashboard.act_refresh.Enabled = True
+        Dashboard.act_refresh.Visible = True
 
     End Sub
 End Class

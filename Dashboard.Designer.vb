@@ -26,12 +26,11 @@ Partial Class Dashboard
         Me.dashboard_tab = New System.Windows.Forms.TabControl()
         Me.tabClient = New System.Windows.Forms.TabPage()
         Me.gb_activities = New System.Windows.Forms.GroupBox()
+        Me.act_refresh = New System.Windows.Forms.Button()
         Me.act_lv = New System.Windows.Forms.ListView()
         Me.act_lb_activity = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.act_lb_created_on = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.act_lb_type = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.act_lb_status = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.act_lb_addedon = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.act_lb_lastmodified = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.act_lb_employee = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.act_lb_comment = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.act_btn_create = New System.Windows.Forms.Button()
@@ -111,16 +110,28 @@ Partial Class Dashboard
         'gb_activities
         '
         resources.ApplyResources(Me.gb_activities, "gb_activities")
+        Me.gb_activities.Controls.Add(Me.act_refresh)
         Me.gb_activities.Controls.Add(Me.act_lv)
         Me.gb_activities.Controls.Add(Me.act_btn_create)
         Me.gb_activities.ForeColor = System.Drawing.Color.White
         Me.gb_activities.Name = "gb_activities"
         Me.gb_activities.TabStop = False
         '
+        'act_refresh
+        '
+        Me.act_refresh.BackColor = System.Drawing.Color.LightSlateGray
+        Me.act_refresh.FlatAppearance.BorderColor = System.Drawing.Color.LightBlue
+        Me.act_refresh.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.act_refresh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue
+        resources.ApplyResources(Me.act_refresh, "act_refresh")
+        Me.act_refresh.ForeColor = System.Drawing.Color.White
+        Me.act_refresh.Name = "act_refresh"
+        Me.act_refresh.UseVisualStyleBackColor = False
+        '
         'act_lv
         '
         Me.act_lv.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.act_lv.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.act_lb_activity, Me.act_lb_type, Me.act_lb_status, Me.act_lb_addedon, Me.act_lb_lastmodified, Me.act_lb_employee, Me.act_lb_comment})
+        Me.act_lv.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.act_lb_activity, Me.act_lb_created_on, Me.act_lb_type, Me.act_lb_employee, Me.act_lb_comment})
         resources.ApplyResources(Me.act_lv, "act_lv")
         Me.act_lv.Name = "act_lv"
         Me.act_lv.UseCompatibleStateImageBehavior = False
@@ -130,21 +141,13 @@ Partial Class Dashboard
         '
         resources.ApplyResources(Me.act_lb_activity, "act_lb_activity")
         '
+        'act_lb_created_on
+        '
+        resources.ApplyResources(Me.act_lb_created_on, "act_lb_created_on")
+        '
         'act_lb_type
         '
         resources.ApplyResources(Me.act_lb_type, "act_lb_type")
-        '
-        'act_lb_status
-        '
-        resources.ApplyResources(Me.act_lb_status, "act_lb_status")
-        '
-        'act_lb_addedon
-        '
-        resources.ApplyResources(Me.act_lb_addedon, "act_lb_addedon")
-        '
-        'act_lb_lastmodified
-        '
-        resources.ApplyResources(Me.act_lb_lastmodified, "act_lb_lastmodified")
         '
         'act_lb_employee
         '
@@ -572,9 +575,7 @@ Partial Class Dashboard
     Friend WithEvents act_lv As ListView
     Friend WithEvents act_lb_activity As ColumnHeader
     Friend WithEvents act_lb_type As ColumnHeader
-    Friend WithEvents act_lb_status As ColumnHeader
-    Friend WithEvents act_lb_addedon As ColumnHeader
-    Friend WithEvents act_lb_lastmodified As ColumnHeader
+    Friend WithEvents act_lb_created_on As ColumnHeader
     Friend WithEvents act_lb_employee As ColumnHeader
     Friend WithEvents act_lb_comment As ColumnHeader
     Friend WithEvents emp_lv As ListView
@@ -590,4 +591,5 @@ Partial Class Dashboard
     Friend WithEvents ci_btn_cancel As Button
     Friend WithEvents emp_btn_load As Button
     Friend WithEvents emp_btn_cancel As Button
+    Friend WithEvents act_refresh As Button
 End Class
