@@ -22,10 +22,6 @@ Partial Class search_contact
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.sc_txt_fname = New System.Windows.Forms.TextBox()
-        Me.sc_lbl_fname = New System.Windows.Forms.Label()
-        Me.sc_lbl_lname = New System.Windows.Forms.Label()
-        Me.sc_txt_lname = New System.Windows.Forms.TextBox()
         Me.sc_lbl_account_number = New System.Windows.Forms.Label()
         Me.account_number = New System.Windows.Forms.TextBox()
         Me.sc_btn_search = New System.Windows.Forms.Button()
@@ -34,46 +30,6 @@ Partial Class search_contact
         Me.sc_lbl_found = New System.Windows.Forms.Label()
         Me.sc_btn_ok = New System.Windows.Forms.Button()
         Me.SuspendLayout()
-        '
-        'sc_txt_fname
-        '
-        Me.sc_txt_fname.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.sc_txt_fname.Location = New System.Drawing.Point(200, 125)
-        Me.sc_txt_fname.Name = "sc_txt_fname"
-        Me.sc_txt_fname.Size = New System.Drawing.Size(194, 26)
-        Me.sc_txt_fname.TabIndex = 2
-        '
-        'sc_lbl_fname
-        '
-        Me.sc_lbl_fname.AutoSize = True
-        Me.sc_lbl_fname.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.sc_lbl_fname.ForeColor = System.Drawing.Color.White
-        Me.sc_lbl_fname.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.sc_lbl_fname.Location = New System.Drawing.Point(59, 125)
-        Me.sc_lbl_fname.Name = "sc_lbl_fname"
-        Me.sc_lbl_fname.Size = New System.Drawing.Size(85, 18)
-        Me.sc_lbl_fname.TabIndex = 6
-        Me.sc_lbl_fname.Text = "First Name"
-        '
-        'sc_lbl_lname
-        '
-        Me.sc_lbl_lname.AutoSize = True
-        Me.sc_lbl_lname.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.sc_lbl_lname.ForeColor = System.Drawing.Color.White
-        Me.sc_lbl_lname.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.sc_lbl_lname.Location = New System.Drawing.Point(60, 186)
-        Me.sc_lbl_lname.Name = "sc_lbl_lname"
-        Me.sc_lbl_lname.Size = New System.Drawing.Size(84, 18)
-        Me.sc_lbl_lname.TabIndex = 8
-        Me.sc_lbl_lname.Text = "Last Name"
-        '
-        'sc_txt_lname
-        '
-        Me.sc_txt_lname.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.sc_txt_lname.Location = New System.Drawing.Point(200, 178)
-        Me.sc_txt_lname.Name = "sc_txt_lname"
-        Me.sc_txt_lname.Size = New System.Drawing.Size(194, 26)
-        Me.sc_txt_lname.TabIndex = 3
         '
         'sc_lbl_account_number
         '
@@ -105,7 +61,7 @@ Partial Class search_contact
         Me.sc_btn_search.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
         Me.sc_btn_search.ForeColor = System.Drawing.Color.White
         Me.sc_btn_search.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.sc_btn_search.Location = New System.Drawing.Point(82, 288)
+        Me.sc_btn_search.Location = New System.Drawing.Point(63, 182)
         Me.sc_btn_search.Name = "sc_btn_search"
         Me.sc_btn_search.Size = New System.Drawing.Size(115, 65)
         Me.sc_btn_search.TabIndex = 4
@@ -122,7 +78,7 @@ Partial Class search_contact
         Me.sc_btn_cancel.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
         Me.sc_btn_cancel.ForeColor = System.Drawing.Color.White
         Me.sc_btn_cancel.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.sc_btn_cancel.Location = New System.Drawing.Point(279, 288)
+        Me.sc_btn_cancel.Location = New System.Drawing.Point(279, 182)
         Me.sc_btn_cancel.Name = "sc_btn_cancel"
         Me.sc_btn_cancel.Size = New System.Drawing.Size(115, 65)
         Me.sc_btn_cancel.TabIndex = 5
@@ -147,7 +103,7 @@ Partial Class search_contact
         Me.sc_lbl_found.Enabled = False
         Me.sc_lbl_found.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.sc_lbl_found.ForeColor = System.Drawing.Color.YellowGreen
-        Me.sc_lbl_found.Location = New System.Drawing.Point(12, 377)
+        Me.sc_lbl_found.Location = New System.Drawing.Point(8, 288)
         Me.sc_lbl_found.Name = "sc_lbl_found"
         Me.sc_lbl_found.Size = New System.Drawing.Size(463, 44)
         Me.sc_lbl_found.TabIndex = 15
@@ -165,7 +121,7 @@ Partial Class search_contact
         Me.sc_btn_ok.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
         Me.sc_btn_ok.ForeColor = System.Drawing.Color.White
         Me.sc_btn_ok.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.sc_btn_ok.Location = New System.Drawing.Point(0, 502)
+        Me.sc_btn_ok.Location = New System.Drawing.Point(0, 363)
         Me.sc_btn_ok.Name = "sc_btn_ok"
         Me.sc_btn_ok.Size = New System.Drawing.Size(483, 65)
         Me.sc_btn_ok.TabIndex = 16
@@ -178,7 +134,7 @@ Partial Class search_contact
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.SlateGray
-        Me.ClientSize = New System.Drawing.Size(483, 567)
+        Me.ClientSize = New System.Drawing.Size(483, 428)
         Me.ControlBox = False
         Me.Controls.Add(Me.sc_btn_search)
         Me.Controls.Add(Me.sc_btn_ok)
@@ -187,21 +143,12 @@ Partial Class search_contact
         Me.Controls.Add(Me.sc_btn_cancel)
         Me.Controls.Add(Me.account_number)
         Me.Controls.Add(Me.sc_lbl_account_number)
-        Me.Controls.Add(Me.sc_txt_lname)
-        Me.Controls.Add(Me.sc_lbl_lname)
-        Me.Controls.Add(Me.sc_txt_fname)
-        Me.Controls.Add(Me.sc_lbl_fname)
         Me.Name = "search_contact"
         Me.Text = "Search Contact"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents sc_txt_fname As TextBox
-    Friend WithEvents sc_lbl_fname As Label
-    Friend WithEvents sc_lbl_lname As Label
-    Friend WithEvents sc_txt_lname As TextBox
     Friend WithEvents sc_lbl_account_number As Label
     Friend WithEvents account_number As TextBox
     Friend WithEvents sc_btn_search As Button

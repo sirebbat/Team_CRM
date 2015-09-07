@@ -29,9 +29,9 @@ Partial Class Dashboard
         Me.act_refresh = New System.Windows.Forms.Button()
         Me.act_lv = New System.Windows.Forms.ListView()
         Me.act_lb_activity = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.act_lb_created_on = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.act_lb_type = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.act_lb_employee = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.act_lb_created_on = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.act_lb_comment = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.act_btn_create = New System.Windows.Forms.Button()
         Me.gb_ci = New System.Windows.Forms.GroupBox()
@@ -131,7 +131,7 @@ Partial Class Dashboard
         'act_lv
         '
         Me.act_lv.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.act_lv.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.act_lb_activity, Me.act_lb_created_on, Me.act_lb_type, Me.act_lb_employee, Me.act_lb_comment})
+        Me.act_lv.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.act_lb_activity, Me.act_lb_type, Me.act_lb_employee, Me.act_lb_created_on, Me.act_lb_comment})
         resources.ApplyResources(Me.act_lv, "act_lv")
         Me.act_lv.Name = "act_lv"
         Me.act_lv.UseCompatibleStateImageBehavior = False
@@ -141,10 +141,6 @@ Partial Class Dashboard
         '
         resources.ApplyResources(Me.act_lb_activity, "act_lb_activity")
         '
-        'act_lb_created_on
-        '
-        resources.ApplyResources(Me.act_lb_created_on, "act_lb_created_on")
-        '
         'act_lb_type
         '
         resources.ApplyResources(Me.act_lb_type, "act_lb_type")
@@ -152,6 +148,10 @@ Partial Class Dashboard
         'act_lb_employee
         '
         resources.ApplyResources(Me.act_lb_employee, "act_lb_employee")
+        '
+        'act_lb_created_on
+        '
+        resources.ApplyResources(Me.act_lb_created_on, "act_lb_created_on")
         '
         'act_lb_comment
         '

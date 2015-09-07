@@ -5,7 +5,8 @@ Imports System.Data.OleDb
 
 Public Class Dashboard
 
-
+    'Variable for account number
+    Dim accountnumb As Int32
     'Dashboard - Create Button
     Private Sub btnCreate_Click(sender As Object, e As EventArgs) Handles btnCreate.Click
         Me.SendToBack()
@@ -38,6 +39,8 @@ Public Class Dashboard
         'disables the create button
         ci_btn_update.Enabled = False
         ci_btn_update.Visible = False
+
+        act_lv.Items.Clear()
 
     End Sub
 
@@ -428,10 +431,11 @@ Public Class Dashboard
                 'Adds items to the dashboard
                 Dim emp_listviewitem As New ListViewItem
                 emp_listviewitem.Text = myReader.GetInt32(0)
-                emp_listviewitem.SubItems.Add(myReader.GetString(1))
                 emp_listviewitem.SubItems.Add(myReader.GetString(2))
                 emp_listviewitem.SubItems.Add(myReader.GetString(3))
                 emp_listviewitem.SubItems.Add(myReader.GetString(4))
+                emp_listviewitem.SubItems.Add(myReader.GetDateTime(5))
+                emp_listviewitem.SubItems.Add(myReader.GetString(6))
 
 
                 emp_lv.Items.Add(emp_listviewitem)
@@ -518,6 +522,53 @@ Public Class Dashboard
         create_contact_activities.BringToFront()
 
 
+
+    End Sub
+
+    Private Sub act_refresh_Click(sender As Object, e As EventArgs) Handles act_refresh.Click
+
+
+
+        Dim myConnString As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source =" & Environment.CurrentDirectory & "\crm_db.accdb"
+        Dim myConnection As New OleDbConnection(myConnString)
+
+        act_lv.Items.Clear()
+
+        myConnection.Open()
+        'gets activities
+        Try
+            'reads the query
+
+            Dim myActivity As New OleDbCommand("SELECT * FROM crm_activities WHERE account_number =@account_number", myConnection)
+            myActivity.Parameters.AddWithValue("@account_number", CType(ci_txt_account.Text, Int32))
+            Dim ActivityReader As OleDbDataReader = myActivity.ExecuteReader
+
+            While ActivityReader.Read
+
+                'Adds items to the combobox
+                Dim act2_listviewitem As New ListViewItem
+                act2_listviewitem.Text = ActivityReader.GetInt32(0)
+                act2_listviewitem.SubItems.Add(ActivityReader.GetString(2))
+                act2_listviewitem.SubItems.Add(ActivityReader.GetString(3))
+                act2_listviewitem.SubItems.Add(ActivityReader.GetDateTime(4))
+                act2_listviewitem.SubItems.Add(ActivityReader.GetString(5))
+
+                act_lv.Items.Add(act2_listviewitem)
+
+            End While
+            myConnection.Close()
+
+
+            'checks for the records
+
+
+
+            'closes the connection
+            myConnection.Close()
+
+        Catch ex As Exception
+            MsgBox(ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
 
     End Sub
 End Class

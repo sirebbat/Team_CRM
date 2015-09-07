@@ -17,24 +17,31 @@ Public Class create_contact_activities
 
 
         Try
-            myConnection.Open()
-            Dim myCommand As New OleDbCommand("INSERT INTO crm_activities (account_number, type, employee, created_on, comment) VALUES (@account_number, @type, @employee, @created_on, @comment)", myConnection)
+            If Not cca_cb_employee.SelectedItem = String.Empty And Not cca_txt_comment.Text = String.Empty And Not cca_cb_contact_type.SelectedItem = String.Empty Then
+                myConnection.Open()
+                Dim myCommand As New OleDbCommand("INSERT INTO crm_activities (account_number, type, employee, created_on, comment) VALUES (@account_number, @type, @employee, @created_on, @comment)", myConnection)
 
-            myCommand.Parameters.AddWithValue("@account_number", CType(Dashboard.ci_txt_account.Text, Int32))
-            myCommand.Parameters.AddWithValue("@type", CType(cca_cb_contact_type.SelectedItem, String))
-            myCommand.Parameters.AddWithValue("@employee", CType(cca_cb_employee.SelectedItem, String))
-            myCommand.Parameters.AddWithValue("@created_on", CType(cca_dp_created_on.Text, Date))
-            myCommand.Parameters.AddWithValue("@comment", CType(cca_txt_comment.Text, String))
+                myCommand.Parameters.AddWithValue("@account_number", CType(Dashboard.ci_txt_account.Text, Int32))
+                myCommand.Parameters.AddWithValue("@type", CType(cca_cb_contact_type.SelectedItem, String))
+                myCommand.Parameters.AddWithValue("@employee", CType(cca_cb_employee.SelectedItem, String))
+                myCommand.Parameters.AddWithValue("@created_on", CType(cca_dp_created_on.Text, Date))
+                myCommand.Parameters.AddWithValue("@comment", CType(cca_txt_comment.Text, String))
 
-            myCommand.ExecuteNonQuery()
+                myCommand.ExecuteNonQuery()
 
-            myCommand.Dispose()
+                myCommand.Dispose()
 
 
-            myConnection.Close()
+                myConnection.Close()
 
-            'Displays saved message
-            MessageBox.Show("Activity Saved.", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                'Displays saved message
+                MessageBox.Show("Activity Saved.", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Else
+
+                MessageBox.Show("All Fields are required. Please complete fields.", "Fields Missing", MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+
+            End If
 
         Catch ex As Exception
             MsgBox(ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -67,7 +74,7 @@ Public Class create_contact_activities
 
         'used to see count now many records found in the db
         Dim recordCount As Integer = 0
-        Dim empid As Integer
+
 
         'Used to get the record from the db and then add it to the combobox
         Dim fname, lname As String

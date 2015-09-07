@@ -88,6 +88,34 @@ Public Class create_contact
                 ' excute SQL expression
                 myCommand.ExecuteNonQuery()
 
+
+                'gets account number
+                Dim getaccount As New OleDbCommand("SELECT * FROM crm_contact WHERE fname  =@fname AND lname =@lname AND office_number =@office_number", myConnection)
+
+                Dim account_number As Int32
+                getaccount.Parameters.AddWithValue("@fname", CType(ci_txt_fname.Text, String))
+                getaccount.Parameters.AddWithValue("@lname", CType(ci_txt_lname.Text, String))
+                getaccount.Parameters.AddWithValue("@office_number", CType(ci_txt_officen.Text, String))
+                Dim myReader2 As OleDbDataReader = getaccount.ExecuteReader
+                While myReader2.Read
+                    account_number = myReader2.GetInt32(0)
+                End While
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 myCommand.Dispose()
 
 
@@ -112,7 +140,7 @@ Public Class create_contact
 
 
 
-                MessageBox.Show("Contact Saved", "Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                MessageBox.Show("Contact Saved with account number " & account_number, "Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
             Else
 
@@ -233,6 +261,10 @@ Public Class create_contact
     End Sub
 
     Private Sub create_contact_MouseClick(sender As Object, e As MouseEventArgs) Handles Me.MouseClick
+
+    End Sub
+
+    Private Sub ci_btn_update_Click(sender As Object, e As EventArgs) Handles ci_btn_update.Click
 
     End Sub
 End Class

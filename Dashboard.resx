@@ -168,12 +168,6 @@
   <data name="act_lb_activity.Width" type="System.Int32, mscorlib">
     <value>75</value>
   </data>
-  <data name="act_lb_created_on.Text" xml:space="preserve">
-    <value>Created On</value>
-  </data>
-  <data name="act_lb_created_on.Width" type="System.Int32, mscorlib">
-    <value>131</value>
-  </data>
   <data name="act_lb_type.Text" xml:space="preserve">
     <value>Type</value>
   </data>
@@ -185,6 +179,12 @@
   </data>
   <data name="act_lb_employee.Width" type="System.Int32, mscorlib">
     <value>205</value>
+  </data>
+  <data name="act_lb_created_on.Text" xml:space="preserve">
+    <value>Created On</value>
+  </data>
+  <data name="act_lb_created_on.Width" type="System.Int32, mscorlib">
+    <value>131</value>
   </data>
   <data name="act_lb_comment.Text" xml:space="preserve">
     <value>Comment</value>
@@ -1812,12 +1812,6 @@
   <data name="&gt;&gt;act_lb_activity.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;act_lb_created_on.Name" xml:space="preserve">
-    <value>act_lb_created_on</value>
-  </data>
-  <data name="&gt;&gt;act_lb_created_on.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;act_lb_type.Name" xml:space="preserve">
     <value>act_lb_type</value>
   </data>
@@ -1828,6 +1822,12 @@
     <value>act_lb_employee</value>
   </data>
   <data name="&gt;&gt;act_lb_employee.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;act_lb_created_on.Name" xml:space="preserve">
+    <value>act_lb_created_on</value>
+  </data>
+  <data name="&gt;&gt;act_lb_created_on.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;act_lb_comment.Name" xml:space="preserve">
