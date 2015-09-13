@@ -36,6 +36,17 @@ Public Class create_contact_activities
 
                 'Displays saved message
                 MessageBox.Show("Activity Saved.", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+
+                'Clears the form
+
+                cca_cb_contact_type.ResetText()
+                cca_cb_employee.ResetText()
+                cca_dp_created_on.ResetText()
+                cca_txt_comment.ResetText()
+
+
+
             Else
 
                 MessageBox.Show("All Fields are required. Please complete fields.", "Fields Missing", MessageBoxButtons.OK, MessageBoxIcon.Error)

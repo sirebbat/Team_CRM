@@ -419,7 +419,6 @@ Public Class Dashboard
             'opens the connection
             myConnection.Open()
 
-            'Search by account number
 
             'query
             Dim myCommand As New OleDbCommand("SELECT * FROM crm_employee", myConnection)
@@ -431,11 +430,11 @@ Public Class Dashboard
                 'Adds items to the dashboard
                 Dim emp_listviewitem As New ListViewItem
                 emp_listviewitem.Text = myReader.GetInt32(0)
+                emp_listviewitem.SubItems.Add(myReader.GetString(1))
                 emp_listviewitem.SubItems.Add(myReader.GetString(2))
-                emp_listviewitem.SubItems.Add(myReader.GetString(3))
                 emp_listviewitem.SubItems.Add(myReader.GetString(4))
-                emp_listviewitem.SubItems.Add(myReader.GetDateTime(5))
-                emp_listviewitem.SubItems.Add(myReader.GetString(6))
+                emp_listviewitem.SubItems.Add(myReader.GetString(3))
+
 
 
                 emp_lv.Items.Add(emp_listviewitem)
